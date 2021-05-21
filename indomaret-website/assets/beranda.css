@@ -1,0 +1,542 @@
+#ads img.hero_banner{
+	width: 100%
+}
+
+#arrow_buttons{
+	margin-top: -380px; 
+	margin-left: 80px;
+}
+
+#ads button.arrow span{
+	height: 59px;
+	width: 59px;
+	background-color: rgba(255, 255, 255, 0.95);
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+#left_arrow{
+	float: left;
+}
+
+#right_arrow{
+	float: right;
+	margin-left: 1143px;
+}
+
+#ads button.arrow img.active_arrow{
+	display: none;
+	margin-top: 16px;
+	width: 14px;
+	height: 25px;
+}
+
+.active_arrow#left{
+	margin-left: -15px;
+}
+
+.active_arrow#right{
+	margin-left: -15px;
+}
+
+#ads button.arrow span:active{
+	background-color: #FECF22;
+}
+
+#ads button.arrow span#left_arrow:active .active_arrow#left{
+	display: block;
+	margin-left: 23px;
+	margin-top: -32px;
+}
+
+#ads button.arrow span#right_arrow:active .active_arrow#right{
+	display: block;
+	margin-left: 23px;
+	margin-top: -32px;
+}
+
+#ads button span img{
+	margin-top: 16px;
+	width: 14px;
+	height: 25px;
+}
+
+#ads img.gradient_background{
+	width: 1440px;
+	position: absolute;
+	top: 630px;
+	left: 0;
+	z-index: 3;
+}
+
+#mid_menu{
+	margin-top: 450px;
+	margin-left: 80px;
+}
+
+#cards{
+	position: relative;
+	margin-top: 50px;
+}
+
+#mid_menu h1{
+	position: relative;
+	z-index: 4;
+	margin-top: -10px;
+}
+
+.cards:first-child{
+	margin-left: 0;
+}
+
+.cards{
+	width: 277px;
+	height: 385px;
+	background: #FFFFFF;
+	box-shadow: 0px 4px 8px rgb(169, 211, 240);
+	border-radius: 31px;
+	margin-left: 52px;
+	float: left;
+	cursor: pointer;
+}
+
+.cards .image_container{
+	width: 59px;
+	height: 56px;
+	margin-left: 110px;
+	margin-top: 75px;
+}
+
+.cards .image_container img{
+	width: 59px;
+}
+
+.cards:nth-child(3) .image_container img{
+	padding-top: 6px;
+}
+
+#active_berita,#active_layanan,#active_kartu,#active_produk{
+	display: none;
+	position: relative;
+	top: -65px;
+}
+
+#active_kartu{
+	padding-top: 6px;
+	padding-bottom: 11px;
+	position: relative;
+	top: -52px;
+}
+
+#active_produk{
+	top: -62px;
+}
+
+#cards div.cards hr{
+	border-top: #FECF22 3px solid;
+	width: 60px;
+	margin-top: 5px;
+	margin-left: 109px;
+}
+
+.cards h3{
+	margin-top: 24px;
+	width: 277px;
+	text-align: center;
+}
+
+.cards p{
+	text-align: center;
+	margin-top: 27px;
+	width: 180px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.cards:nth-child(1) p{
+	width: 175px;
+}
+
+.cards:nth-child(3) p{
+	width: 220px;
+	padding-left: 28px;
+	padding-right: 28px;
+}
+
+.cards:hover{
+	box-shadow: 0px 6px 12px rgb(169, 211, 240);
+}
+
+.cards:active{
+	background: #006AB4;
+}
+
+.cards:active p{
+	color: #FFFFFF;
+}
+
+.cards:active div h3{
+	color: #FFFFFF;
+}
+
+#berita:active #active_berita{
+	display: block;
+}
+
+#layanan:active #active_layanan{
+	display: block;
+}
+
+#kartu:active #active_kartu{
+	display: block;
+}
+
+#produk:active #active_produk{
+	display: block;
+}
+
+#franchise{
+	margin-top: 40px;
+}
+
+#diamond_container{
+	position: relative;
+	top: 400px;
+}
+
+.mid_gradient_background{
+	position: absolute;
+	left: 0;
+	top: 120px;
+	width: 100%;
+}
+
+div.yellow_box{
+	position: absolute;
+	background-color: #FECF22;
+	transform: rotate(-46.26deg);
+}
+
+div.red_box{
+	position: absolute;
+	background-color: #D61627;
+	transform: rotate(-46.26deg);
+}
+
+div.yellow_box.one{
+	top: 210px;
+	left: -30px;
+	width: 167.23px;
+	height: 167.4px;
+}
+
+img#mbak{
+	position: absolute;
+	left: 190px;
+	top: 155px;
+	width: 246px;
+	height: 246px;
+}
+
+div.yellow_box.two{
+	top: 290px;
+	left: 475px;
+	width: 93.39px;
+	height: 94.86px;
+}
+
+div.red_box.one{
+	top: 375px;
+	left: 135px;
+	width: 119.3px;
+	height: 121.45px;
+}
+
+img#mbak_mask{
+	position: absolute;
+	left: 0px;
+	top: 415px;
+	height: 302px;
+}
+
+img#indomaret{
+	position: absolute;
+	left: 225px;
+	top: 370px;
+	height: 393px;
+}
+
+div.yellow_box.three{
+	top: 640px;
+	left: 120px;
+	width: 145.31px;
+	height: 147.75px;
+}
+
+img#indomaret_small{
+	position: absolute;
+	left: 268px;
+	top: 720px;
+	height: 133px;
+}
+
+div.red_box.two{
+	left: -30px;
+	top: 775px;
+	width: 151.03px;
+	height: 151.03px;
+}
+
+img#mask_dude{
+	position: absolute;
+	right: 0px;
+	top: 28px;
+	height: 200px;
+}
+
+img#dude{
+	position: absolute;
+	right: 0px;
+	top: 400px;
+	height: 317px;
+}
+
+div.red_box.three{
+	position: absolute;
+	width: 228.55px;
+	height: 228.55px;
+	right: 20px;
+	top: 198px;
+}
+
+div.yellow_box.four{
+	width: 167.23px;
+	height: 167.4px;
+	position: absolute;
+	right: 0px;
+	top: 720px;
+}
+
+img#domar{
+	position: absolute;
+	right: 70px;
+	top: 610px;
+	height: 307.43px;
+}
+
+#bangun_bisnis{
+	position: relative;
+	margin-left: 709px;
+	top: 480px;
+}
+
+#bangun_bisnis h2{
+	width: 480px;
+}
+
+#bangun_bisnis p{
+	margin-top: 8px;
+	width: 400px;
+}
+
+#bangun_bisnis button{
+	background-color: #006AB4;
+	border: 3px solid #006AB4;
+	box-sizing: border-box;
+	width: 281px;
+	height: 45px;
+	border-radius: 22.5px;
+	margin-top: 35px;
+	font-weight: 500;
+	font-size: 17px;
+	line-height: 25px;
+	text-align: center;
+	color: #FFFFFF;
+	letter-spacing: 0.02em;
+	cursor: pointer;
+}
+
+#bangun_bisnis button:hover{
+	background-color: #FFFFFF;
+	border: 3px solid #006AB4;
+	color: #006AB4;
+}
+
+#bangun_bisnis button:active{
+	background-color: #10507D;
+	border: none;
+	color: #ffffff;
+}
+
+#map{
+	float: left;
+	margin-left: 80px;
+	margin-top: 900px;
+}
+
+#map img{
+	width: 1266px;
+}
+
+#cari_gerai{
+	background-color: rgba(0, 106, 180, 0.83);
+	border-radius: 18px;
+	width: 570px;
+	height: 473px;
+	position: relative;
+	top: -480px;
+}
+
+img#location{
+	width: 74px;
+	margin-top: 110px;
+	margin-left: 107px;
+}
+
+#cari_gerai h2{
+	color: #FFFFFF;
+	margin-top: -100px;
+	margin-left: 220px;
+}
+
+input[type=text]#cari_gerai_terdekatmu{
+  	width: 311px;
+	height: 45px;
+  	padding-left: 22px;
+  	border: none;
+  	border-radius: 7px;
+  	color: #000000;
+  	font-size: 17px;
+  	position: relative;
+  	margin-top: 18px;
+  	left: 105px;
+}
+
+#hover_help{
+	width: 25px;
+	position: relative;
+	left: 400px;
+	top: -33px;
+}
+
+#hover_location img{
+	width: 22px;
+	cursor: pointer;
+	position: absolute;
+	top: -2px;
+}
+
+.bubble_chat{
+	visibility: hidden;
+	position: absolute;
+	left: -14px;
+	top: -45px;
+}
+
+.bubble{
+	background-color: #FECF22;
+ 	border-radius: 7px;
+ 	width: 185px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	color: rgba(0, 0, 0, 0.9);
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 18px;
+	letter-spacing: 0.02em;
+	text-align: center;
+}
+
+.pointer{
+	width: 21px;
+	height: 22px;
+	width: 0; 
+  	height: 0; 
+  	border-left: 8px solid transparent;
+  	border-right: 8px solid transparent;
+  	border-top: 14px solid #FECF22;
+  	margin-left: 18px;
+}
+
+#hover_help:hover .bubble_chat{
+	visibility: visible;
+}
+
+button.cari_kami{
+	border: 3px solid #FFFFFF;
+	box-sizing: border-box;
+	border-radius: 20px;
+	width: 170px;
+	height: 37px;
+	font-weight: 500;
+	font-size: 17px;
+	line-height: 25px;
+	text-align: center;
+	color: #FFFFFF;
+	cursor: pointer;
+	margin-left: 105px;
+	margin-top: -3px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+button.cari_kami:hover{
+	background: #FFFFFF;
+	border: none;
+	color: #006AB4;
+}
+
+button.cari_kami:active{
+	background: #10507D;
+	border: 3px solid #FFFFFF;
+	color: #ffffff;
+}
+
+footer{
+	margin-top: 1510px;
+}
+
+.navifooter{
+	top: -232px;
+}
+
+.company{
+	margin-top: -370px;
+}
+
+.awards img{
+	margin-top: 16px;
+}
+
+.newsletter{
+	top: -299px;
+}
+
+.socmed{
+	top: -72px;
+}
+
+.copyright{
+	margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
