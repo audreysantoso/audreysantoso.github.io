@@ -1,0 +1,266 @@
+<!--Indomaret Website Group 1(Assignment2)-->
+<!DOCTYPE html>
+<html style="margin: 0;" lang="id">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/global.css">
+	<link rel="stylesheet" type="text/css" href="assets/karir.css">
+	<title>Indomaret Karir</title>
+</head>
+<body style="margin: 0;">
+<div class="parent">
+	<nav>
+		<div id="responsive_menu">
+			<div id="top_responsive_menu">
+				<div id="search_container_responsive"><!--search bar-->
+					<input type="text">
+					<button><img src="images/search.png" id="search_responsive" alt="Cari"/></button>
+				</div>
+			</div>
+			<button><img src="images/menu_responsive_close.png" id="close_responsive" alt="Close" onclick="slideoutmenu()"/></button>
+			<div class="menu_cont">
+				<div class="responsive_menu_container"><a href="index.html">Beranda</a><hr></div>
+				<div class="responsive_menu_container">Waralaba <img src="images/bluearrow.png" class="blue_arrow" alt="Navigasi"/><hr></div>
+				<div class="responsive_menu_container">Mitra <img src="images/bluearrow.png" class="blue_arrow" alt="Navigasi"/><hr></div>
+				<div class="responsive_menu_container" id="current"><a href="karir.html">Karir</a><hr></div>
+				<div class="responsive_menu_container">Korporat <img src="images/bluearrow.png" class="blue_arrow" alt="Navigasi"/><hr></div>
+			</div>
+			<div id="contact_responsive">
+				<div>Hubungi Kami:</div>
+				<div>(021)1500280</div>
+				<div>customercare@klikindomaret.com</div>
+			</div>
+		</div>
+		<img src="images/menu.png" alt="Menu" id="side_nav" onclick="slideinmenu()"/>
+		<div id="contact"><!--contact info-->
+			<div>
+				<div style="margin-right: 15px; width: 96px;">Hubungi Kami:</div>
+				<img src="images/phone.png" alt="Telefon" id="phone"/>
+				<div style="margin-right: 15px; width: 96px;">(021)1500280</div>
+				<img src="images/email.png" alt="Surel" id="email"/>
+				<div style="width: 207px;">customercare@klikindomaret.com</div>
+			</div>
+		</div>
+		<div id="navigation"><!--main nav bar-->
+			<a href="index.html"><img src="images/logo.png" alt="Logo Indomaret" id="logo"/></a>
+			
+			<div><!--Menu-->
+				<div class="menu"><a href="index.html" style="margin-left: 0;">Beranda</a></div>
+				
+				<div class="menu" id="waralaba">
+					<div class="square_waralaba">
+						<span>Waralaba</span>
+					</div>
+					<span>Waralaba<img src="images/dropdown_arrow.png" alt="Navigasi"/></span>
+					<div class="menu_dropdown_waralaba">
+						<div class="menu_drop"></div>
+						<div class="menu_drop">Info<hr></div>
+						<div class="menu_drop">Keuntungan<hr></div>
+						<div class="menu_drop">Investasi<hr></div>
+						<div class="menu_drop">Pendaftaran<hr></div>
+						<div class="menu_drop" style="border-bottom: none;">Testimoni</div>
+						<div class="menu_drop"></div>
+					</div>
+				</div>
+
+				<div class="menu" id="mitra">
+					<div class="square_mitra">
+						<span>Mitra</span>
+					</div>
+					<span>Mitra<img src="images/dropdown_arrow.png" alt="Navigasi"/></span>
+					<div class="menu_dropdown_mitra">
+						<div class="menu_drop"></div>
+						<div class="menu_drop">Pemasok<hr></div>
+						<div class="menu_drop">Properti & Lokasi<hr></div>
+						<div class="menu_drop">Sewa Teras<hr></div>
+						<div class="menu_drop" style="border-bottom: none;">Pendaftaran ATM</div>
+						<div class="menu_drop"></div>
+					</div>
+				</div>
+				
+				<div class="menu" id="karir"><a href="karir.html" class="current" style="font-weight: 700; text-decoration: underline;">Karir</a></div>
+				
+				<div class="menu" id="korporat">
+					<div class="square_korporat">
+						<span>Korporat</span>
+					</div>
+					<span>Korporat<img src="images/dropdown_arrow.png" alt="Navigasi"/></span>
+					<div class="menu_dropdown_korporat">
+						<div class="menu_drop"></div>
+						<div class="menu_drop">Pusat Distribusi<hr></div>
+						<div class="menu_drop">Gerai & Pemasaran<hr></div>
+						<div class="menu_drop">Penghargaan<hr></div>
+						<div class="menu_drop" style="border-bottom: none;">Pendaftaran ATM</div>
+						<div class="menu_drop"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="search_container"><!--search bar-->
+			<input type="text" placeholder="Cari">
+			<button><img src="images/search.png" id="search" alt="Cari"/></button>
+		</div>
+	</nav>
+
+	<main>
+			<section id="berkarir"><!--berkarir di indomaret-->
+				<img src="images/building.jpg" alt="Indomaret Building"/>
+				<div id="berkarir_text">
+					<h1>Berkarir di Indomaret</h1>
+					<p>Bergabunglah dengan kami, dan jadi bagian<br> dari perusahaan dengan sektor bisnis<br> terbanyak di Indonesia. </p>
+					<button class="pelajari_selengkapnya">PELAJARI SELENGKAPNYA</button>
+				</div>
+			</section>
+
+			<button id="pelayanan"><!--pelayanan pelanggan button-->
+				<span class="circle"></span>
+				<span class="circle"><img src="images/white_pelayanan.png" alt="Ikon Chat"/><img src="images/yellow_pelayanan.png" id="active_pelayanan" alt="Ikon Chat"/></span>
+				<span id="rectangle"><span id="rectangle_text">Pelayanan pelanggan</span></span>
+			</button>
+
+			<section id="lowongan"><!--lowongan kerja-->
+				<h2>Lowongan Pekerjaan</h2>
+				<div id="top">
+					<div class="cards">  
+						<h3>Magang</h3>
+						<p>Berpeluang untuk memiliki pengalaman kerja bagi mahasiswa dari universitas terkemuka.</p>
+						<button>Lebih lanjut ></button> 
+						<img src="images/bluearrow.png" alt="Arrow" class="lowongan_arrow"/> 
+					</div>
+					<div class="cards">  
+						<h3>Management Development Program</h3>
+						<p>Program akselerasi yang mempersiapkan lulusan baru tingkat manajerial di berbagai departemen Indomaret Group.</p>
+						<button>Lebih lanjut ></button>
+						<img src="images/bluearrow.png" alt="Arrow" class="lowongan_arrow"/> 
+					</div>
+					<div class="cards">  
+						<h3>Management Development Program Specialist</h3>
+						<p>Pekerjaan spesialis untuk jurusan tertentu, seperti teknologi informasi, desain visual, dll.</p>
+						<button>Lebih lanjut ></button>
+						<img src="images/bluearrow.png" alt="Arrow" class="lowongan_arrow"/> 
+					</div>
+				</div>
+				
+				<div id="bottom">
+					<div class="cards">  
+						<h3>Profesional</h3>
+						<p>Tersedia untuk anda yang memiliki pengalaman kerja terhadap lowongan perkerjaan yang tersedia di Indomaret<br> Group.</p>
+						<button>Lebih lanjut ></button>
+						<img src="images/bluearrow.png" alt="Arrow" class="lowongan_arrow"/> 
+					</div>
+					<div class="cards">  
+						<h3>Supervisor Trainee Program</h3>
+						<p>Program percepatan karir bagi lulusan baru menuju level pengawas dalam 1 tahun diberbagai departemen/unit bisnis lainnya.</p>
+						<button>Lebih lanjut ></button>
+						<img src="images/bluearrow.png" alt="Arrow" class="lowongan_arrow"/> 
+					</div>
+					<div class="cards">  
+						<h3>Staf</h3>
+						<p>Kesempatan untuk memulai pengalaman berkarir Anda di berbagai departemen dan unit bisnis Indomaret Group.</p>
+						<button>Lebih lanjut ></button>
+						<img src="images/bluearrow.png" alt="Arrow" class="lowongan_arrow"/> 
+					</div>
+				</div>
+			</section>
+			<img src="images/career_bg.png" class="mid_bg" alt="Latar"/>
+
+			<section id="testimoni"><!--testimoni-->
+				<h2>Testimoni</h2> 
+				<button id="lebih_lanjut_testimoni">Lebih lanjut ></button>
+				<div class="redbox">
+					<h3>Delfi</h3>
+				</div> 
+				<img src="images/testimonidiamonds.png" alt="Diamonds" class="diamonds_responsive"/>
+				<div class="greybox"> 
+					<p id="greybox_desktop">Luar Biasa! Menurut saya Indomaret Group merupakan tempat yang sempurna untuk belajar mengenal dunia kerja. Saya merasa benar-benar dipersiapkan untuk menjadi seorang tenaga kerja yang professional dengan mengasah softskill dan hardskill. “Jangan Pernah Berhenti Belajar dan Jangan Cepat Merasa Puas.”</p>
+					<p id="greybox_responsive">Luar Biasa! Menurut saya Indomaret Group merupakan tempat yang sempurna untuk belajar mengenal dunia kerja. <br>Saya merasa benar-benar dipersiapkan untuk menjadi seorang tenaga kerja yang professional dengan mengasah softskill... </p>
+				</div>
+				<img src="images/testimoni1.png" alt="Testimoni Profile: Delfi" class="testimoni_profile"/>
+				<img src="images/delfitestimoni.png" alt="Testimoni Profile: Delfi" class="testimoni_profile_responsive"/>
+				<div id="arrow_buttons">
+				<button class="arrow"> 
+					<span id="left_arrow"><img src="images/yellow_left_arrow.png" alt="Panah Navigasi Kiri"/><img src="images/white_left_arrow.png" class="active_arrow" id="left" alt="Panah Navigasi Kiri"/></span>
+				</button>
+				<button class="arrow">
+					<span id="right_arrow"><img src="images/yellow_right_arrow.png" alt="Panah Navigasi Kanan"/><img src="images/white_right_arrow.png" class="active_arrow" id="right" alt="Panah Navigasi Kanan"/></span>
+				</button>
+				</div> 
+				<div id="indicator_container">
+					<div class="blue"></div>
+					<div class="blue"></div>
+					<div class="blue"></div>
+				</div>
+			</section>
+	</main>
+
+	<footer>
+		<div>
+			<span class="navifooter"><a href="index.html">Beranda</a></span>
+			<span class="navifooter">Waralaba</span>
+			<span class="navifooter">Mitra</span>
+			<span class="navifooter"><a href="karir.html">Karir</a></span>
+			<span class="navifooter">Korporat</span> 
+		</div>
+		
+		<div class="newsletter">
+			<h4>Berlangganan Newsletter Indomaret</h4>	
+			<input type="text" placeholder="Masukan email Anda" id="new_search">
+			<button><img src="images/newsletter_arrow.png" id="new_search_arrow" alt="Panah"/></button>
+		</div>
+		
+		<div class="company">
+			<div class="company_address">
+				<h4>PT Indomarco Prismatama</h4>
+				<p>Jl. Ancol barat I No.9 RT.1/RW.2, <br>
+				Ancol, Kec. Pademangan, <br>
+				Jakarta Utara 14430<br>
+				Telp. (021) 6909400</p>
+			</div>
+			<div class="company_address">
+				<h4>Kantor Pusat 1</h4>
+				<p>Jl. Boulevard Pantai Indah Kapuk,<br> 
+				Kamal Muara, Penjaringan<br> 
+				Jakarta Utara 14430<br>
+				Telp. (021) 50897400</p>
+			</div>
+			<div class="company_address">
+				<h4>Kantor Pusat 2</h4>
+				<p>Jl. Terusan Angkasa Blok B2<br> 
+				Kav. 1, Gunung Sahari, Kemayoran<br>
+				Jakarta Pusat 10610<br>
+				Telp. (021) 29559100</p>
+			</div>
+		</div>
+
+		<div class="awards">
+			<img src="images/awards.png" alt="Indomaret Awards"/>
+		</div>
+
+		<div class="socmed">
+			<a href="https://www.facebook.com/IndomaretMudahdanHemat/" target="_blank"><img src="images/facebook.png" alt="Facebook"/></a>
+			<a href="https://twitter.com/indomaret?lang=en" target="_blank"><img src="images/twitter.png" alt="Twitter"/></a>
+			<a href="https://www.youtube.com/channel/UCDfDwRm4uwDrym-dFgs7_EQ" target="_blank"><img src="images/youtube.png" alt="Youtube"/></a>
+			<a href="https://www.instagram.com/indomaret/?hl=en" target="_blank"><img src="images/instagram.png" alt="Instagram"/></a>
+		</div>
+
+		<div class="copyright">
+			<div id="copyright_words">Copyrights © 2014-2021 Indomaret. All Rights Reserved</div>
+		</div>	
+	</footer>
+</div>
+<script>
+	function slideinmenu() {
+		document.getElementById('responsive_menu').style.left = "0px";
+		document.getElementById('close_responsive').style.display = "block";
+	}
+	  
+	function slideoutmenu() {
+		document.getElementById('responsive_menu').style.left = "-310px";
+		document.getElementById('close_responsive').style.display = "none";
+	}
+</script>
+</body>
+</html>
