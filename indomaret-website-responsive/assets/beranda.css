@@ -1,0 +1,935 @@
+#ads{
+	width: 1440px;
+	height: 780px;
+	margin: 0 auto;
+}
+
+#ads img.hero_banner{
+	width: 100%;
+}
+
+#arrow_buttons{
+	margin-top: -380px; 
+}
+
+#ads button.arrow span{
+	height: 59px;
+	width: 59px;
+	background-color: rgba(255, 255, 255, 0.95);
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+	border-radius: 50%;
+}
+
+#left_arrow{
+	float: left;
+	margin-left: 80px;
+}
+
+#right_arrow{
+	float: right;
+	margin-left: 1143px;
+}
+
+#ads button.arrow img.active_arrow{
+	display: none;
+	margin-top: 16px;
+	width: 14px;
+	height: 25px;
+}
+
+.active_arrow#left{
+	margin-left: -15px;
+}
+
+.active_arrow#right{
+	margin-left: -15px;
+}
+
+#ads button.arrow span:active{
+	background-color: #FECF22;
+}
+
+#ads button.arrow span#left_arrow:active .active_arrow#left{
+	display: block;
+	margin-left: 23px;
+	margin-top: -32px;
+}
+
+#ads button.arrow span#right_arrow:active .active_arrow#right{
+	display: block;
+	margin-left: 23px;
+	margin-top: -32px;
+}
+
+#ads button span img{
+	margin-top: 16px;
+	width: 14px;
+	height: 25px;
+}
+
+img.gradient_background{
+	width: 100%;
+	position: absolute;
+	top: 630px;
+	z-index: 3;
+}
+
+#mid_menu{
+	width: 1440px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+#cards{
+	position: relative;
+	z-index: 3;
+	width: 100%;
+	height: 450px;
+	margin: 0 auto;
+	margin-top: 50px;
+	margin-left: 80px;
+}
+
+#mid_menu h1{
+	position: relative;
+	z-index: 4;
+	margin-top: -10px;
+	margin-left: 80px;
+}
+
+.cards:first-child{
+	margin-left: 0;
+}
+
+.cards{
+	width: 277px;
+	height: 385px;
+	background: #FFFFFF;
+	box-shadow: 0px 4px 8px rgb(169, 211, 240);
+	border-radius: 31px;
+	margin-left: 52px;
+	float: left;
+	cursor: pointer;
+}
+
+.cards .image_container{
+	width: 59px;
+	height: 56px;
+	margin-left: 110px;
+	margin-top: 75px;
+}
+
+.cards .image_container img{
+	width: 59px;
+}
+
+.cards:nth-child(3) .image_container img{
+	padding-top: 6px;
+}
+
+#active_berita,#active_layanan,#active_kartu,#active_produk{
+	display: none;
+	position: relative;
+	top: -65px;
+}
+
+#active_kartu{
+	padding-top: 6px;
+	padding-bottom: 11px;
+	position: relative;
+	top: -52px;
+}
+
+#active_produk{
+	top: -62px;
+}
+
+#cards div.cards hr{
+	border-top: #FECF22 3px solid;
+	width: 60px;
+	margin-top: 5px;
+	margin-left: 109px;
+}
+
+.cards h3{
+	margin-top: 24px;
+	width: 277px;
+	text-align: center;
+}
+
+.cards p{
+	text-align: center;
+	margin-top: 27px;
+	width: 180px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.cards:nth-child(1) p{
+	width: 175px;
+}
+
+.cards:nth-child(3) p{
+	width: 220px;
+	padding-left: 28px;
+	padding-right: 28px;
+}
+
+.cards:hover{
+	box-shadow: 0px 6px 12px rgb(169, 211, 240);
+}
+
+.cards:active{
+	background: #006AB4;
+}
+
+.cards:active p{
+	color: #FFFFFF;
+}
+
+.cards:active h3{
+	color: #FFFFFF;
+}
+
+#berita:active #active_berita{
+	display: block;
+}
+
+#layanan:active #active_layanan{
+	display: block;
+}
+
+#kartu:active #active_kartu{
+	display: block;
+}
+
+#produk:active #active_produk{
+	display: block;
+}
+
+#franchise{
+	width: 1440px;
+	height: 1040px;
+	margin: 0 auto;
+}
+
+#diamond_container{
+	position: relative;
+}
+
+img.mid_gradient_background{
+	position: absolute;
+	left: 0;
+	top: 1480px;
+	width: 100%;
+}
+
+div.yellow_box{
+	position: absolute;
+	background-color: #FECF22;
+	transform: rotate(-46.26deg);
+}
+
+div.red_box{
+	position: absolute;
+	background-color: #D61627;
+	transform: rotate(-46.26deg);
+}
+
+div.yellow_box.one{
+	top: 160px;
+	left: -30px;
+	width: 167.23px;
+	height: 167.4px;
+}
+
+img#mbak{
+	position: absolute;
+	left: 190px;
+	top: 105px;
+	width: 246px;
+	height: 246px;
+}
+
+div.yellow_box.two{
+	top: 240px;
+	left: 475px;
+	width: 93.39px;
+	height: 94.86px;
+}
+
+div.red_box.one{
+	top: 325px;
+	left: 135px;
+	width: 119.3px;
+	height: 121.45px;
+}
+
+img#mbak_mask{
+	position: absolute;
+	left: 0px;
+	top: 365px;
+	height: 302px;
+}
+
+img#indomaret{
+	position: absolute;
+	left: 225px;
+	top: 320px;
+	height: 393px;
+}
+
+div.yellow_box.three{
+	top: 570px;
+	left: 120px;
+	width: 145.31px;
+	height: 147.75px;
+}
+
+img#indomaret_small{
+	position: absolute;
+	left: 268px;
+	top: 670px;
+	height: 133px;
+}
+
+div.red_box.two{
+	left: -35px;
+	top: 725px;
+	width: 151px;
+	height: 151px;
+}
+
+img#mask_dude{
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 200px;
+}
+
+img#dude{
+	position: absolute;
+	right: 0px;
+	top: 370px;
+	height: 317px;
+}
+
+div.red_box.three{
+	position: absolute;
+	width: 228px;
+	height: 228px;
+	right: 20px;
+	top: 170px;
+}
+
+div.yellow_box.four{
+	width: 167px;
+	height: 167px;
+	position: absolute;
+	right: 0px;
+	top: 690px;
+}
+
+img#domar{
+	position: absolute;
+	right: 70px;
+	top: 580px;
+	height: 307px;
+}
+
+#bangun_bisnis{
+	position: relative;
+	margin-left: 709px;
+	top: 440px;
+}
+
+#bangun_bisnis h2{
+	width: 480px;
+}
+
+#bangun_bisnis p{
+	margin-top: 8px;
+	width: 400px;
+}
+
+#bangun_bisnis button{
+	background-color: #006AB4;
+	border: 3px solid #006AB4;
+	box-sizing: border-box;
+	width: 281px;
+	height: 45px;
+	border-radius: 22.5px;
+	margin-top: 35px;
+	font-weight: 500;
+	font-size: 17px;
+	line-height: 25px;
+	text-align: center;
+	color: #FFFFFF;
+	letter-spacing: 0.02em;
+}
+
+#bangun_bisnis button:hover{
+	background-color: #FFFFFF;
+	border: 3px solid #006AB4;
+	color: #006AB4;
+}
+
+#bangun_bisnis button:active{
+	background-color: #10507D;
+	border: none;
+	color: #ffffff;
+}
+
+#map{
+	position: relative;
+	z-index: 3;
+	margin: 0 auto;
+	width: 1440px;
+	height: 620px;
+}
+
+#map img{
+	width: 1266px;
+	margin-left: 80px;
+}
+
+#cari_gerai{
+	background-color: rgba(0, 106, 180, 0.83);
+	border-radius: 18px;
+	width: 570px;
+	height: 473px;
+	position: relative;
+	top: -480px;
+	left: 80px;
+}
+
+img#location{
+	width: 74px;
+	margin-top: 110px;
+	margin-left: 107px;
+}
+
+#cari_gerai h2{
+	color: #FFFFFF;
+	margin-top: -100px;
+	margin-left: 220px;
+}
+
+input[type=text]#cari_gerai_terdekatmu{
+  	width: 311px;
+	height: 45px;
+  	padding-left: 22px;
+  	border: none;
+  	border-radius: 7px;
+  	color: #000000;
+  	font-size: 17px;
+  	position: relative;
+  	margin-top: 18px;
+  	left: 105px;
+}
+
+#hover_help{
+	width: 25px;
+	position: relative;
+	left: 320px;
+	top: -33px;
+}
+
+#hover_location img{
+	width: 22px;
+	cursor: pointer;
+	position: absolute;
+	top: -2px;
+}
+
+.bubble_chat{
+	visibility: hidden;
+	position: absolute;
+	left: 65px;
+	top: -45px;
+}
+
+.bubble{
+	background-color: #FECF22;
+ 	border-radius: 7px;
+ 	width: 185px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	color: rgba(0, 0, 0, 0.9);
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 18px;
+	letter-spacing: 0.02em;
+	text-align: center;
+}
+
+.pointer{
+	width: 21px;
+	height: 22px;
+	width: 0; 
+  	height: 0; 
+  	border-left: 8px solid transparent;
+  	border-right: 8px solid transparent;
+  	border-top: 14px solid #FECF22;
+  	margin-left: 18px;
+}
+
+#hover_help:hover .bubble_chat{
+	visibility: visible;
+}
+
+button.cari_kami{
+	border: 3px solid #FFFFFF;
+	box-sizing: border-box;
+	border-radius: 20px;
+	width: 170px;
+	height: 37px;
+	font-weight: 500;
+	font-size: 17px;
+	line-height: 25px;
+	text-align: center;
+	color: #FFFFFF;
+	margin-left: 105px;
+	margin-top: -3px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+button.cari_kami:hover{
+	background: #FFFFFF;
+	border: none;
+	color: #006AB4;
+}
+
+button.cari_kami:active{
+	background: #10507D;
+	border: 3px solid #FFFFFF;
+	color: #ffffff;
+}
+
+.grad_bg_responsive{
+	display: none;
+}
+
+.indicator_container{
+	display: none;
+}
+
+.mid_gradient_background_resp{
+	display: none;
+}
+
+.lokasi_responsive{
+	display: none;
+}
+
+#map_resp{
+	display: none;
+}
+
+@media (max-width: 500px){
+	#ads{
+		margin-top: -27px;
+		width: 500px;
+		height: 290px;
+	}
+
+	#ads button{
+		display: none;
+	}
+	.grad_bg_responsive{
+		display: block;
+		margin-top: 290px;
+		margin-left: -1px;
+	}
+
+	.gradient_background{
+		display: none;
+	}
+
+	.indicator_contiainer{
+		display: block;
+	}
+
+	.blue{
+		position: relative;
+		top: -30px;
+		z-index: 5;
+		width: 40px;
+		height: 13px;
+		background-color: rgba(169, 211, 240, 0.3);
+		border-radius: 8px;
+		margin-left: 20px;
+		float: left;
+		cursor: pointer;
+	}
+
+	.blue:first-child{
+		background-color: rgba(169, 211, 240);
+	}
+
+	.blue:active{
+		background-color: rgba(169, 211, 240);
+	}
+
+	#mid_menu{
+		width: 500px;
+		height: 630px;
+	}
+
+	#mid_menu h1{
+		margin-left: 20px;
+	}
+
+	#cards{
+		margin-top: 30px;
+		margin-left: 20px;
+	}
+
+	.cards{
+		width: 212px;
+		height: 238px;
+		margin: 10px;
+		background: #FFFFFF;
+		box-shadow: 0px 4px 8px rgba(169, 211, 240, 0.8);
+		border-radius: 31px;
+	}
+
+	.cards:nth-child(3){
+		margin-left: 0;
+	}
+
+	.cards .image_container{
+		width: 75px;
+		height: 47px;
+		margin-left: 70px;
+		margin-top: 40px;
+	}
+
+	.cards .image_container img{
+		width: 75px;
+	}
+
+	.cards p{
+		display: none;
+	}
+
+	#cards div.cards hr{
+		width: 40px;
+		margin-top: -20px;
+		margin-left: 86px;
+	}
+
+	#cards div.cards h3{
+		position: relative;
+		top: 35px;
+		width: 212px;
+		text-align: center;
+	}
+
+	.cards:hover{
+		box-shadow: 0px 4px 8px rgba(169, 211, 240, 0.8);
+	}
+
+	.cards:active{
+		box-shadow: none;
+		background: #ffffff;
+	}
+
+	.cards:active h3{
+		color: rgba(0, 0, 0, 0.9);
+	}
+
+	#berita:active #active_berita{
+		display: none;
+	}
+
+	#layanan:active #active_layanan{
+		display: none;
+	}
+
+	#kartu:active #active_kartu{
+		display: none;
+	}
+
+	#produk:active #active_produk{
+		display: none;
+	}
+
+	.cards:active p{
+		color: rgba(0, 0, 0, 0.9);
+	}
+
+	#franchise{
+		width: 500px;
+		height: 440px;
+	}
+
+	.mid_gradient_background{
+		display: none;
+	}
+
+	.mid_gradient_background_resp{
+		width: 100%;
+		display: block;
+		position: absolute;
+		top: 0;
+		right: -2px;
+	}
+
+	.yellow_box.one{
+		display: none;
+	}
+
+	#mbak{
+		display: none;
+	}
+
+	.yellow_box.two{
+		display: none;
+	}
+
+	.red_box.one{
+		display: none;
+	}
+
+	#mbak_mask{
+		display: none;
+	}
+
+	#indomaret{
+		display: none;
+	}
+
+	.yellow_box.three{
+		display: none;
+	}
+
+	#indomaret_small{
+		display: none;
+	}
+
+	.red_box.two{
+		display: none;
+	}
+
+	img#mask_dude{
+		right: 0px;
+		top: 10px;
+		height: 55px;
+	}
+
+	div.red_box.three{
+		width: 64.24px;
+		height: 64.24px;
+		right: 0px;
+		top: 65px;
+	}
+
+	img#dude{
+		right: 0px;
+		top: 130px;
+		height: 120px;
+	}
+
+	div.yellow_box.four{
+		width: 50.56px;
+		height: 50.61px;
+		right: 0px;
+		top: 250px;
+	}
+
+	img#domar{
+		right: 35px;
+		top: 185px;
+		height: 118px;
+	}
+
+	#bangun_bisnis{
+		margin-left: 20px;
+		position: relative;
+		top: 80px;
+	}
+
+	#bangun_bisnis h2{
+		width: 310px;
+	}
+
+	#bangun_bisnis p{
+		width: 310px;
+		margin-top: 3px;
+	}
+
+	#bangun_bisnis button{
+		width: 281px;
+		height: 45px;
+		margin-top: 17px;
+		font-size: 16px;
+		line-height: 23.5px;
+	}
+
+	#bangun_bisnis button:hover{
+		background-color: #006AB4;
+		color: #ffffff;
+	}
+
+	#bangun_bisnis button:active{
+		background-color: #10507D;
+		border: none;
+		color: #ffffff;
+	}
+
+	#map{
+		width: 500px;
+		height: 660px;
+	}
+
+	#map_desktop{
+		display: none;
+	}
+
+	#cari_gerai{
+		width: 444px;
+		height: 268px;
+		margin-left: -60px;
+		top: -580px;
+		border-radius: 10px 10px 0px 0px;
+	}
+
+	#map img#map_resp{
+		display: block;
+		width: 444px;
+		margin-left: 20px;
+		position: relative;
+		top: -25px;
+	}
+
+	img#location{
+		width: 30px;
+		height: 45px;
+		margin-left: 60px;
+		object-fit: fill;
+		right: 20px;
+		margin-top: 43px;
+	}
+
+	.bubble_chat{
+		display: none;
+	}
+
+	#hover_location{
+		display: none;
+	}
+
+	#map h2{
+		margin-top: -65px;
+		margin-left: 120px
+	}
+
+	input[type=text]#cari_gerai_terdekatmu{
+  		width: 310px;
+		height: 42px;
+		margin-left: -47px;
+		margin-top: 9px;       
+	}
+
+	button.cari_kami{
+		width: 170px;
+		height: 45px;
+		margin-top: 24px;
+		margin-left: 53px;
+		border-radius: 22.5px;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 23px;
+	}
+
+	button.cari_kami:hover{
+		background: transparent;
+		border: none;
+		border: 3px solid #FFFFFF;
+		color: #FFFFFF;
+	}
+
+	button.cari_kami:active{
+		background: #10507D;
+		border: 3px solid #FFFFFF;
+		color: #ffffff;
+	}
+
+	.lokasi_responsive{
+		display: block;
+		height: 60px;
+		margin-left: 60px;
+		margin-top: 200px;
+	}
+
+	img#reponsive_location_icon{
+		object-fit: contain;
+		position: relative;
+		width: 50px;
+		left: 240px;
+		top: 41px;
+		display: block;
+		z-index: 2;
+		cursor: pointer;
+	}
+
+	img#reponsive_location_icon_pressed{
+		object-fit: contain;
+		position: relative;
+		width: 50px;
+		left: 240px;
+		top: 41px;
+		display: none;
+		z-index: 2;
+		cursor: pointer;
+	}
+
+	#klik_lokasi{
+		position: relative;
+		display: block;
+		width: 180px;
+		background: #FFFFFF;
+		border: 2.5px solid #D61627;
+		border-radius: 10px;
+		left: 145px;
+		font-size: 12px;
+		font-weight: 400;
+		padding-left: 15px;
+		padding-top: 3px;	
+		padding-bottom: 3px;		
+	}
+
+	.lokasi_responsive:active #reponsive_location_icon{
+		display: none;
+	}
+
+	.lokasi_responsive:active #reponsive_location_icon_pressed{
+		display: block;
+	}
+
+	.lokasi_responsive div{
+		cursor: pointer;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
