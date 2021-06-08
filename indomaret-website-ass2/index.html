@@ -1,0 +1,268 @@
+<!--Indomaret Website Group 1(Assignment2)-->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+	<meta charset="utf-8">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/global.css">
+	<link rel="stylesheet" type="text/css" href="assets/beranda.css">
+	<title>Indomaret</title>
+</head>
+<body>
+<div class="parent">
+	<nav>
+		<div id="contact"><!--contact info-->
+			<div class="contact_container">
+				<div>Hubungi Kami:</div>
+				<img src="images/phone.png" alt="Telefon" id="phone"/>
+				<div>(021)1500280</div>
+				<img src="images/email.png" alt="Surel" id="email"/>
+				<div class="email_text">customercare@klikindomaret.com</div>
+			</div>
+		</div>
+		<div id="navigation"><!--main nav bar-->
+			<a href="index.html" id="logo_link"><img src="images/logo.png" alt="Logo Indomaret" id="logo"/></a>
+			
+			<div class="menu_main"><!--Menu-->
+				<div class="menu" id="beranda"><a href="index.html" class="current">Beranda</a></div>
+				
+				<div class="menu" id="waralaba">
+					<div class="square_waralaba">
+						<span class="span_hover">Waralaba</span>
+					</div>
+					<span class="span_default">Waralaba<img src="images/dropdown_arrow.png" alt="Navigasi"/></span>
+					<div class="menu_dropdown_waralaba">
+						<div class="menu_drop"></div>
+						<div class="menu_drop">Info<hr></div>
+						<div class="menu_drop">Keuntungan<hr></div>
+						<div class="menu_drop">Investasi<hr></div>
+						<div class="menu_drop">Pendaftaran<hr></div>
+						<div class="menu_drop">Testimoni</div>
+						<div class="menu_drop"></div>
+					</div>
+				</div>
+
+				<div class="menu" id="mitra">
+					<div class="square_mitra">
+						<span class="span_hover">Mitra</span>
+					</div>
+					<span class="span_default">Mitra<img src="images/dropdown_arrow.png" alt="Navigasi"/></span>
+					<div class="menu_dropdown_mitra">
+						<div class="menu_drop"></div>
+						<div class="menu_drop">Pemasok<hr></div>
+						<div class="menu_drop">Properti & Lokasi<hr></div>
+						<div class="menu_drop">Sewa Teras<hr></div>
+						<div class="menu_drop">Pendaftaran ATM</div>
+						<div class="menu_drop"></div>
+					</div>
+				</div>
+				
+				<div class="menu" id="karir"><a href="karir.html">Karir</a></div>
+				
+				<div class="menu" id="korporat">
+					<div class="square_korporat">
+						<span class="span_hover">Korporat</span>
+					</div>
+					<span class="span_default">Korporat<img src="images/dropdown_arrow.png" alt="Navigasi"/></span>
+					<div class="menu_dropdown_korporat">
+						<div class="menu_drop"></div>
+						<div class="menu_drop">Pusat Distribusi<hr></div>
+						<div class="menu_drop">Gerai & Pemasaran<hr></div>
+						<div class="menu_drop">Penghargaan<hr></div>
+						<div class="menu_drop">Sejarah & Visi</div>
+						<div class="menu_drop"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="search_container"><!--search bar-->
+			<input type="text" placeholder="Cari">
+			<button><img src="images/search.png" id="search" alt="Cari"/></button>
+		</div>
+	</nav>
+
+	<main>
+		<section id="ads"><!--ad banner-->
+			<img src="images/ads1.jpg" alt="Diskon klik food Indomaret" class="hero_banner"/>
+			<div id="arrow_buttons">
+				<button class="arrow"> 
+					<span id="left_arrow">
+						<img src="images/yellow_left_arrow.png" alt="Panah Navigasi Kiri"/>
+						<img src="images/white_left_arrow.png" class="active_arrow" id="left" alt="Panah Navigasi Kiri"/>
+					</span>
+				</button>
+				<button class="arrow">
+					<span id="right_arrow">
+						<img src="images/yellow_right_arrow.png" alt="Panah Navigasi Kanan"/>
+						<img src="images/white_right_arrow.png" class="active_arrow" id="right" alt="Panah Navigasi Kanan"/>
+					</span>
+				</button>
+			</div>
+			<img src="images/home_bg.png" class="gradient_background" alt="Latar"/>
+		</section>
+
+		<button id="pelayanan"><!--pelayanan pelanggan button-->
+			<span class="circle"></span>
+			<span class="circle"><img src="images/white_pelayanan.png" alt="Ikon Chat"/><img src="images/yellow_pelayanan.png" id="active_pelayanan" alt="Ikon Chat"/></span>
+			<span id="rectangle"><span id="rectangle_text">Pelayanan pelanggan</span></span>
+		</button>
+
+		<section id="mid_menu"><!--Cards menu-->
+			<h1>Selamat Datang di Indomaret!</h1>
+			<div id="cards">
+				<div class="cards" id="berita">
+					<div class="image_container">
+						<img src="images/berita.png" alt="Ikon Berita"/>
+						<img src="images/white_berita.png" id="active_berita" alt="Ikon Berita"/>
+					</div>
+					<h3>Berita</h3>
+					<hr>
+					<p>Temukan berita terkini tentang Indomaret dan kegiatannya</p>
+				</div>
+				<div class="cards" id="layanan">
+					<div class="image_container">
+						<img src="images/layanan.png" alt="Ikon Layanan"/>
+						<img src="images/white_layanan.png" id="active_layanan" alt="Ikon Layanan"/>
+					</div>
+					<h3>Layanan</h3>
+					<hr>
+					<p>Temukan inovasi terbaru dalam produk dan jasa Indomaret</p>
+				</div>
+				<div class="cards" id="kartu">
+					<div class="image_container">
+						<img src="images/kartu.png" alt="Ikon Kartu"/>
+						<img src="images/white_kartu.png" id="active_kartu" alt="Ikon Kartu"/>
+					</div>
+					<h3>Kartu</h3>
+					<hr>
+					<p>Jadilah member Indomaret dan dapatkan promosi dan keuntungan berbelanja</p>
+				</div>
+				<div class="cards" id="produk">
+					<div class="image_container">
+						<img src="images/produk.png" alt="Ikon Produk"/>
+						<img src="images/white_produk.png" id="active_produk" alt="Ikon Produk"/>
+					</div>
+					<h3>Produk</h3>
+					<hr>
+					<p>Temukan berbagai produk Indomaret </p>
+				</div>	
+			</div>
+		</section>
+
+		<section id="franchise"><!--franchise with diamonds-->
+			<div id="diamond_container">
+				<img src="images/home_mid_bg.png" class="mid_gradient_background" alt="Latar"/>
+				<div class="yellow_box one"></div>
+				<img src="images/diamond_mbak.png" id="mbak" alt="Sales Indomaret"/>
+				<div class="yellow_box two"></div>
+				<div class="red_box one"></div>
+				<img src="images/diamond_mask_mbak.png" id="mbak_mask" alt="Sales Indomaret"/>
+				<img src="images/diamond_indomaret.png" id="indomaret" alt="Gerai Indomaret"/>
+				<div class="yellow_box three"></div>
+				<img src="images/diamond_indomaret_small.png" id="indomaret_small" alt="Gerai Indomaret"/>
+				<div class="red_box two"></div>
+				<img src="images/diamond_mask_dude.png" id="mask_dude" alt="Sales Indomaret"/>
+				<img src="images/diamond_dude.png" id="dude" alt="Sales Indomaret"/>
+				<div class="red_box three"></div>
+				<div class="yellow_box four"></div>
+				<img src="images/domar.png" id="domar" alt="Domar"/>
+			</div>
+			<div id="bangun_bisnis">
+				<h2>Bangun Bisnis Bersama Franchise Indomaret</h2>
+				<p>Wujudkan mimpimu mempunyai bisnis dengan franchise Indomaret dan raih keuntungannya!</p>
+				<button>Pelajari Selengkapnya</button>
+			</div>
+		</section>
+
+		<section id="map"><!--cari gerai map-->
+			<img src="images/cari_kami_map.png" alt="Peta" id="map_desktop"/>
+			<div id="cari_gerai">
+				<img src="images/location_icon.png" id="location" alt="Lokasi"/>
+				<h2>Cari gerai<br> terdekatmu!</h2>
+				<input type="text" placeholder="Jalan, Kota, atau Provinsi" id="cari_gerai_terdekatmu">
+				<div id="hover_help">
+					<button id="hover_location"><img src="images/red_location_icon.png" id="red_icon" alt="Lokasi saat ini"/></button>
+					<div class="bubble_chat">
+						<div class="bubble">Klik untuk pakai lokasi Anda</div>
+						<div class="pointer"></div>
+					</div>
+				</div>
+				<button class="cari_kami">CARI KAMI</button>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<div class="navigation_footer">
+			<div class="navifooter"><a href="index.html">Beranda</a></div>
+			<div class="navifooter">Waralaba
+				<div class="drop_footer top">Info</div>
+				<div class="drop_footer">Keuntungan</div>
+				<div class="drop_footer">Investasi</div>
+				<div class="drop_footer">Pendaftaran</div>
+				<div class="drop_footer">Testimoni</div>
+			</div>
+			<div class="navifooter">Mitra
+				<div class="drop_footer top">Pemasok</div>
+				<div class="drop_footer">Properti & Lokasi</div>
+				<div class="drop_footer">Sewa Teras</div>
+				<div class="drop_footer">Pendaftaran ATM</div>
+			</div>
+			<div class="navifooter"><a href="karir.html">Karir</a></div>
+			<div class="navifooter">Korporat
+				<div class="drop_footer top">Pusat Distribusi</div>
+				<div class="drop_footer">Gerai & Pemasaran</div>
+				<div class="drop_footer">Penghargaan</div>
+				<div class="drop_footer">Sejarah & Visi</div>
+			</div> 
+		</div>
+		
+		<div class="newsletter">
+			<h4>Berlangganan Newsletter Indomaret</h4>	
+			<input type="text" placeholder="Masukan email Anda" id="new_search">
+			<button><img src="images/newsletter_arrow.png" id="new_search_arrow" alt="Panah"/></button>
+		</div>
+		
+		<div class="company">
+			<div class="company_address">
+				<h4>PT Indomarco Prismatama</h4>
+				<p>Jl. Ancol barat I No.9 RT.1/RW.2, <br>
+				Ancol, Kec. Pademangan, <br>
+				Jakarta Utara 14430<br>
+				Telp. (021) 6909400</p>
+			</div>
+			<div class="company_address">
+				<h4>Kantor Pusat 1</h4>
+				<p>Jl. Terusan Angkasa Blok B2<br> 
+				Kav. 1, Gunung Sahari, Kemayoran<br>
+				Jakarta Pusat 10610<br>
+				Telp. (021) 29559100</p>
+			</div>
+			<div class="company_address">
+				<h4>Kantor Pusat 2</h4>
+				<p>Jl. Boulevard Pantai Indah Kapuk,<br> 
+				Kamal Muara, Penjaringan<br> 
+				Jakarta Utara 14430<br>
+				Telp. (021) 50897400</p>
+			</div>
+		</div>
+
+		<div class="awards">
+			<img src="images/awards.png" id="awards" alt="Indomaret Awards"/>
+		</div>
+
+		<div class="socmed">
+			<a href="https://www.facebook.com/IndomaretMudahdanHemat/" target="_blank"><img src="images/facebook.png" alt="Facebook"/></a>
+			<a href="https://twitter.com/indomaret?lang=en" target="_blank"><img src="images/twitter.png" alt="Twitter"/></a>
+			<a href="https://www.youtube.com/channel/UCDfDwRm4uwDrym-dFgs7_EQ" target="_blank"><img src="images/youtube.png" alt="Youtube"/></a>
+			<a href="https://www.instagram.com/indomaret/?hl=en" target="_blank"><img src="images/instagram.png" alt="Instagram"/></a>
+		</div>
+
+		<div class="copyright">
+			<div id="copyright_words">Copyrights © 2014-2021 Indomaret. All Rights Reserved</div>
+		</div>	
+	</footer>
+</div>
+</body>
+</html>
