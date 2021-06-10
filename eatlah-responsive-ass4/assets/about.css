@@ -1,0 +1,285 @@
+.parent{
+	background-image: url(../images/about_bg.png);
+	background-size: cover;
+	width: 100vw;
+	height: 2832px;
+}
+
+#history{
+	margin: 0 auto;
+	width: 1440px;
+	height: 853px;
+}
+
+div.text_container{
+	margin-left: 146px;
+}
+
+#history div.text_container{
+	width: 783px;
+	float: left;
+	margin-top: 220px;
+}
+
+#history div.text_container p.bigger_p{
+	width: 564px;
+	padding-top: 5px;
+}
+
+#history div.chick_container{
+	position: relative;
+}
+
+#history img.chick{
+	width: 564px;
+	float: right;
+	position: absolute;
+	top: -100px;
+	right: 0px;
+}
+
+#history .egg_top{
+	width: 270px;
+	margin-top: 0;
+	margin-left: -710px;
+}
+
+#history .egg_bottom{
+	width: 270px;
+	margin-top: 420px;
+	margin-left: -490px;
+}
+
+#founders{
+	margin: 0 auto;
+	margin-top: 40px;
+	width: 1440px;
+	height: 670px;
+}
+
+#founders div.text_container{
+	float: left;
+	width: 418px;
+}
+
+#founders div.text_container p.first{
+	margin-top: 10px;
+}
+
+#founders div.founders_container{
+	width: 199px;
+	float: left;
+	margin-left: 20px;
+	margin-top: 122px;
+}
+
+#founders div.founders_container.first{
+	margin-left: 94px;
+}
+
+#founders img.founders_image{
+	width: 100%;
+}
+
+#founders div.founders_name{
+	width: 110px;
+	padding: 15px 44px 10px 45px;
+	text-align: center;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 21px;
+	line-height: 27px;
+	color: #FFFFFF;
+}
+
+#franchise{
+	margin: 0 auto;
+	width: 1440px;
+	height: 1005px;
+}
+
+#franchise img.egg{
+	width: 292px;
+	margin-top: 54px;
+	display: block;
+}
+
+#franchise div.text_container{
+	width: 418px;
+	margin-top: 40px;
+	float: left;
+}
+
+#franchise div.text_container p{
+	margin-top: 10px;
+}
+
+#franchise button{
+	width: 272px;
+	height: 44px;
+	background: #AB140E;
+	border-radius: 22px;
+	padding-bottom: 2px;
+	margin-top: 52px;
+}
+
+#franchise button:hover{
+	box-shadow: none;
+}
+
+#franchise button:active{
+	box-shadow: none;
+	background: #58100D;
+}
+
+#franchise img.eatlah_franchise{
+	width: 732px;
+	float: right;
+	margin-top: -393px;
+}
+
+footer{
+	margin-top: -326px;
+}
+
+#franchise img.egg_franchise_resp{
+	display: none;
+}
+
+@media (max-width: 500px){
+	.parent{
+		background-image: url(../images/about_bg_resp.png);
+		width: 500px;
+		height: 1840px;
+		margin-top: 75px;
+	}
+
+	#history{
+		width: 500px;
+		height: 586px;
+	}
+
+	div.text_container{
+		margin-left: 27px;
+	}
+
+	#history div.text_container{
+		width: 446px;
+		float: left;
+		margin-top: 26px;
+	}
+
+	#history div.text_container p.bigger_p{
+		width: 446px;
+		padding-top: 5px;
+	}
+
+	#history div.chick_container{
+		position: relative;
+	}
+
+	#history img.chick{
+		display: none;
+	}
+
+	#history .egg_top{
+		width: 210px;
+		margin-top: -40px;
+		margin-left: 27px;
+	}
+
+	#history .egg_bottom{
+		width: 210px;
+		margin-top: 10px;
+		margin-left: 119px;
+	}
+
+	#founders{
+		margin-top: 30px;
+		width: 500px;
+		height: 643px;
+	}
+
+	#founders div.text_container{
+		width: 413px;
+	}
+
+	#founders div.founders_container{
+		width: 92px;
+		float: left;
+		margin-left: 85px;
+		margin-top: 43px;
+	}
+
+	#founders div.founders_container.first{
+		margin-left: 27px
+	}
+
+	#founders img.founders_image{
+		width: 100%;
+	}
+
+	#founders div.founders_name{
+		width: 92px;
+		padding: 11px 0px 0px 0px;
+		text-align: center;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 25px;
+		color: #FFFFFF;
+	}
+
+	#franchise{
+		width: 500px;
+		height: 530px;
+	}
+
+	#franchise img.egg{
+		display: none;
+	}
+
+	#franchise img.egg_franchise_resp{
+		display: block;
+		width: 119px;
+		margin-top: 8px;
+		float: right;
+	}
+
+	#franchise div.text_container{
+		width: 387px;
+	}
+
+	#franchise button{
+		width: 210px;
+		height: 44px;
+		margin-top: 40px;
+	}
+
+	#franchise button:hover{
+		box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+	}
+
+	#franchise button:active{
+		box-shadow: none;
+		background: #58100D;
+	}
+
+	#franchise img.eatlah_franchise{
+		display: none;
+	}
+
+	footer{
+		margin-top: -30px;
+	}
+}
+
+
+
+
+
+
+
+
+
+

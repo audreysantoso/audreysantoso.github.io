@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/global.css">
+	<link rel="stylesheet" type="text/css" href="assets/about.css">
+	<title>Eatlah</title>
+</head>
+<body>
+	<script>
+	function slideinmenu() {
+		document.getElementById('responsive_menu').style.left = "0px";
+	}
+	  
+	function slideoutmenu() {
+		document.getElementById('responsive_menu').style.left = "-310px";
+	}
+	</script>
+	<nav>
+		<div id="responsive_menu">
+			<div id="top_responsive_menu">
+				<div id="en">EN</div>
+				<div id="idn">ID</div>
+				<button><img src="images/close.png" id="close_responsive" alt="Close" onclick="slideoutmenu()"/></button>
+			</div>
+			<div class="menu_cont">
+				<div class="responsive_menu_container">
+					<a id="menu_resp"
+					onclick="document.getElementById('menu_resp').style.backgroundColor = '#EDE7E2';
+					document.getElementById('outlets_resp').style.backgroundColor = 'transparent';
+					document.getElementById('contact_resp').style.backgroundColor = 'transparent';" 
+					href="index.html#menu">Menu</a>
+					<hr>
+				</div>
+				<div class="responsive_menu_container">
+					<a id="outlets_resp"
+					onclick="document.getElementById('outlets_resp').style.backgroundColor = '#EDE7E2';
+					document.getElementById('menu_resp').style.backgroundColor = 'transparent';
+					document.getElementById('contact_resp').style.backgroundColor = 'transparent';" 
+					href="index.html#outlets">Outlets</a>
+					<hr> 
+				</div>
+				<div class="responsive_menu_container current_resp">
+					<a href="about.html">About Us</a> 
+					<hr>
+				</div>
+				<div class="responsive_menu_container">
+					<a id="contact_resp"
+					onclick="document.getElementById('contact_resp').style.backgroundColor = '#EDE7E2';
+					document.getElementById('outlets_resp').style.backgroundColor = 'transparent';
+					document.getElementById('menu_resp').style.backgroundColor = 'transparent';" 
+					href="index.html#contact">Contact Us</a>
+					<hr>
+				</div>
+			</div>
+			<img src="images/chick_resp_menu.png" class="chick_resp_menu" alt="Chicken"/>
+		</div>
+		<button id="hamb_button"><img src="images/hamb.png" id="hamb" alt="Hamburger Menu" onclick="slideinmenu()"/></button>
+		<a href="index.html"><img src="images/logo.png" id="logo" alt="Eatlah Logo"/></a>
+		<div class="lang">
+			EN
+			<img src="images/lang_arrow.png" alt="arrow"/>
+			<div class="lang_option">
+				<div></div>
+				<div>ID</div>
+			</div>
+		</div>
+		<div class="main_menu_nav">
+			<a id="menu_desk" 
+			onclick="document.getElementById('menu_desk').style.color = '#FAC404';
+			document.getElementById('outlets_desk').style.color = 'rgba(255,255,255,0.8)';
+			document.getElementById('contact_desk').style.color = 'rgba(255,255,255,0.8)';
+			" href="index.html#menu">Menu</a>
+					
+			<a href="about.html" class="current"> About Us</a>
+
+			<a id="outlets_desk" 
+			onclick="document.getElementById('outlets_desk').style.color = '#FAC404';
+			document.getElementById('menu_desk').style.color = 'rgba(255,255,255,0.8)';
+			document.getElementById('contact_desk').style.color = 'rgba(255,255,255,0.8)';" 
+			href="index.html#outlets">Outlets</a>
+			
+			<a id="contact_desk" 
+			onclick="document.getElementById('contact_desk').style.color = '#FAC404';
+			document.getElementById('menu_desk').style.color = 'rgba(255,255,255,0.8)';
+			document.getElementById('outlets_desk').style.color = 'rgba(255,255,255,0.8)';" 
+			href="index.html#contact">Contact Us</a>
+		</div>
+	</nav>
+	<main>
+		<div class="parent">
+			<section id="history">
+				<img src="images/cracked_egg_top.png" class="egg_top" alt="Cracked egg"/>
+				<div class="text_container">
+					<h1>Coming Out of the Shell</h1>
+					<p class="bigger_p">Eatlah is a street food stall, but it is more fitting to be dubbed as a refuge for salted egg chicken enthusiasts. Apart from its eye-catching stall, it’s their commitment in delivering one good dish and doing it well that makes Eatlah stand out. Don’t be surprised to see this modest dish invading Indonesia soon.</p>
+				</div>
+				<div class="chick_container"><img src="images/about_chick.png" class="chick" alt="Chicken"/></div>
+				<img src="images/cracked_egg_bottom.png" class="egg_bottom" alt="Cracked egg"/>
+			</section>
+			<section id="founders">
+				<div class="text_container">
+					<h2>Founders</h2>
+					<p class="first">After living for nearly a decade in Singapore and Malaysia, the dish had become the primary refuge for the trio behind Eatlah (Riesky Vernandes, Charina Prinandita, and Michael Chrisyanto) when it comes to quick and easy meal during their student days.
+					</p>
+					<br>
+					<p>After moving back to Indonesia for good, they hankered to bring the authentic taste of Singaporean salted egg chicken to Jakarta, which led them to learn more about the recipe of the dish from their favourite salted egg chicken stall in Singapore.          
+					</p>
+				</div>
+				<div class="founders_container first">
+					<img src="images/riesky.png" class="founders_image" alt="Riesky Vernandes"/>
+					<div class="founders_name">Riesky Vernandes</div>
+				</div>
+				<div class="founders_container">
+					<img src="images/charina.png" class="founders_image" alt="Charina Prinandita"/>
+					<div class="founders_name">Charina Prinandita</div>
+				</div>
+				<div class="founders_container">
+					<img src="images/michael.png" class="founders_image" alt="Michael Chrisyanto"/>
+					<div class="founders_name">Michael Chrisyanto</div>
+				</div>
+			</section>
+			<section id="franchise">
+				<img src="images/egg_resp_franchise.png" class="egg_franchise_resp" alt="Egg"/>
+				<img src="images/egg.png" class="egg" alt="Egg"/>
+				<div class="text_container">
+					<h2>Franchise</h2>
+					<p>By 2018, Eatlah has already established 14 of the largest branches in Jabodetabek, Bandung and Semarang. Charina stated that one branch can sell an average of 300 boxes per day, making a total of 9000 sales per month.  
+					</p>
+					<a href="form.pdf" target="_blank" download><button>Sign up now</button></a>
+				</div>
+				<img src="images/franchise.png" class="eatlah_franchise" alt="Eatlah food"/>
+			</section> 
+		</div>
+	</main>
+	<footer>
+		<div class="newsletter">
+			<div class="footer_heading">Subscribe to Our Newsletter</div>
+			<div class="smaller_p">We’ll EGG-xceed your EGG-spectations with promo, discounts, and many more!</div>
+			<input type="text" name="email" placeholder="Email address" id="email">
+			<button onclick="popupFooter()">
+				<img src="images/footer_arrow.png" class="input_arrow" alt="Arrow"/>
+			</button>
+		</div>
+		<div id="footerpop">
+			<div class="text_popup">
+				<div class="popup_heading">Thank You</div>
+				<div class="popup_subheading">for subscribing!</div>
+				<p>Check your email! We’ve got exciting stuffs for you. Psstt.. including a starting promo code!</p>
+				<button id="return" onclick="closePopupFooter()">Return</button>
+			</div>
+			<img src="images/chicken_popup.png" class="chick_popup" alt="Chicken with thumbs up"/>
+			<img src="images/popup_chick_resp.png" class="chick_popup_resp" alt="Chicken with thumbs up"/>
+		</div>
+		<div class="socmed">
+			<a href="https://api.whatsapp.com/send?phone=6282111078742" target="_blank"><img src="images/whatsapp.png" alt="Whatsapp"/></a>
+			<a href="https://www.facebook.com/Eatlah-769730569841309/" target="_blank"><img src="images/facebook.png" alt="Facebook"/></a>
+			<a href="https://www.instagram.com/eatlahjkt/?hl=en" target="_blank"><img src="images/instagram.png" alt="Instagram"/></a>
+		</div>
+		<div class="copyright">
+			© 2016 Eatlah Indonesia
+		</div>
+	</footer>
+	<script>
+		function popupFooter() {
+			document.getElementById('footerpop').style.top= "50%";
+	 	}
+	 	function closePopupFooter() {
+	 		document.getElementById('footerpop').style.top= "-20%";
+	 	}
+	</script>
+</body>
+</html>
