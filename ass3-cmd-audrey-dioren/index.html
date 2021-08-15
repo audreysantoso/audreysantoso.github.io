@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Dirgahayu Republik Indonesia ke-76</title>
+    <script src="aframe-master.min.js"></script>
+    <script src="aframe-ar-nft.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        width: 100vw;
+        height: 100vh;
+      }
+
+      .arjs-loader {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: white;
+        z-index: 100;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .arjs-loader img{
+        width: 100%;
+        padding-top: 0;
+      }
+
+      #dirgahayu{
+        width: 100vw;
+        height: 100vw;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        z-index: 9999;
+      }
+
+    </style>
+  </head>
+
+  <body style="margin: 0px; overflow: hidden;">
+    <div class="arjs-loader">
+        <img src="hut.png" alt="Dirgahayu Republik Indonesia ke-76"/>
+    </div>
+
+    <a-scene
+      vr-mode-ui="enabled: false;"
+      renderer="logarithmicDepthBuffer: true;"
+      embedded
+      arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;">
+      
+      <a-nft
+        type="nft"
+        url="ass3-cmd-audrey-dioren/scan-me"
+        smooth="true"
+        smoothCount="10"
+        smoothTolerance=".01"
+        smoothThreshold="5">
+      </a-nft>
+
+      <a-entity camera></a-entity>
+    </a-scene>
+
+      <video id="dirgahayu" loop>
+        <source src="dirgahayu.mp4" type="video/mp4">
+        <source src="dirgahayu.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+      </video>
+
+  </body>
+</html>
