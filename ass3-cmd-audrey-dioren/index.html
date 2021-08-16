@@ -2,9 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>TEST 2</title>
+    <title>Dirgahayu Republik Indonesia ke-76</title>
     <script src="aframe-master.min.js"></script>
     <script src="aframe-ar-nft.js"></script>
+    <script src="https://rawgit.com/mayognaise/aframe-gif-shader/master/dist/aframe-gif-shader.min.js"></script>
+    <script src="https://rawgit.com/mayognaise/aframe-gif-component/master/dist/aframe-gif-component.min.js"></script>
     <style>
       * {
         margin: 0;
@@ -64,9 +66,7 @@
         smoothCount="10"
         smoothTolerance=".01"
         smoothThreshold="5">
-         <a-entity>
-            <a-box position="-100 10 0" src="house.jpeg" rotation="" color="" shadow="" material="" geometry="" scale="50 5 50"></a-box>
-          </a-entity>
+         <a-entity geometry="primitive:box" material="shader:gif;src:url(dirgahayu.gif);" gif=""></a-entity>
       </a-nft>
       <a-entity camera></a-entity>
     </a-scene>
