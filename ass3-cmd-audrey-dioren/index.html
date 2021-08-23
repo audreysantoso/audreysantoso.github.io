@@ -50,21 +50,13 @@
     AFRAME.registerComponent('markerhandler', {
         init: function () {
           this.el.sceneEl.addEventListener('markerFound', () => {
-            //var check = document.getElementById('that').className;
-            //if (check == 'off') {
-              //document.getElementById('that').className = "on";
-            //}
-            alert('yes');
+            var x = document.getElementById('song');
+            x.play();
           });
           
           this.el.sceneEl.addEventListener('markerLost', () => {
-            //var check = document.getElementById('that').className;
-            //if (check == 'on') {
-              //document.getElementById('that').className = "off";
-              //var x = document.getElementById('that');
-             // x.pause();
-           // }
-              
+            var x = document.getElementById('song');
+            x.pause(); 
           });
         }
       });
@@ -94,5 +86,10 @@
       </a-nft>
       <a-entity camera></a-entity>
     </a-scene>
+    <audio id="song" controls class="off">
+      <source src="song.mp4" type="audio/mp3">
+      <source src="song.ogg" type="audio/ogg">
+    Your browser does not support the audio tag.
+    </audio>
   </body>
 </html>
