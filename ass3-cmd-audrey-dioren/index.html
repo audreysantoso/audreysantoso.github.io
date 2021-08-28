@@ -65,8 +65,15 @@
         padding-top: 0;
         display: block;
         position: absolute;
-        left: -400vw;
-        top:-200vh;
+      }
+      
+       #loader-dummy-img{
+        width: 100%;
+        padding-top: 0;
+        display: block;
+        position: relative;
+        top: -200vh;
+        left: -200vw;
       }
 
     </style>
@@ -88,6 +95,7 @@
     setTimeout (loaderDummy, 5000);
     function loaderDummy(){
       document.getElementById('loader-dummy').style.display="none";
+      document.getElementById('loader-dummy-img').style.display="none";
     }
     </script>
   </head>
@@ -96,7 +104,7 @@
     <div id="loader-dummy">
         <img src="hut.png" alt="Dirgahayu Republik Indonesia ke-76"/>
     </div>
-    <img src="dirgahayu.gif"/>
+    <img src="dirgahayu.gif" id="loader-dummy-img/>
 
     <div class="arjs-loader">
         <img src="hut.png" alt="Dirgahayu Republik Indonesia ke-76"/>
@@ -116,8 +124,8 @@
         smoothCount="10"
         smoothTolerance=".01"
         smoothThreshold="5">
-        <a-box>
-        <a-entity geometry="" material="shader: gif; src: url(dirgahayu.gif)" gif="" scale="100 100 100" position="0.349 34.825 -6.990" sound="src: url(sound.mp3); autoplay: true"></a-entity>
+        <a-box color="black">
+        <a-entity geometry="" material="shader: gif; src: url(dirgahayu.gif)" gif="" scale="98.411 98.411 98.411" position="0.137 34.825 7.863" sound="src: url(sound.mp3); autoplay: true"></a-entity>
         </a-box>
         </a-nft>
       <a-entity camera></a-entity>
