@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #idk {
+        display: none;
+      }
+    </style>
+    <script>
+      function addtoms(whatiwannadd) {
+        var existing = localStorage.getItem("mystorage");
+        var addnew = existing + ',' + whatiwannadd;
+        localStorage.setItem("mystorage", addnew);
+      }
+
+      function cekpass(thepass) {
+        if (thepass == 'whatever') {
+          addtoms('hello');
+        } else {
+          alert('wrong password');
+        }
+      }
+      </script>
+  </head>
+  <body>
+    <div id="idk">
+      <input type="password" id="pass1" />
+      <button type="button" onclick="cekpass(document.getElementById('pass1').value)">get key 1</button>
+    </div>
+
+
+    <h1 onclick="document.getElementById('idk').style.display = 'block';">fuse me</h1>
+    <!-- <h1 onclick="addtoms('hello')">hello</h1>
+    <h1 onclick="addtoms('woot')">wooot</h1> -->
+  </body>
+</html>

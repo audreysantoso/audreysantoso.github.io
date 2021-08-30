@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+
+      var x = localStorage.getItem("mystorage");
+      // cek for hello
+      var notok = '';
+      if (x.includes("hello") == false) {
+        var notok = '1';
+      }
+      if (x.includes("woot") == false) {
+        var notok = '1';
+      }
+
+if (notok == '') {
+  alert('yay! good job')
+} else {
+  alert('you still got missing keys')
+}
+      </script>
+  </head>
+  <body>
+
+  </body>
+</html>
