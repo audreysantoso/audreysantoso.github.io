@@ -621,6 +621,20 @@ footer div div.footer-last{
 	margin-left: 77px;
 }
 
+footer td a{
+	color: white;
+	text-decoration:none;
+}
+
+footer td a:hover{
+	text-decoration:underline;
+	color:white;
+}
+
+footer td a:active{
+	color:white;
+}
+
 footer div p{
 	font-size: 12px;
 	clear: both;
