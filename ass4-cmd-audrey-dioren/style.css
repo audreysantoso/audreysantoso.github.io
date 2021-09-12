@@ -1,0 +1,462 @@
+body{
+	background-color: black;
+	width: 100vw;
+	height: 100vh;
+}
+
+@font-face{
+	font-family: titlefont;
+	src: url(darknblack.otf);
+}
+
+h1{
+	font-family: 'titlefont', sans-serif;
+	font-size: 60px;
+	text-align: center;
+	color: white;
+}
+
+h1 span{
+	font-family: 'STIX Two Text', serif;
+}
+
+h2{
+	font-family: 'titlefont', sans-serif;
+	font-size: 40px;
+	text-align: center;
+	color: white;
+	margin-top: -40px;
+}
+
+p {
+	font-family: 'STIX Two Text', serif;
+	text-align: center;
+	font-weight: 300px;
+	color: white;
+	font-size: 18px;
+	line-height: 27px;
+	letter-spacing: 0.5px;
+}
+
+button {
+	font-family: 'STIX Two Text', serif;
+	font-weight: 700px;
+	color: white;
+	font-size: 18px;
+	line-height: 28px;
+	background-color: transparent;
+	border: 1px solid white;
+	cursor: pointer;
+}
+
+button:active{
+	color: #b5b5b5;
+	border: 1px solid #b5b5b5;
+}
+
+#premsg,#donemsg,#congrats {
+	position: fixed;
+	z-index: 10;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.8);
+	display: block;
+}
+
+.popcont-first {
+	position: absolute;
+	top: 27%;
+	left: calc(50% - 440px);
+	width: 800px;
+	height: 500px;
+	padding: 50px;
+	padding-top: 20px;
+	transition: opacity 0.5s;
+}
+
+.popcont-first button {
+	background-color: transparent;
+	position: absolute;
+	left: 340px;
+	top: 200px;
+	width: 120px;
+	height: 50px;
+	font-size: 20px;
+}
+
+.popcont-first button:active{
+	color: #b5b5b5;
+}
+
+.text-container {
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+
+.readme, .audioplay-likea, .morsetext-likea {
+	font-family: 'STIX Two Text', serif;
+	text-decoration: none;
+	display: none;
+	text-align: center;
+	position: absolute;
+	left: 145px;
+	top: 130px;
+	width: 100px;
+	height: 30px;
+	font-size: 20px;
+	font-weight: 700px;
+	color: white;
+	font-size: 18px;
+	line-height: 28px;
+	background-color: transparent;
+	border: none;
+}
+
+.readme:hover, .likea: hover{
+	text-decoration: none;
+	color: white;
+}
+
+.readme:active, .likea:active{
+	text-decoration: none;
+	color: #b5b5b5;
+	border: 1px solid #b5b5b5;
+}
+
+
+.popcont {
+	position: absolute;
+	top: 10%;
+	left: calc(50% - 300px);
+	width: 500px;
+	height: 500px;
+	padding: 50px;
+	padding-top: 20px;
+	transition: opacity 0.5s;
+}
+
+button.back{
+	margin-left: -460px;
+}
+
+#text-one p {
+	width: 100%;
+	position: absolute;
+	top: 120px;
+}
+
+.text-prompt p.yay{
+	margin-top: -10px;
+	font-weight: 500;
+}
+
+.text-prompt p.question{
+	margin-top: -10px;
+}
+
+#text-one button {
+	background-color: transparent;
+	position: absolute;
+	top: 450px;
+	left: 410px;
+	width: 120px;
+	height: 50px;
+	font-size: 20px;
+}
+
+#text-one button:active {
+	color: #b5b5b5;
+}
+
+#text-two p {
+	width: 100%;
+	position: absolute;
+	top: 200px;
+}
+
+#text-two button {
+	background-color: transparent;
+	position: absolute;
+	top: 450px;
+	left: 410px;
+	width: 120px;
+	height: 50px;
+	font-size: 20px;
+}
+
+#text-two button:active {
+	color: #b5b5b5;
+}
+
+#guide, #outro, #intro {
+	opacity: 0;
+	display: none;
+	transition: opacity 0.5s;
+}
+
+#morse {
+	position: fixed;
+	top: -50%;
+	left: -50%;
+}
+
+.close{
+	font-size: 20px;
+	width: 50px;
+	height: 50px;
+	border: none;
+	margin-left: -20px;
+}
+
+.close:active{
+	color: #b5b5b5;
+	border: none;
+}
+
+.msg{
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	top: 0px;
+	left: 0px;
+	transition: opacity 0.5s;
+	background-color: rgba(0,0,0,0.5);
+}
+
+#phone-msg,#door-msg,#handkerchief-msg,#house-one-msg,#house-two-msg,#house-three-msg,#handkerchief-error, #letter-msg-home, #lotus-msg, #lotus-error, #apple-msg, #apple-error, #comb-msg,#comb-error,#quill-msg,#radio-msg,#cannot-msg,#book-housetwo-msg, #letter-msg, #quill-error,#hint-book-house-three,#book-housethree-msg, #cannot-msg{
+	display: none;
+	opacity: 0;
+	transition: opacity 0.5s;
+}
+
+#door-msg .text-prompt p{
+	margin-left: 20px;
+}
+
+p.error-msg{
+	margin-top: 90px;
+	margin-left: -80px;
+}
+
+button#try-again-one,button#try-again-two,button#try-again-three,button#try-again-four,button#try-again-five{
+	margin-left: 10px;
+	padding-top: 10px;
+	padding-bottom: 40px;
+	padding-left: 10px;
+	padding-right: 10px;
+	width: 130px;
+}
+
+#radio-hint,#morsecode{
+	display: none;
+}
+
+#radio-msg img{
+	width: 250px;
+	display: absolute;
+}
+
+.text-prompt{
+	position: absolute;
+	width: 400px;
+	height: 400px;
+	left: calc(50% - 200px);
+	top: 34%;
+}
+
+.text-prompt p{
+	margin-top: 30px;
+	margin-left: 0;
+}
+
+.text-prompt button{
+	font-size: 30px;
+}
+
+.text-prompt button:active{
+	color: #b5b5b5;
+}
+
+#door-msg p{
+	top: 300px;
+}
+
+button.hint{
+	background-color: transparent;
+	position: absolute;
+	left: 125px;
+	top: 150px;
+	width: 100px;
+	height: 40px;
+	font-size: 20px;
+}
+
+button.yes{
+	background-color: transparent;
+	position: absolute;
+	left: 220px;
+	top: 100px;
+	width: 150px;
+	height: 50px;
+	font-size: 20px;
+}
+
+button.no{
+	background-color: transparent;
+	position: absolute;
+	left: 50px;
+	top: 100px;
+	width: 150px;
+	height: 50px;
+	font-size: 20px;
+}
+
+#book-housetwo-msg button.hint{
+	left: 145px;
+	top: 200px;
+}
+
+p#book-housetwo-hint{
+	display: none;
+}
+
+#letter-msg-hint-housetwo{
+	left: 150px;
+	top: 190px;
+}
+
+#letter-p-hint,#letter-p-home-hint{
+	display: none;
+}
+
+#hint-letter-msg-home{
+	left: 145px;
+	top: 160px;
+}
+
+button.collect{
+	background-color: transparent;
+	position: absolute;
+	left: 270px;
+	top: 160px;
+	width: 100px;
+	height: 50px;
+	font-size: 20px;
+}
+
+input{
+	position: absolute;
+	top: 170px;
+	left: 40px;
+	width: 200px;
+	height: 30px;
+}
+
+#book-housethree-msg p#book-housethree-p{
+	width: 100%;
+	font-size: 15px;
+	margin-top: -10px;
+	margin-left: 10px;
+}
+
+p#hint-book-house-three{
+	position: relative;
+	top: 100px;
+	margin-top: 0;
+}
+
+#book-housethree-msg button.hint{
+	top: 280px;
+	left: 160px;
+}
+
+button.audioplay-likea{
+	width: 200px;
+	left: 100px;
+	top: 50px;
+	font-size: 18px;
+}
+
+button.morsetext-likea{
+	font-size: 13px;
+	width: 200px;
+	height: 30px;
+	left: 100px;
+	top: 100px;
+}
+
+p#morsecode{
+	display: none;
+	top: -20px;
+}
+
+#radio-msg button.hint{
+	left: 150px;
+}
+
+.flashtop{
+	background-color: transparent;
+	position: fixed; 
+	top: 0px; 
+	left: 0px; 
+	width: 100vw; 
+	height: 26.570680628272251vh; 
+	display: block; 
+	background-image: url("images/top.png");
+	background-size: 100% 100%;
+}
+
+.flashleft{
+	background-color: transparent;
+	position: fixed; 
+	top: 26.570680628272251vh; 
+	left: 0px; 
+	width: 40.5555555555556vw; 
+	height: 46.858638743455497vh; 
+	display: block; 
+	background-image: url("images/left.png");
+	background-size: 100% 100%;
+}
+
+.flashright{
+	background-color: transparent;
+	position: fixed; 
+	top: 26.570680628272251vh; 
+	right: 0px; 
+	width: 40.5555555555556vw; 
+	height: 46.858638743455497vh; 
+	display: block; 
+	background-image: url("images/right.png");
+	background-size: 100% 100%;
+}
+
+.flashbottom{
+	background-color: transparent;
+	position: fixed; 
+	bottom: 0px; 
+	left: 0px; 
+	width: 100vw; 
+	height: 26.670680628272251vh; 
+	display: block; 
+	background-image: url("images/bottom.png");
+	background-size: 100% 100%;
+}
+
+#congrats,#cannot-msg{
+	display: none;
+}
+
+#congrats{
+	top: 0;
+	left: 0;
+}
+
+#text-finish h2{
+	margin-top: 290px;
+	margin-left: -100px;
+}
+
+#text-finish h2 span{
+	font-family: 'STIX Two Text', serif;
+}

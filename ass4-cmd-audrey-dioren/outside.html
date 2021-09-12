@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <script src="//aframe.io/releases/0.8.2/aframe.min.js"></script>
+    <script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v5.0.0/dist/aframe-extras.min.js"></script>
+    <script src="//cdn.rawgit.com/donmccurdy/aframe-physics-system/v3.3.0/dist/aframe-physics-system.min.js"></script>
+    <script src="blocking.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet"> 
+		<title>The Old Lady's House</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <a-scene renderer="colorManagement: true" physics="debug: true">
+      <a-plane static-body position="0 0 0" rotation="-90 0 0" width="8" height="14" color="#312B23" scale="1118.370 6361.743 1"></a-plane>
+      <a-sky src="images/sky2.jpg" rotation="0 270 0" material="" geometry="radius: 10000;" scale="1 1 1"></a-sky>
+      <a-image src="images/soil.png" position="-2.747 9.513 -1132.5001" scale="5919.571 8404.801 20.728" rotation="90 0 0" material="" geometry=""></a-image>
+    <a-image src="images/soil.png" position="-1187.00845 9.513 -1131.31414" scale="5919.571 8404.801 20.728" rotation="90 0 0" material="" geometry=""></a-image>
+    <a-image src="images/soil.png" position="-598.09391 9.51313 -2952.1103" scale="5919.571 7106.66933 20.728" rotation="90 90 0" material="" geometry=""></a-image>
+   <a-box static-body="sphereRadius:NaN" position="2758.03437 509.321 -1377.02682" material="transparent:true;opacity:0" height="3" width="4" color="red" scale="37.32 1675.7765 9668.72662" id="one" geometry="" velocity=""></a-box>
+       <a-box static-body="sphereRadius:NaN" position="-503.65396 99.14228 -5925.36721" material="transparent:true;opacity:0" height="3" width="4" color="red" scale="2203.46191 3364.78565 255.81995" id="two" geometry="" velocity=""></a-box>
+      <a-box static-body="sphereRadius:NaN" position="-4146.03287 509.321 -1377.02682" material="transparent:true;opacity:0" height="3" width="4" color="red" scale="37.32 3240.01905 9668.72662" id="three" geometry="" velocity=""></a-box>
+     <a-box static-body="sphereRadius:NaN" position="-503.65396 99.14228 3024.81965" material="transparent:true;opacity:0" height="3" width="4" color="red" scale="2203.46191 3129.94106 255.81995" id="four" geometry="" velocity=""></a-box>
+
+      <a-entity kinema-body="radius: 0.8" movement-controls="fly: false" position="0 0 4" look-controls wasd-controls="acceleration: 900; enabled:true" id="cam">
+        <a-entity camera position="0 500 0"><a-cursor fuse="true" fuseTimout="500"></a-cursor></a-entity>
+      </a-entity>
+
+    <a-entity  id="house-one" 
+          gltf-model="models/house1/house/scene.gltf" 
+          position="-1220.66105 -0.5 -3066.25686" 
+          scale="0.5 0.5 0.5">
+    </a-entity>
+    <a-entity  id="house-two"
+          gltf-model="models/house2/housetwo/scene.gltf" 
+          position="1318.41767 -18.2815 -303.55544" 
+          scale="2.11 2.6 2.6" 
+          rotation="">
+    </a-entity>
+    <a-entity  id="house-three" 
+          gltf-model="models/house3/housethree/scene.gltf" 
+          position="-1766.35933 -0.5 -1233.76018" 
+          scale="2.7 2.7 2.7" 
+          rotation="0 90 0">
+    </a-entity>
+    <a-entity id="tree" gltf-model="models/tree/scene.gltf" position="781.74912 -0.5 -3506.88905" scale="3 3 3" rotation="0 90 0">
+    </a-entity>
+    <a-entity id="lotus-a" gltf-model="models/lotus/scene.gltf" position="-1248.15909 30.92948 86.58413" scale="500 500 500" rotation="0 90 0">
+    </a-entity>
+    <a-entity id="lotus-b" gltf-model="models/lotus/scene.gltf" position="-1358.89147 30.92948 -64.10095" scale="500 500 500" rotation="0 90 0">
+    </a-entity>
+    <a-entity id="crate" gltf-model="models/crate/scene.gltf" position="848.98097 -0.5 -2550.26683" scale="20 20 20" rotation="1.6128761932932674 53.4735780617646 -1.1946170028477665">
+    </a-entity>
+    <a-entity id="apple" gltf-model="models/apple/scene.gltf" position="1240.83008 -0.5 -2992.27645" scale="2.7 2.7 2.7" rotation="0 90 0">
+    </a-entity>
+    <a-entity id="pond" gltf-model="models/pond/scene.gltf" position="-1425.54402 23.06327 -123.01727" scale="177.53892 100 141.17521" rotation="0 90 0">
+    </a-entity>
+
+  </a-scene>
+  <div class="flashtop"></div>
+  <div class="flashleft"></div>
+  <div class="flashright"></div>
+  <div class="flashbottom"></div>
+
+    <div class="msg" id="lotus-msg">
+    <div class="text-prompt">
+    <button class="close" onclick="document.getElementById('lotus-msg').style.display = 'none';
+                    document.getElementById('lotus-error').style.display='none';">x</button>
+    <p class="yay" id="yay-four">YOU HAVE FOUND AN ITEM!</p>
+    <p class="question" id="question-four">What was the last word in the riddle?<br>(Answer must be in lowercase)</p>
+    <input type="text" id="pass4" />
+        <button id="collect-four" class="collect" type="button" onclick="cekpassFour(document.getElementById('pass4').value)">Collect</button>
+    </div>
+  </div>
+  <div class="msg" id="lotus-error">
+    <div class="text-prompt">
+      <button class="close" 
+            onclick="document.getElementById('lotus-msg').style.display = 'none';
+                      document.getElementById('lotus-error').style.display='none';">
+    x
+    </button>
+    <p class="error-msg">
+        Wrong Password!
+    </p>
+    <button id="try-again-four" class="hint" type="button" 
+            onclick="document.getElementById('lotus-msg').style.display='block';
+            document.getElementById('lotus-error').style.display='none';">
+    Try Again
+    </button>
+    </div>
+  </div>
+
+    <div class="msg" id="apple-msg">
+    <div class="text-prompt">
+    <button class="close" onclick="document.getElementById('apple-msg').style.display = 'none';
+                                  document.getElementById('apple-error').style.display='none';">x</button>
+    <p class="yay" id="yay-five">YOU HAVE FOUND AN ITEM!</p>
+    <p class="question" id="question-five">What was the first word of the clue's answer?<br>(Answer must be in lowercase)</p>
+    <input type="text" id="pass5" />
+        <button id="collect-five" class="collect" type="button" onclick="cekpassFive(document.getElementById('pass5').value)">Collect</button>
+    </div>
+  </div>
+  <div class="msg" id="apple-error">
+    <div class="text-prompt">
+      <button class="close" 
+            onclick="document.getElementById('apple-msg').style.display = 'none';
+                      document.getElementById('apple-error').style.display='none';">
+    x
+    </button>
+    <p class="error-msg">
+        Wrong Password!
+    </p>
+    <button id="try-again-five" class="hint" type="button" 
+            onclick="document.getElementById('apple-msg').style.display='block';
+            document.getElementById('apple-error').style.display='none';">
+    Try Again
+    </button>
+    </div>
+  </div>
+
+  <div class="msg" id="house-one-msg">
+    <div class="text-prompt">
+    <p>Do you want to explore inside this house?</p>
+    <button class="yes" onclick="location.replace('index.html');">Yes, I do</button>
+    <button class="no" onclick="document.getElementById('house-one-msg').style.display='none';wasdon();">No, stay outside</button>
+    </div>
+  </div>
+
+  <div class="msg" id="house-two-msg">
+    <div class="text-prompt">
+    <p>Do you want to explore inside this house?</p>
+    <button class="yes" onclick="location.replace('house-2nd.html');">Yes, I do</button>
+    <button class="no" onclick="document.getElementById('house-two-msg').style.display='none';wasdon();">No, stay outside</button>
+    </div>
+  </div>
+
+  <div class="msg" id="house-three-msg">
+    <div class="text-prompt">
+    <p>Do you want to explore inside this house?</p>
+    <button class="yes" onclick="location.replace('house-3rd.html');">Yes, I do</button>
+    <button class="no" onclick="document.getElementById('house-three-msg').style.display='none';wasdon();">No, stay outside</button>
+    </div>
+  </div>
+
+    <div id="congrats" class="popcont-first">
+      <div class="text-container" id="text-finish">
+        <h2>You have escaped!</h2>
+      </div>
+    </div>
+
+
+  <div class="msg" id="cannot-msg">
+    <div class="text-prompt">
+    <button class="close" onclick="document.getElementById('cannot-msg').style.display = 'none'">x</button>
+    <p class="cannot">You still got missing items!</p>
+    </div>
+  </div>
+  <button style="position: fixed; top:50px; right:50px; width:150px; height: 50px;" type="button" onclick="escape();">ESCAPE</button>
+  <script type="text/javascript">
+    var lotus = document.querySelector('#lotus-b');
+    lotus.addEventListener('fusing', function(evt){
+      document.getElementById('lotus-msg').style.display = 'block';
+      document.getElementById('lotus-msg').style.opacity = '1';
+
+    });
+    var apple = document.querySelector('#apple');
+    apple.addEventListener('fusing', function(evt){
+      document.getElementById('apple-msg').style.display = 'block';
+      document.getElementById('apple-msg').style.opacity = '1';
+
+    });
+
+
+    var houseone = document.querySelector('#house-one');
+    houseone.addEventListener('fusing', function(evt){
+      document.getElementById('house-one-msg').style.display = 'block';
+      document.getElementById('house-one-msg').style.opacity = '1';
+      var camera = document.querySelector('#cam');
+      camera.setAttribute('wasd-controls', 'enabled: false;');
+    });
+
+    function wasdon(){
+      var camera = document.querySelector('#cam');
+      camera.setAttribute('wasd-controls', 'enabled: enable;');
+    }
+
+    var housetwo = document.querySelector('#house-two');
+    housetwo.addEventListener('fusing', function(evt){
+      document.getElementById('house-two-msg').style.display = 'block';
+      document.getElementById('house-two-msg').style.opacity = '1';
+      var camera = document.querySelector('#cam');
+      camera.setAttribute('wasd-controls', 'enabled: false;');
+    });
+
+    var housethree = document.querySelector('#house-three');
+    housethree.addEventListener('fusing', function(evt){
+      document.getElementById('house-three-msg').style.display = 'block';
+      document.getElementById('house-three-msg').style.opacity = '1';
+      var camera = document.querySelector('#cam');
+      camera.setAttribute('wasd-controls', 'enabled: false;');
+    }); 
+  </script>
+  <script type="text/javascript">
+    function addtoms(whatiwannadd) {
+    if (whatiwannadd === null) {
+
+    } else {
+    var existing = localStorage.getItem("mystorage");
+      if (existing === null){
+        var addnew = whatiwannadd;
+      }
+      else{
+        var addnew = existing + ',' + whatiwannadd;
+      }
+      localStorage.setItem("mystorage", addnew);
+      }
+    }
+
+  function cekpassFour(thepass) {
+    if (thepass == 'death') {
+      addtoms('lotus');
+      document.getElementById('yay-four').innerHTML = 'Nice Job! You have collected an item!';
+      document.getElementById('question-four').style.display='none';
+      document.getElementById('collect-four').style.display='none';
+      document.getElementById('pass4').style.display='none';
+    } else {
+      document.getElementById('pass4').value ='';
+      document.getElementById('lotus-error').style.display='block';
+      document.getElementById('lotus-error').style.opacity='1';
+      document.getElementById('lotus-msg').style.display='none';
+    }
+  }
+
+   function cekpassFive(thepass) {
+    if (thepass == 'find') {
+      addtoms('apple');
+      document.getElementById('yay-five').innerHTML = 'Nice Job! You have collected an item!';
+      document.getElementById('question-five').style.display='none';
+      document.getElementById('collect-five').style.display='none';
+      document.getElementById('pass5').style.display='none';
+    } else {
+      document.getElementById('pass5').value ='';
+    document.getElementById('apple-error').style.display='block';
+    document.getElementById('apple-error').style.opacity='1';
+    document.getElementById('apple-msg').style.display='none';
+    }
+  }
+// function escape(){
+
+function escape(){
+var x = localStorage.getItem("mystorage");
+var notok = '';
+if (x.includes("houseone") == false) {
+var notok = '1';
+}
+if (x.includes("handkerchief") == false) {
+var notok = '1';
+}
+if (x.includes("comb") == false) {
+var notok = '1';
+}
+if (x.includes("quill") == false) {
+var notok = '1';
+}
+if (x.includes("lotus") == false) {
+var notok = '1';
+}
+if (x.includes("apple") == false) {
+var notok = '1';
+}
+var x = localStorage.getItem("mystorage");
+  if (notok == '') {
+    document.getElementById('congrats').style.display = "block";
+    document.getElementById('congrats').style.opacity = "1";
+  } else {
+    document.getElementById('cannot-msg').style.display = "block";
+    document.getElementById('cannot-msg').style.opacity = "1";
+  }
+}
+// }
+  </script>
+</body>
+</html>

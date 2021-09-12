@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script src="//aframe.io/releases/0.8.2/aframe.min.js"></script>
+	<script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v5.0.0/dist/aframe-extras.min.js"></script>
+	<script src="//cdn.rawgit.com/donmccurdy/aframe-physics-system/v3.3.0/dist/aframe-physics-system.min.js"></script>
+	<script src="blocking.js"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet"> 
+	<title>The Old Lady's House:The Game</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<!--TEXTS-->
+	
+<!--AFRAME-->
+	<a-scene renderer="colorManagement: true" physics="debug: true">
+     <a-box static-body="sphereRadius:NaN" position="775.68813 583.27019 -173.92494" material="transparent:true;opacity:0" height="3" width="4" color="black" scale="4.14024 551.915 1244.1208" id="front" geometry="" velocity=""></a-box>
+     <a-box static-body="sphereRadius:NaN" position="-929.43616 583.27019 -173.92494" material="transparent:true;opacity:0" height="3" width="4" color="black" scale="5.75505 551.915 1244.1208" id="end" geometry="" velocity=""></a-box>
+      <a-box static-body="sphereRadius:NaN" position="277.49295 583.27019 -637.56733" material="transparent:true;opacity:0" height="3" width="4" color="black" scale="804.58637 551.915 31.54865" id="right" geometry="" velocity=""></a-box>
+      <a-box static-body="sphereRadius:NaN" position="277.49295 583.27019 305.02576" material="transparent:true;opacity:0" height="3" width="4" color="black" scale="804.58637 551.915 15.43288" id="left" geometry="" velocity=""></a-box>
+      <!--  <a-box static-body position="665.110 145.120 118.065" height="3" width="4" color="red" scale="37.320 551.915 2174.270"></a-box> -->
+      <a-plane static-body position="0 0 0" rotation="-90 0 0" width="8" height="14" color="#171614" scale="1118.370 6361.743 1"></a-plane>
+
+      <a-entity kinema-body="radius: 0.8" movement-controls="fly: false" position="0 0 4" look-controls wasd-controls="acceleration: 900">
+        <a-entity camera position="0 500 0" ><a-cursor fuse="true" fuseTimout="500"></a-cursor></a-entity>
+      </a-entity>
+
+			<!-- <a-entity camera position="0 458.952 -411.529" look-controls wasd-controls="acceleration: 10000">
+				<a-cursor fuse="true" fuseTimout="500"></a-cursor>
+			</a-entity>-->
+		<!-- </a-entity> -->
+
+		<!--objects-->
+		<a-entity id="house" 
+					gltf-model="models/house3/housethree/scene.gltf" 
+					position="24.82171 -0.5 -173.90274" 
+					scale="3 3 3" 
+					rotation="0 90 0">
+		</a-entity>
+	
+		<a-image src="images/floor.png" 
+					static-body="sphereRadius: NaN" 
+					position="-2.7471 9.51323 -186.03738" 
+					scale="1975.03674 1069.73412 20.72822" 
+					rotation="90.00021045914971 0 0">
+		</a-image>
+
+	<a-entity id="table" 
+					gltf-model="models/house3/table/scene.gltf" 
+					position="-356.09122 114.76461 218.70706" 
+					scale="200 200 200" 
+					rotation="0 90 0">
+		</a-entity>
+
+		<a-entity id="wardrobe" 
+					gltf-model="models/house3/wardrobe/scene.gltf" 
+					position="-853.40253 -1.90422 90.18643" 
+					scale="80 70 70" 
+					rotation="0 90 0">
+		</a-entity>
+
+		<a-entity id="bed" 
+					gltf-model="models/house3/bed/scene.gltf" 
+					position="41.24718 -4.41847 -431.7775" 
+					scale="3.74 2.61 4.73" 
+					rotation="0 270 0">
+		</a-entity>
+
+		<a-entity id="tv-table" 
+					gltf-model="models/house3/tv-table/scene.gltf" 
+					position="771.18607 -10.32175 126.24376" 
+					scale="3 3 3" 
+					rotation="0 90 0">
+		</a-entity>
+
+		<a-entity id="cupboard" 
+					gltf-model="models/house3/cupboard/scene.gltf" 
+					position="70.0018 -23.70127 340.43627" 
+					scale="2.5 2.5 1.45988" 
+					rotation="0 180 0">
+		</a-entity>
+
+		<a-entity id="door" 
+					gltf-model="models/house3/door/scene.gltf" 
+					position="788.96925 8.30726 -348.84268" 
+					scale="118.31 106.14 115.98" 
+					rotation="0 90 0">
+		</a-entity>
+
+		<a-entity id="vintage-chair" 
+					gltf-model="models/house3/vintage-chair/scene.gltf" 
+					position="-370.09563 -90.90824 -196.21872" 
+					scale="0.35 0.35 0.35">
+		</a-entity>
+
+		<a-entity id="chair" 
+					gltf-model="models/house3/chair/scene.gltf" 
+					position="451.85164 -4.36498 222.03853" 
+					scale="0.36 0.36 0.36" 
+					rotation="0 -68.853 0">
+		</a-entity>
+
+		<a-entity id="lamp" 
+					gltf-model="models/house1/lamp/scene.gltf" 
+					position="-799.44026 500.31331 -167.0034" 
+					scale="2.5 2.5 2.5">
+		</a-entity>
+
+		<a-entity id="radio" 
+					gltf-model="models/house3/radio/scene.gltf" 
+					position="749.59086 257.76631 227.69265" 
+					scale="2 2 2" 
+					rotation="-0.5798332886723931 -99.36577857835815 -0.9843414920347544">
+		</a-entity>
+
+		<a-entity id="plate" 
+					gltf-model="models/house3/plate/scene.gltf" 
+					position="771.03256 262.73595 100.45579" 
+					scale="0.3 0.3 0.3" 
+					rotation="-3.0000000000000004 2.03 10.88">
+		</a-entity>
+
+		<a-entity id="papera" 
+					gltf-model="models/house3/paper/scene.gltf" 
+					position="-284.7635 220.5399 215.23368" 
+					scale="4 4 4" 
+					rotation="0 -67.36150205794063 0">
+		</a-entity>
+
+		<a-entity id="paperb" 
+					gltf-model="models/house3/paper/scene.gltf" 
+					position="-438.86437 220.5399 215.23368" 
+					scale="4 4 4" 
+					rotation="0 -135.4787354476588 0">
+		</a-entity>
+
+		<a-entity id="paperc" 
+					gltf-model="models/house3/paper/scene.gltf" 
+					position="-350.61168 220.5399 215.23368" 
+					scale="4 4 4" 
+					rotation="0 -82.62853546699654 0">
+		</a-entity>
+
+		<a-entity id="book" 
+							gltf-model="models/house3/book/scene.gltf" 
+							position="38.1029 239.43884 269.05691" 
+							scale="68.65562 68.65562 68.65562" 
+							rotation="-82.79297435419909 2.9965692685342056 -179.9998479605043">
+		</a-entity>
+
+		<a-entity id="quill" 
+					gltf-model="models/house3/quill/scene.gltf" 
+					position="-193.8655 262.12872 245.86153" 
+					scale="40 40 40" 
+					rotation="0 94.997 0">	
+		</a-entity>
+
+		<!--Lighitng-->
+		<a-entity light="type: ambient; color: #ffffff; intensity: 1.3"></a-entity>
+	</a-scene>
+
+	<!--Flash-->
+	<div class="flashtop"></div>
+	<div class="flashleft"></div>
+	<div class="flashright"></div>
+	<div class="flashbottom"></div>
+
+	<!--AUDIO-->
+	<audio controls id="morse">
+	  <source src="sound/mp3-morse-2.mp3" type="audio/ogg">
+	  <source src="sound/ogg-morse-2.ogg" type="audio/mpeg">
+	  Your browser does not support the audio tag.
+	</audio>
+
+	<div class="msg" id="radio-msg">
+		<div class="text-prompt">
+		<button class="close" onclick="document.getElementById('radio-msg').style.display = 'none';
+																	document.getElementById('morsecode').style.display = 'none';
+																	document.getElementById('radio-hint').style.display = 'none';
+																	stopmorse();">×</button>
+		<button class="audioplay-likea" id="audioplay-button" onclick="playmorse()">Play Audio</button>
+		<p id="morsecode">
+			..-. --- .-. / .-- .-. .. - .. -. --. / .- -. -.. / -- .- -.. . / ..-. .-. --- -- / ..-. . .- - .... . .-.
+		</p>
+		<p id="radio-hint">
+			Morse. <br> What you are looking for is inside this house 
+		</p>
+		<button class="morsetext-likea" id="morsetext-button" onclick="document.getElementById('morsecode').style.display = 'block'; 
+																																document.getElementById('audioplay-button').style.display = 'none'; 
+																																document.getElementById('morsetext-button').style.display = 'none';">
+					If audio is troubled, click here
+		</button>
+		<button class="hint" onclick="document.getElementById('radio-hint').style.display = 'block'; 
+																document.getElementById('audioplay-button').style.display = 'none'; 
+																document.getElementById('morsetext-button').style.display = 'none'; 
+																document.getElementById('morsecode').style.display = 'none';">
+					HINT</button>
+		</div>
+	</div>
+
+	<div class="msg" id="door-msg">
+		<div class="text-prompt">
+		<p>Do you want to explore outside this house?</p>
+		<button class="yes" onclick="location.replace('outside.html');">Yes, I do</button>
+		<button class="no" onclick="document.getElementById('door-msg').style.display='none'">No, stay inside</button>
+		</div>
+	</div>
+
+	<div class="msg" id="book-housethree-msg">
+		<div class="text-prompt">
+		<button class="close" onclick="document.getElementById('book-housethree-msg').style.display = 'none';
+																	document.getElementById('book-housethree-p').style.display='block';
+																	document.getElementById('hint-book-house-three').style.display='none';">×</button>
+		<p id="book-housethree-p">
+		THE BURIAL OF THE DEAD<br>
+		April is the cruellest month, breeding
+		lilacs out of the dEad land, stirring
+		dull roots with sPring rain.
+		earth in forgetful sNow, Feeding
+		a little life with dried tubers.
+		summer surPrised us, coming over the starnbergersee
+		And went on in sunlight, Into the hofgarten,
+		aNd Drank coffee, and talked for an hour. 
+		and when we were chiLdren, my cousin’s he took me out on a sled.
+		</p>
+		<p id="hint-book-house-three">Some letters are different from others <br> What you’re looking for is located outside.</p>
+		<button class="hint" onclick="document.getElementById('hint-book-house-three').style.display='block';
+																document.getElementById('hint-book-house-three').style.opacity='1';
+																document.getElementById('book-housethree-p').style.display='none';">HINT</button>
+		</div>
+	</div>
+
+	<!--QUILL MSG-->
+	<div class="msg" id="quill-msg">
+		<div class="text-prompt">
+		<button class="close" 
+						onclick="document.getElementById('quill-msg').style.display = 'none';
+											document.getElementById('quill-error').style.display='none';">
+		×</button>
+		<p class="yay" id="yay-three">YOU HAVE FOUND AN ITEM!</p>
+		<p class="question" id="question-three">
+			What did the code say?<br>(Answer must be in lowercase, with space)
+		</p>
+		<input type="text" id="pass3" />
+      	<button id="collect-three" class="collect" type="button" 
+      					onclick="cekpassThree(document.getElementById('pass3').value)">
+      	Collect</button>
+		</div>
+	</div>
+
+	<div class="msg" id="quill-error">
+		<div class="text-prompt">
+			<button class="close" 
+						onclick="document.getElementById('quill-msg').style.display = 'none';
+											document.getElementById('quill-error').style.display='none';">
+		×</button>
+		<p class="error-msg">
+				Wrong Password!
+		</p>
+		<button id="try-again-three" class="hint" type="button" 
+						onclick="document.getElementById('quill-msg').style.display='block';
+						document.getElementById('quill-error').style.display='none';">
+		Try Again
+		</button>
+		</div>
+	</div>
+
+	<div id="congrats" class="popcont-first">
+		<div class="text-container" id="text-finish">
+			<h2>You have escaped<span>!</span></h2>
+		</div>
+	</div>
+
+	<div class="msg" id="cannot-msg">
+		<div class="text-prompt">
+		<button class="close" onclick="document.getElementById('cannot-msg').style.display = 'none'">×</button>
+		<p class="cannot">You still got missing items!</p>
+		</div>
+	</div>
+
+	<button style="position: fixed; top:50px; right:50px; width:150px; height: 50px;" type="button" 
+	onclick="escape()">ESCAPE</button>
+</body>
+</html>
+<script>
+// function playambi() {
+// 	var x = document.getElementById('ambi');
+// 	x.play();
+// }
+
+function playmorse(){
+	var morse = document.getElementById('morse');
+	morse.play();
+	morse.currentTime=0;
+}
+
+function stopmorse(){
+	var morse = document.getElementById('morse');
+	morse.pause();
+}
+
+var radio = document.querySelector('#radio');
+radio.addEventListener('fusing', function(evt){
+	document.getElementById('radio-msg').style.display = 'block';
+	document.getElementById('radio-msg').style.opacity = '1';
+	document.getElementById('morsetext-button').style.display= 'block';
+	document.getElementById('audioplay-button').style.display= 'block';
+	document.getElementById('morsetext-button').style.border= '1px solid white';
+	document.getElementById('audioplay-button').style.border= '1px solid white';
+});
+
+var book = document.querySelector('#book');
+book.addEventListener('fusing', function(evt){
+	document.getElementById('book-housethree-msg').style.display = 'block';
+	document.getElementById('book-housethree-msg').style.opacity = '1';
+
+});
+
+var quill = document.querySelector('#quill');
+quill.addEventListener('fusing', function(evt){
+	document.getElementById('quill-msg').style.display = 'block';
+	document.getElementById('quill-msg').style.opacity = '1';
+
+});
+
+var door = document.querySelector('#door');
+door.addEventListener('fusing', function(evt){
+	document.getElementById('door-msg').style.display = 'block';
+	document.getElementById('door-msg').style.opacity = '1';
+
+});
+
+</script>
+<script>
+	function addtoms(whatiwannadd) {
+		if (whatiwannadd === null) {
+
+		} else {
+		var existing = localStorage.getItem("mystorage");
+			if (existing === null){
+				var addnew = whatiwannadd;
+			}
+			else{
+      	var addnew = existing + ',' + whatiwannadd;
+    	}
+      localStorage.setItem("mystorage", addnew);
+    	}
+    }
+
+
+  function cekpassThree(thepass) {
+  	// alert(thepass);
+    if (thepass == 'for writing and made from feather') {
+      addtoms('quill');
+      document.getElementById('yay-three').innerHTML = 'Nice Job! You have collected an item!';
+      document.getElementById('question-three').style.display='none';
+      document.getElementById('collect-three').style.display='none';
+      document.getElementById('pass3').style.display='none';
+    } else {
+      document.getElementById('pass3').value ='';
+			document.getElementById('quill-error').style.display='block';
+			document.getElementById('quill-error').style.opacity='1';
+			document.getElementById('quill-msg').style.display='none';
+    }
+  }
+  
+		function escape(){
+					var x = localStorage.getItem("mystorage");
+					if (x.includes("houseone") == false) {
+					var notok = '1';
+					}
+					var notok = '';
+					if (x.includes("handkerchief") == false) {
+					var notok = '1';
+					}
+					if (x.includes("comb") == false) {
+					var notok = '1';
+					}
+					if (x.includes("quill") == false) {
+					var notok = '1';
+					}
+					if (x.includes("lotus") == false) {
+					var notok = '1';
+					}
+					if (x.includes("apple") == false) {
+					var notok = '1';
+					}
+				 var x = localStorage.getItem("mystorage");
+					if (notok == '') {
+					  document.getElementById('congrats').style.display = "block";
+					  document.getElementById('congrats').style.opacity = "1";
+					} else {
+					  document.getElementById('cannot-msg').style.display = "block";
+					  document.getElementById('cannot-msg').style.opacity = "1";
+					}
+		}
+</script>
+

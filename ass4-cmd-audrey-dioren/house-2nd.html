@@ -1,0 +1,517 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script src="//aframe.io/releases/0.8.2/aframe.min.js"></script>
+	<script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v5.0.0/dist/aframe-extras.min.js"></script>
+	<script src="//cdn.rawgit.com/donmccurdy/aframe-physics-system/v3.3.0/dist/aframe-physics-system.min.js"></script>
+	<script src="blocking.js"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet"> 
+	<title>The Old Lady's House:The Game</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	
+<!--AFRAME-->
+	<a-scene renderer="colorManagement: true" physics="debug: true">
+		 <a-box static-body="sphereRadius:NaN" position="958 583.27019 -148.94436" material="transparent:true;opacity:0" height="3" width="4" color="black" scale="4.14024 551.915 2160.19587" id="front" geometry="" velocity=""></a-box>
+     <a-box static-body="sphereRadius:NaN" position="-1107.61072 583.27019 -173.92494" material="transparent:true;opacity:0" height="3" width="4" color="black" scale="5.75505 551.915 2104.18172" id="end" geometry="" velocity=""></a-box>
+      <a-box static-body="sphereRadius:NaN" position="277.49295 583.27019 -941.11886" material="transparent:true;opacity:0" height="3" width="4" color="black" scale="804.58637 551.915 31.54865" id="right" geometry="" velocity=""></a-box>
+      <a-box static-body="sphereRadius:NaN" position="277.49295 583.27019 603.68797" material="transparent:true;opacity:0" height="3" width="4" color="black" scale="804.58637 551.915 15.43288" id="left" geometry="" velocity=""></a-box>
+      <!--  <a-box static-body position="665.110 145.120 118.065" height="3" width="4" color="red" scale="37.320 551.915 2174.270"></a-box> -->
+      <a-plane static-body position="0 0 0" rotation="-90 0 0" width="8" height="14" color="#171614" scale="1118.370 6361.743 1"></a-plane>
+
+      <a-entity kinema-body="radius: 0.8" movement-controls="fly: false" position="0 0 4" look-controls wasd-controls="acceleration: 900">
+        <a-entity camera position="0 500 0" ><a-cursor fuse="true" fuseTimout="500"></a-cursor></a-entity>
+      </a-entity>
+
+		<!-- </a-entity> -->
+
+		<!--objects-->
+		<a-entity id="house" 
+					gltf-model="models/house2/housetwo/scene.gltf" 
+					position="-484.801 -197.008 -5" 
+					scale="2.11 2.6 2.6" 
+					rotation="0 90 0">
+		</a-entity>
+
+		<a-image src="images/floor.png" 
+					position="-72.36842 9.52291 -185.34288" 
+					scale="2183.684 1664.0862 20.728" 
+					rotation="90.00021045914971 0 0">
+		</a-image>
+
+		<a-entity id="cupboard" 
+					gltf-model="models/house2/cupboard/scene.gltf" 
+					position="-1024.05515 299.54633 153.38741" 
+					scale="4.434 3.02127 3.782">
+		</a-entity>
+
+		<a-entity id="door" 
+					gltf-model="models/house2/door/scene.gltf" 
+					position="-447.11706 -18.44947 615.01744" 
+					scale="3.824 3.29127 5.182">
+		</a-entity>
+
+		<a-entity id="table" 
+					gltf-model="models/house2/table/scene.gltf" 
+					position="-859.10648 11.71727 -552.72596" 
+					scale="4.28 2.65 4.55831" 
+					rotation="">
+		</a-entity>
+
+		<a-entity id="wood-table" 
+					gltf-model="models/house2/wood-table/scene.gltf" 
+					position="865.88383 117.16594 -791.9701" 
+					scale="28.12 20.11 20" 
+					rotation="">
+		</a-entity>
+
+		<a-entity id="chair" gltf-model="models/house2/chair/scene.gltf" position="826.8135 -19.10005 -242.4158" scale="400 400 400" rotation="0 59.99999999999999 0">
+		</a-entity>
+
+		<a-entity id="stove" 
+					gltf-model="models/house2/stove/scene.gltf" 
+					position="-303.24066 278.81711 -855.25401" 
+					scale="3.2 3.2 3.2" 
+					rotation="">
+		</a-entity>
+
+		<a-entity id="table-chair" 
+					gltf-model="models/house2/table-chair/scene.gltf" 
+					position="-832.83413 0 -2434.36502" 
+					scale="350 350 350">
+		</a-entity>
+
+		<a-entity id="bed" 
+					gltf-model="models/house2/bed/scene.gltf" 
+					position="991.2642 -102.82891 607.86586" 
+					scale="306.55359 207.47156 256.79261" 
+					rotation="0 270 0">
+		</a-entity>
+
+		<a-entity id="mirror" gltf-model="models/house2/mirror/scene.gltf" position="942.88179 413.34306 -684.57714" scale="200 311.56394 192.49282" rotation="0 180 0">
+		</a-entity>
+
+		<a-entity id="fan" 
+					gltf-model="models/house2/fan/scene.gltf" 
+					position="-907.06107 353.13456 -868.84376" 
+					scale="100 100 100" 
+					rotation="0 -120.53026657269562 0" 
+					animation-mixer="clip: Cube.003|Cube.003Action; timeScale: 1.5">
+		</a-entity>
+
+		<a-entity id="book-stack" 
+					gltf-model="models/house2/book-stack/scene.gltf" 
+					position="-1021.23731 513.08303 216.637" 
+					scale="70 70 70" 
+					rotation="0 145.065 0">
+		</a-entity>
+
+		<a-entity id="booka" 
+					gltf-model="models/house2/book2/scene.gltf" 
+					position="-999.61166 332.24604 206.99181" 
+					scale="9 9 9" 
+					rotation="0 40 0">	
+		</a-entity>
+
+		<a-entity id="book-stack" 
+					gltf-model="models/house2/book-stack/scene.gltf" 
+					position="-1017.80023 513.08303 67.19773" 
+					scale="70 70 70" 
+					rotation="0 78.61897681667104 0">
+		</a-entity>
+
+		<a-entity id="bookb" 
+					gltf-model="models/house2/book2/scene.gltf" 
+					position="-1044.00545 349.31802 135.93767" 
+					scale="9 9 9" 
+					rotation="-11.418475899162177 -47.625970804659424 4.584235318841716">
+		</a-entity>
+
+		<a-entity id="bookc" 
+					gltf-model="models/house2/book2/scene.gltf" 
+					position="198.43482 260.21681 -489.85292" 
+					scale="9 9 9" 
+					rotation="0 -130.4728031916008 0" 
+					animation="property: scale; from: 9 9 9; to: 9.6 9.6 9.6; easing: linear; loop: NaN">
+		</a-entity>
+
+		<a-entity id="couch-pillowa" 
+					gltf-model="models/house2/couch-pillow/scene.gltf" 
+					position="676.70887 173.68955 341.46396" 
+					scale="150 100 100" 
+					rotation="-31.539034790771293 102.73591632931765 0">
+		</a-entity>
+
+		<a-entity id="couch-pillowb" 
+					gltf-model="models/house2/couch-pillow/scene.gltf" 
+					position="789.14459 172.81981 289.94015" 
+					scale="130 130 130" 
+					rotation="-29.610458852360946 84.80119142613262 0">
+		</a-entity>
+
+		<a-entity id="comb" 
+					gltf-model="models/house2/comb/scene.gltf" 
+					position="914.06804 248.01013 -601.05486" 
+					scale="2.78316 1.11 1.4" 
+					rotation="0 40 0">
+		</a-entity>
+
+		<a-entity id="powder" 
+					gltf-model="models/house2/powder/scene.gltf" 
+					position="706.26013 211.23761 -990.04659" 
+					scale="0.8 0.8 0.8" 
+					rotation="0 40 0">
+		</a-entity>
+
+		<a-entity id="soap" 
+					gltf-model="models/house2/soap/scene.gltf" 
+					position="1294.35096 219.44126 -766.87741" 
+					rotation="0 -97.78326914820681 0">
+		</a-entity>
+
+		<a-entity id="couch-pillowc" 
+					gltf-model="models/house2/couch-pillow/scene.gltf" 
+					position="789.14459 172.81981 289.94015" 
+					scale="130 130 130" 
+					rotation="-29.610458852360946 84.80119142613262 0">
+		</a-entity>
+
+		<a-entity id="ceilinga" 
+					gltf-model="models/house2/ceiling/scene.gltf" 
+					position="-583.55803 1297.59637 -180.30025" 
+					scale="5 5 5" 
+					rotation="-2.8865613718690875 85.4755627510016 1.7589804310516275" 
+					animation-mixer="clip:Ventilator; loop:repeat; timeScale: 6;">
+		</a-entity>
+
+		<a-entity id="ceilingb" 
+					gltf-model="models/house2/ceiling/scene.gltf" 
+					position="465.34375 1294.47099 -197.8159" 
+					scale="5 5 5" 
+					rotation="-0.8124541534955073 46.47833634101238 0.6422856883416528">
+		</a-entity>
+
+		<a-entity id="papera" 
+					gltf-model="models/house2/paper/scene.gltf" 
+					position="-837.30191 28.40872 315.55676" 
+					scale="3 3 3" 
+					rotation="">
+		</a-entity>
+
+		<a-entity id="paperb" gltf-model="models/house2/paper/scene.gltf" 
+					position="-837.30191 28.40872 217.24878" 
+					scale="3 1.38379 3" 
+					rotation="0 -54.22300685779572 0">
+		</a-entity>
+
+		<a-entity id="paperc" 
+					gltf-model="models/house2/paper/scene.gltf" 
+					position="-760.06796 28.40872 269.89178" 
+					scale="3 2.06552 3" 
+					rotation="0 -142.13765094266924 0">
+		</a-entity>
+
+		<a-entity id="bottlea" 
+					gltf-model="models/house2/bottle/scene.gltf" 
+					position="-11.48145 332.05657 -485.61143" 
+					scale="15 15 15">
+		</a-entity>
+
+		<a-entity id="bottleb" 
+					gltf-model="models/house2/bottle/scene.gltf" 
+					position="43.30337 332.05657 -410.45032" 
+					scale="15 15 15" 
+					rotation="">
+		</a-entity>
+
+		<a-entity id="bottlec" 
+					gltf-model="models/house2/bottle/scene.gltf" 
+					position="136.9109 276.97886 -378.34684" 
+					scale="15 15 15" 
+					rotation="0 -22.58656924185218 90.01396144623286">
+		</a-entity>
+
+		<a-entity id="bottled" 
+					gltf-model="models/house2/bottle/scene.gltf" 
+					position="-1009.8945 305.5194 -168.29786" 
+					scale="15 15 15" 
+					rotation="">
+		</a-entity>
+
+		<a-entity id="bottlee" 
+					gltf-model="models/house2/bottle/scene.gltf" 
+					position="-849.32318 255.78548 -670.6792" 
+					scale="15 15 15" 
+					rotation="88.83023064149258 -45.90308671470103 0">
+		</a-entity>
+
+		<a-entity id="bottlef" 
+					gltf-model="models/house2/bottle/scene.gltf" 
+					position="-11.48145 332.05657 -485.61143" 
+					scale="15 15 15">
+		</a-entity>
+
+		<a-entity id="handkerchief" 
+					gltf-model="models/house2/handkerchief/scene.gltf" 
+					position="-1037.83887 326.03449 227.2874" 
+					scale="3 3 3" 
+					rotation="43.751630193984795 51.36795816465882 3.158716324556228">
+		</a-entity>
+
+		<a-entity id="letter" 
+					gltf-model="models/house1/paper/scene.gltf" 
+					position="-721.9556 240.9513 -327.64035" 
+					scale="0.8 0.8 0.8" 
+					rotation="0 145.065 0" 
+					animation="property: scale; from: 0.8 0.8 0.8; to: 1 1 1; easing: linear; loop: NaN">
+		</a-entity>
+
+		<a-entity id="doll" 
+					gltf-model="models/house2/doll/scene.gltf" 
+					position="737.88463 197.13275 208.67764" 
+					scale="25 25 25" 
+					rotation="-58.91381232653177 -153.52518712089434 42.966678014655564">
+		</a-entity>
+
+		<!--Lighitng-->
+		<a-entity light="type: ambient; color: #ffffff; intensity: 1.3"></a-entity>
+	</a-scene>
+	<!--Flash-->
+	<div class="flashtop"></div>
+	<div class="flashleft"></div>
+	<div class="flashright"></div>
+	<div class="flashbottom"></div>
+
+	<div class="msg" id="book-housetwo-msg">
+		<div class="text-prompt">
+			<button class="close" onclick="document.getElementById('book-housetwo-msg').style.display = 'none';
+										document.getElementById('book-housetwo-hint').style.display = 'none';
+										document.getElementById('book-housetwo-p').style.display = 'block';">×</button>
+			<p id="book-housetwo-p">P 199, L 16, W 4</p>
+			<p id="book-housetwo-hint">If P stands for page, what else is in a book?<br> What you’re looking for is located inside this house.</p>
+			<a class="readme" id="readme-book" href="https://play.google.com/books/reader?id=0I8XAAAAYAAJ&pg=GBS.PA6&hl=en.">Read Book</a>
+			<button class="hint" onclick="document.getElementById('readme-book').style.display= 'none';
+										document.getElementById('book-housetwo-hint').style.display = 'block'; 
+										document.getElementById('book-housetwo-p').style.display = 'none';">HINT</button>
+		</div>
+	</div>
+
+	<div class="msg" id="letter-msg">
+		<div class="text-prompt">
+			<button class="close"  onclick="document.getElementById('letter-msg').style.display = 'none';
+											document.getElementById('letter-p-hint').style.display = 'none';
+											document.getElementById('letter-p').style.display = 'block';">×</button>
+			<p id="letter-p">A=5 <br> Y K I X</p>
+			<p id="letter-p-hint">A=1, B=2, C=3,...<br> What you’re looking for is located inside this house.</p>
+			<button class="hint" id="letter-msg-hint-housetwo" onclick="document.getElementById('letter-p-hint').style.display = 'block'; document.getElementById('letter-p').style.display = 'none';">HINT</button>
+		</div>
+	</div>
+
+	<div class="msg" id="door-msg">
+		<div class="text-prompt">
+			<p>Do you want to explore outside this house?</p>
+			<button class="yes" onclick="location.replace('outside.html');">Yes, I do</button>
+			<button class="no" onclick="document.getElementById('door-msg').style.display='none'">No, stay inside</button>
+		</div>
+	</div>
+
+	<div class="msg" id="handkerchief-msg">
+		<div class="text-prompt">
+			<button class="close" onclick="document.getElementById('handkerchief-msg').style.display = 'none';
+																		document.getElementById('handkerchief-error').style.display='none';">×</button>
+			<p class="yay" id="yay-one">YOU HAVE FOUND AN ITEM!</p>
+			<p class="question" id="question-one">On the book, what color was this item?<br>(Answer must be in lowercase)</p>
+			<input type="text" id="pass1" />
+	      	<button id="collect-one" class="collect" type="button" onclick="cekpassOne(document.getElementById('pass1').value)">Collect</button>
+			</div>
+	</div>
+	
+	<div class="msg" id="handkerchief-error">
+		<div class="text-prompt">
+			<button class="close" 
+						onclick="document.getElementById('handkerchief-msg').style.display = 'none';
+								document.getElementById('handkerchief-error').style.display='none';">
+		×
+		</button>
+		<p class="error-msg">
+				Wrong Password!
+		</p>
+		<button id="try-again-one" class="hint" type="button" 
+						onclick="document.getElementById('handkerchief-msg').style.display='block';
+						document.getElementById('handkerchief-error').style.display='none';">
+		Try Again
+		</button>
+		</div>
+	</div>
+
+	<div class="msg" id="comb-msg">
+		<div class="text-prompt">
+			<button class="close" onclick="document.getElementById('comb-msg').style.display = 'none';
+										document.getElementById('comb-error').style.display='none';">×</button>
+			<p class="yay" id="yay-two">YOU HAVE FOUND AN ITEM!</p>
+			<p class="question" id="question-two">T=?<br>(Answer must be in Uppercase)</p>
+			<input type="text" id="pass2" />
+	      	<button id="collect-two" class="collect" type="button" onclick="cekpassTwo(document.getElementById('pass2').value)">Collect</button>
+		</div>
+	</div>
+
+	<div class="msg" id="comb-error">
+		<div class="text-prompt">
+			<button class="close" 
+						onclick="document.getElementById('comb-msg').style.display = 'none';
+											document.getElementById('comb-error').style.display='none';">
+		×
+		</button>
+		<p class="error-msg">
+				Wrong Password!
+		</p>
+		<button id="try-again-two" class="hint" type="button" 
+						onclick="document.getElementById('comb-msg').style.display='block';
+						document.getElementById('comb-error').style.display='none';">
+		Try Again
+		</button>
+		</div>
+	</div>
+
+	<div id="congrats" class="popcont-first">
+		<div class="text-container" id="text-finish">
+			<h2>You have escaped<span>!</span></h2>
+		</div>
+	</div>
+
+
+	<div class="msg" id="cannot-msg">
+		<div class="text-prompt">
+		<button class="close" onclick="document.getElementById('cannot-msg').style.display = 'none'">×</button>
+		<p class="cannot">You still got missing items!</p>
+		</div>
+	</div>
+
+	<button style="position: fixed; top:50px; right:50px; width:150px; height: 50px;" type="button" onclick="escape();">ESCAPE</button>
+</body>
+<script>
+
+var book = document.querySelector('#bookc');
+book.addEventListener('fusing', function(evt){
+	document.getElementById('book-housetwo-msg').style.display = 'block';
+	document.getElementById('book-housetwo-msg').style.opacity = '1';
+	document.getElementById('readme-book').style.display= 'block';
+	document.getElementById('readme-book').style.border= '1px solid white';
+
+});
+
+var letter = document.querySelector('#letter');
+letter.addEventListener('fusing', function(evt){
+	document.getElementById('letter-msg').style.display = 'block';
+	document.getElementById('letter-msg').style.opacity = '1';
+
+});
+
+var handkerchief = document.querySelector('#handkerchief');
+handkerchief.addEventListener('fusing', function(evt){
+	// setTimeout(function(){ 
+		document.getElementById('handkerchief-msg').style.display = 'block';
+		document.getElementById('handkerchief-msg').style.opacity = '1';
+	// }, 1000);
+
+});
+
+var comb = document.querySelector('#comb');
+comb.addEventListener('fusing', function(evt){
+	document.getElementById('comb-msg').style.display = 'block';
+	document.getElementById('comb-msg').style.opacity = '1';
+
+});
+
+var door = document.querySelector('#door');
+door.addEventListener('fusing', function(evt){
+	document.getElementById('door-msg').style.display = 'block';
+	document.getElementById('door-msg').style.opacity = '1';
+
+});
+
+</script>
+<script>
+	function addtoms(whatiwannadd) {
+		if (whatiwannadd === null) {
+
+		} else {
+		var existing = localStorage.getItem("mystorage");
+			if (existing === null){
+				var addnew = whatiwannadd;
+			}
+			else{
+      	var addnew = existing + ',' + whatiwannadd;
+    	}
+      localStorage.setItem("mystorage", addnew);
+    	}
+    }
+
+	function cekpassOne(thepass) {
+	  if (thepass == 'white') {
+	    addtoms('handkerchief');
+	    document.getElementById('yay-one').innerHTML = 'Nice Job! You have collected an item!';
+	    document.getElementById('question-one').style.display='none';
+	    document.getElementById('collect-one').style.display='none';
+	    document.getElementById('pass1').style.display='none';
+	  } else {
+	    document.getElementById('pass1').value ='';
+			document.getElementById('handkerchief-error').style.display='block';
+			document.getElementById('handkerchief-error').style.opacity='1';
+			document.getElementById('handkerchief-msg').style.display='none';
+	  }
+	}
+
+	 function cekpassTwo(thepass) {
+    if (thepass == 'X') {
+      addtoms('comb');
+      document.getElementById('yay-two').innerHTML = 'Nice Job! You have collected an item!';
+      document.getElementById('question-two').style.display='none';
+      document.getElementById('collect-two').style.display='none';
+      document.getElementById('pass2').style.display='none';
+    } else {
+	    document.getElementById('pass2').value ='';
+			document.getElementById('comb-error').style.display='block';
+			document.getElementById('comb-error').style.opacity='1';
+			document.getElementById('comb-msg').style.display='none';
+    }
+	}
+
+
+	function escape(){
+			var x = localStorage.getItem("mystorage");
+			if (x.includes("houseone") == false) {
+			var notok = '1';
+			}
+			var notok = '';
+			if (x.includes("handkerchief") == false) {
+			var notok = '1';
+			}
+			if (x.includes("comb") == false) {
+			var notok = '1';
+			}
+			if (x.includes("quill") == false) {
+			var notok = '1';
+			}
+			if (x.includes("lotus") == false) {
+			var notok = '1';
+			}
+			if (x.includes("apple") == false) {
+			var notok = '1';
+			}
+		 var x = localStorage.getItem("mystorage");
+			if (notok == '') {
+			  document.getElementById('congrats').style.display = "block";
+			  document.getElementById('congrats').style.opacity = "1";
+			} else {
+			  document.getElementById('cannot-msg').style.display = "block";
+			  document.getElementById('cannot-msg').style.opacity = "1";
+			}
+	}
+		
+</script>
+</html>
