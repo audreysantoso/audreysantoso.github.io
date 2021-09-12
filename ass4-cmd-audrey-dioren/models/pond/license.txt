@@ -1,0 +1,11 @@
+Model Information:
+* title:	Abandoned pond
+* source:	https://sketchfab.com/3d-models/abandoned-pond-018af3b933c8452c9744bb7d5ba3fa34
+* author:	adamaf (https://sketchfab.com/adamaf)
+
+Model License:
+* license type:	CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)
+* requirements:	Author must be credited. No commercial use. Modified versions must have the same license.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Abandoned pond" (https://sketchfab.com/3d-models/abandoned-pond-018af3b933c8452c9744bb7d5ba3fa34) by adamaf (https://sketchfab.com/adamaf) licensed under CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)
