@@ -1,0 +1,210 @@
+body{
+    overflow: hidden;
+}
+
+html{
+    overflow: hidden;
+}
+
+.screen-black{
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000000000;
+}
+
+.msg-copy{
+    background: #FFFFFF;
+    border-radius: 25px;
+    padding: 30px 50px 30px 50px;
+    width: 500px;
+    color: #346CEA;
+    text-align: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 29px;
+    line-height: 134.52%;
+    position: fixed;
+    left: calc(50% - 250px);
+    top: calc(50% - 60px);
+    display: none;
+    z-index: 100000000000000;
+}
+
+.fin-img{
+    width: 530px;
+    margin-left: calc(50vw - 265px);
+    margin-top: -50px;
+    display: block;
+}
+
+h1{
+    width: 600px;
+    margin-left: calc(50vw - 300px);
+    color: #1A53D3;
+    text-align: center;
+    margin-top: 40px;
+}
+
+p{
+    width: 600px;
+    margin-left: calc(50vw - 300px);
+    text-align: center;
+}
+
+.buttoncon{
+    margin-top: 30px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.above-the-fold-lp, img, h1, p, .buttoncon{
+    z-index: 10;
+}
+
+#copied{
+    display: none;
+}
+
+@media screen and (max-width: 1200px){ 
+    body{
+        overflow-y: scroll;
+        padding-bottom: 100px;
+    }
+    
+    html{
+        overflow-y: scroll;
+    }
+
+    .fin-img{
+        margin-top: 0px;
+        width: 400px;
+        margin-left: calc(50vw - 200px);
+    }
+    
+    h1{
+        width: 70vw;
+        margin-left: 15vw;
+        margin-top: 20px;
+    }
+
+    p{
+        width: 80vw;
+        margin-left: 10vw;
+    }
+
+    .buttoncon{
+        margin-top: 20px;
+    }
+}
+
+
+@media screen and (max-width: 500px){ 
+    .msg-copy{
+        padding: 30px 50px 30px 50px;
+        width: 300px;
+        font-size: 29px;
+        left: calc(50% - 150px);
+        top: calc(50% - 60px);
+    }
+
+    body{
+        overflow: hidden;
+    }
+    
+    html{
+        overflow: hidden;
+    }
+
+    .fin-img{
+        margin-top: 50px;
+        width: 300px;
+        margin-left: calc(50vw - 150px);
+    }
+    
+    h1{
+        font-size: 25px;
+    }
+
+    p{
+        width: 80vw;
+        margin-left: 10vw;
+    }
+
+}@media screen and (max-width: 500px){ 
+    .msg-copy{
+        width: 300px;
+        left: calc(50% - 150px);
+    }
+
+    body{
+        overflow: hidden;
+    }
+    
+    html{
+        overflow: hidden;
+    }
+
+    .fin-img{
+        margin-top: 50px;
+        width: 300px;
+        margin-left: calc(50vw - 150px);
+    }
+    
+    h1{
+        font-size: 25px;
+    }
+
+    p{
+        width: 80vw;
+        margin-left: 10vw;
+    }
+
+}
+
+@media screen and (max-width: 300px){ 
+    .msg-copy{
+        width: 200px;
+        left: calc(50% - 100px);
+    }
+
+    body{
+        overflow-y: scroll;
+    }
+    
+    html{
+        overflow-y: scroll;
+    }
+
+    .fin-img{
+        margin-top: 50px;
+        width: 280px;
+        margin-left: calc(50vw - 140px);
+    }
+    
+    h1{
+        font-size: 25px;
+    }
+
+    p{
+        width: 80vw;
+        margin-left: 10vw;
+    }
+
+}
+
+@media screen and (max-width: 400px){ 
+    .fin-img{
+        margin-top: 10px;
+    }
+    button.button{
+         padding: 8px 12px;
+    }
+}
