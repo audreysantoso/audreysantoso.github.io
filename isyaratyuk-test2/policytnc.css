@@ -1,0 +1,39 @@
+main{
+    margin-top: 100px;
+}
+
+main .container{
+    width: 65%;
+}
+
+footer{
+    margin-top: 140px;
+}
+
+p{
+    margin-top: 40px;
+}
+
+p.paragraph{
+    margin-top: 0;
+}
+
+h2{
+    font-weight: 700;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-size: 18px;
+    line-height: 147%;
+    color: #6A6F7E;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+li, ul{
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 147%;
+    color: #6A6F7E;
+}
