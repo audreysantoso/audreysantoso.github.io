@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <!--COMPULSORY-->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Isyarat Yuk</title>
+    
+        <!--FONTS-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+        <!--BOOTSTRAP-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+        <!--STYLES-->
+        <link rel="stylesheet" href="global.css">
+        <link rel="stylesheet" href="video.css">
+    </head>
+    <body id="xx">
+        <div id="parent">
+            <div id="landscapeonly">
+                <div id="screen-black" class="screen-black"></div> 
+                
+                <!--HALO POP UP-->
+                <div id="pop-up-1" class="d-flex justify-content-center">
+                    <img src="images/halo.png"/>
+                    <h1 class="pop-up-h1">
+                        Kami sangat senang kamu tertarik untuk belajar BISINDO!
+                    </h1>
+                    <p class="pop-up-p">
+                        Kamu akan menonton video bahasa isyarat dan menjawab pertanyaannya. Durasi sesi : 5 menit.
+                    </p>
+                    <button class="pop-up-button primary" onclick="removePopUp('pop-up-1'); mulaiBelajarPlay();">
+                        Mulai belajar
+                    </button>
+                </div>
+                <button id="demo-play-pause" class="play-pause" style="background-image: url('images/play.svg');"></button>
+
+<!--------------LEARN-------LEARN-------LEARN-------LEARN-------LEARN-------LEARN---------------->    
+                <div id="learn" class="lecture-cont">
+
+                    <!--BACK BUTTON-->
+                    <button class="back-button" id="learn-back" onclick="backButton('learn-vid', 'learn-play-pause', 'learn-pop-up-exit', 'learn-screen-black')"><img src="images/back.svg"/></button>
+
+
+                    <!--EXIT POP UP-->
+                    <div id="learn-pop-up-exit" class="d-flex justify-content-center pop-up-exit">
+                        <img src="images/exit.png"/>
+                        <h1 class="pop-up-h1">
+                            Kamu yakin mau pergi?
+                        </h1>
+                        <p class="pop-up-p">
+                            Kamu belum selesai belajar BISINDO bersamaku. Kalau kamu keluar sekarang, kamu akan harus mengulang pelajaran ini dari awal.
+                        </p>
+                        <button class="pop-up-button primary" onclick="backContinueButton('learn-vid', 'learn-play-pause', 'learn-pop-up-exit', 'learn-screen-black')">Lanjut belajar</button>
+                        <a href="index.html" class="pop-up-button secondary">Keluar ke beranda</a>
+                    </div>
+
+                    <!--INFO BUTTON-->
+                    <button class="info-button" id="info-learn" onclick="backButton('learn-vid', 'learn-play-pause', 'learn-pop-up-info', 'learn-screen-black')"><img src="images/info.svg"/></button>
+
+                    <!--INFO POP UP-->
+                    <div class="pop-up-info" id="learn-pop-up-info">
+                        <button class="info-close-button" onclick="backContinueButton('learn-vid', 'learn-play-pause', 'learn-pop-up-info', 'learn-screen-black')"><img src="images/close.svg"/></button>
+                        <div class="pop-up-info-cont">
+                            <img src="images/info.png" class="info-img"/>
+                            <h1 class="pop-up-h1">
+                                Hal yang wajib kamu ketahui tentang Bahasa Isyarat di Indonesia!
+                            </h1>
+                            <div class="info-paragraph-left">
+                                <h2 class="pop-up-h4">
+                                    Bahasa Isyarat di Indonesia
+                                </h2>
+                                <p>
+                                    Bahasa isyarat adalah cara komunikasi yang dilakukan dengan gerakan tubuh dan bibir dari pada suara kita. Di Indonesia ada 2 jenis bahasa isyarat, yaitu Sistem Isyarat Bahasa Indonesia (SIBI) dan Bahasa Isyarat Indonesia (BISINDO). Perbedaan paling jelas antar keduanya adalah SIBI memakai satu tangan sedangkan BISINDO memakai dengan dua tangan.  
+                                </p>
+                            </div>
+                            <div class="info-paragraph-right">
+                                <h2 class="pop-up-h4">
+                                    Mengenai BISINDO
+                                </h2>
+                                <p>
+                                    BISINDO merupakan bahasa isyarat yang biasa digunakan oleh kalangan difabel dan masyarat inklusi dalam berkomunikasi sehari-hari. BISINDO muncul secara alami dari komunitas Teman Tuli, serta lebih praktis dan mudah untuk digunakan sehari-hari.
+                                </p>
+                            </div>
+                            <div class="info-paragraph-bottom">
+                                <h2 class="pop-up-h4">
+                                    Manfaat belajar bahasa isyarat
+                                </h2>
+                                <div class="first-manfaat-6 manfaat-6">
+                                    <img src="images/info-1.png"/>
+                                    <p>Meningkatkan Kepedulian</p>
+                                </div>
+
+                                <div class="manfaat-6">
+                                    <img src="images/info-2.png"/>
+                                    <p>Mudah Bersosialisasi</p>
+                                </div>
+
+                                <div class= "manfaat-6">
+                                    <img src="images/info-3.png"/>
+                                    <p>Mengasah Kemampuan Otak</p>
+                                </div>
+
+                                <div class= "manfaat-6">
+                                    <img src="images/info-4.png"/>
+                                    <p>Nilai Jual untuk Kerja</p>
+                                </div>
+
+                                <div class= "manfaat-6">
+                                    <img src="images/info-5.png"/>
+                                    <p>Sumber Mencari Uang</p>
+                                </div>
+
+                                <div class= "manfaat-6">
+                                    <img src="images/info-6.png"/>
+                                    <p>Menjadi Pekerjaan</p>
+                                </div>
+
+                                <ul>
+                                    <li>Meningkatkan Kepedulian</li>
+                                    <li>Mudah Bersosialisasi</li>
+                                    <li>Mengasah Kemampuan Otak</li>
+                                    <li>Nilai Jual untuk Kerja</li>
+                                    <li>Sumber Mencari Uang</li>
+                                    <li>Menjadi Pekerjaan</li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!--CONTENT-->
+                    <div id="learn-msg-correct" class="msg-correct pop-up-h1">Yay jawabanmu benar!</div>
+                    <div id="learn-msg-wrong1" class="msg-wrong pop-up-h1">Oops! Jawabanmu masih salah.
+                        Coba lagi ya!</div>
+                    <div id="learn-msg-wrong2" class="msg-wrong pop-up-h1">Oops! Jawabanmu masih salah.
+                        Coba lagi ya!</div>
+
+                    <div id="learn-pop-up-question" class="pop-up-questions">
+                        <h1 class="pop-up-h1">
+                            Bagaimana cara bilang “Belajar” dalam bahasa isyarat?
+                        </h1>
+                        <p class="pop-up-p">
+                            Klik jawaban yang benar!
+                        </p>
+                        <video id="learn-correct" class="choices" onclick="learnCorrect()" loop>
+                            <source src="images/learn/learnc.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <video id="learn-wrongA" class="choices" onclick="learnWrongA()" loop>
+                            <source src="images/learn/learnw1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <video id="learn-wrongB" class="choices" onclick="learnWrongB()" loop>
+                            <source src="images/learn/learnw2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <button class="pop-up-tertiary" onclick="learnNext()">Lewati pertanyaan ini ></button>
+                    </div>
+
+                    <div id="learn-screen-black" class="screen-black"></div>
+
+                    <div id="learn-progress-cont" class="progress-cont">
+                        <div class="inner-progress-cont">
+                            <progress id="learn-progress" max="100" value="0">Progress</progress>
+                            <div class="progress-dot learn-progress-dot"></div>
+                        </div>
+                        <div class="inner-progress-cont">
+                            <progress class="eat-progress" max="100" value="0">Progress</progress>
+                            <div class="progress-dot eat-progress-dot"></div>
+                        </div>
+                        <div class="inner-progress-cont">
+                            <progress class="help-progress" max="100" value="0">Progress</progress>
+                            <div class="progress-dot help-progress-dot"></div>
+                        </div>
+                        <div class="inner-progress-cont">
+                            <progress class="thx-progress" max="100" value="0">Progress</progress>
+                            <div class="progress-dot thx-progress-dot"></div>
+                        </div>
+                        <div class="inner-progress-cont">  
+                            <progress class="urwel-progress" max="100" value="0">Progress</progress>
+                            <div class="progress-dot urwel-progress-dot"></div>
+                        </div>
+                        <div class="inner-progress-cont">
+                            <progress class="outro-progress" max="100" value="0">Progress</progress>
+                        </div>
+                    </div>
+                    
+                    <button id="learn-play-pause" class="play-pause" onclick="learnPlayPause()"></button>
+                    
+                    <div class="screen-gradient"></div>
+                    <video id="learn-vid" class="lecture-vid">
+                        <source src="images/learn/opening.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    
+                </div>
+
+<!--------------EAT------EAT------EAT------EAT------EAT------EAT-------------------------------->
+                <div id="eat" class="lecture-cont">
+                    <!--BACK BUTTON-->
+                    <button class="back-button" id="eat-back" onclick="backButton('eat-vid', 'eat-play-pause', 'eat-pop-up-exit', 'eat-screen-black')"><img src="images/back.svg"/></button>
+
+
+                    <!--EXIT POP UP-->
+                    <div id="eat-pop-up-exit" class="d-flex justify-content-center pop-up-exit">
+                        <img src="images/exit.png"/>
+                        <h1 class="pop-up-h1">
+                            Kamu yakin mau pergi?
+                        </h1>
+                        <p class="pop-up-p">
+                            Kamu belum selesai belajar BISINDO bersamaku. Kalau kamu keluar sekarang, kamu akan harus mengulang pelajaran ini dari awal.
+                        </p>
+                        <button class="pop-up-button primary" onclick="backContinueButton('eat-vid', 'eat-play-pause', 'eat-pop-up-exit', 'eat-screen-black')">Lanjut belajar</button>
+                        <a href="index.html" class="pop-up-button secondary">Keluar ke beranda</a>
+                    </div>
+
+                    <!--INFO BUTTON-->
+                    <button class="info-button" id="info-eat" onclick="backButton('eat-vid', 'eat-play-pause', 'eat-pop-up-info', 'eat-screen-black')"><img src="images/info.svg"/></button>
+
+                    <!--INFO POP UP-->
+                    <div class="pop-up-info" id="eat-pop-up-info">
+                        <button class="info-close-button" onclick="backContinueButton('eat-vid', 'eat-play-pause', 'eat-pop-up-info', 'eat-screen-black')"><img src="images/close.svg"/></button>
+                        <div class="pop-up-info-cont">
+                            <img src="images/info.png" class="info-img"/>
+                            <h1 class="pop-up-h1">
+                                Hal yang wajib kamu ketahui tentang Bahasa Isyarat di Indonesia!
+                            </h1>
+                            <div class="info-paragraph-left">
+                                <h2 class="pop-up-h4">
+                                    Bahasa Isyarat di Indonesia
+                                </h2>
+                                <p>
+                                    Bahasa isyarat adalah cara komunikasi yang dilakukan dengan gerakan tubuh dan bibir dari pada suara kita. Di Indonesia ada 2 jenis bahasa isyarat, yaitu Sistem Isyarat Bahasa Indonesia (SIBI) dan Bahasa Isyarat Indonesia (BISINDO). Perbedaan paling jelas antar keduanya adalah SIBI memakai satu tangan sedangkan BISINDO memakai dengan dua tangan.  
+                                </p>
+                            </div>
+                            <div class="info-paragraph-right">
+                                <h2 class="pop-up-h4">
+                                    Mengenai BISINDO
+                                </h2>
+                                <p>
+                                    BISINDO merupakan bahasa isyarat yang biasa digunakan oleh kalangan difabel dan masyarat inklusi dalam berkomunikasi sehari-hari. BISINDO muncul secara alami dari komunitas Teman Tuli, serta lebih praktis dan mudah untuk digunakan sehari-hari.
+                                </p>
+                            </div>
+                            <div class="info-paragraph-bottom">
+                                <h2 class="pop-up-h4">
+                                    Manfaat belajar bahasa isyarat
+                                </h2>
+                                <div class="first-manfaat-6 manfaat-6">
+                                    <img src="images/info-1.png"/>
+                                    <p>Meningkatkan Kepedulian</p>
+                                </div>
+
+                                <div class="manfaat-6">
+                                    <img src="images/info-2.png"/>
+                                    <p>Mudah Bersosialisasi</p>
+                                </div>
+
+                                <div class= "manfaat-6">
+                                    <img src="images/info-3.png"/>
+                                    <p>Mengasah Kemampuan Otak</p>
+                                </div>
+
+                                <div class= "manfaat-6">
+                                    <img src="images/info-4.png"/>
+                                    <p>Nilai Jual untuk Kerja</p>
+                                </div>
+
+                                <div class= "manfaat-6">
+                                    <img src="images/info-5.png"/>
+                                    <p>Sumber Mencari Uang</p>
+                                </div>
+
+                                <div class= "manfaat-6">
+                                    <img src="images/info-6.png"/>
+                                    <p>Menjadi Pekerjaan</p>
+                                </div>
+
+                                <ul>
+                                    <li>Meningkatkan Kepedulian</li>
+                                    <li>Mudah Bersosialisasi</li>
+                                    <li>Mengasah Kemampuan Otak</li>
+                                    <li>Nilai Jual untuk Kerja</li>
+                                    <li>Sumber Mencari Uang</li>
+                                    <li>Menjadi Pekerjaan</li>
+                                    
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!--CONTENT-->
+                    <div id="eat-msg-correct" class="msg-correct pop-up-h1">Yay jawabanmu benar!</div>
+                    <div id="eat-msg-wrong1" class="msg-wrong pop-up-h1">Oops! Jawabanmu masih salah.
+                        Coba lagi ya!</div>
+                    <div id="eat-msg-wrong2" class="msg-wrong pop-up-h1">Oops! Jawabanmu masih salah.
+                        Coba lagi ya!</div>
+
+                    <div id="eat-pop-up-question" class="pop-up-questions">
+                        <h1 class="pop-up-h1">
+                            Bagaimana cara bilang “Makan” dalam bahasa isyarat?
+                        </h1>
+                        <p class="pop-up-p">
+                            Klik jawaban yang benar!
+                        </p>
+                        <video id="eat-wrongA" class="choices" onclick="eatWrongA()" loop>
+                            <source src="images/eat/eatw1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <video id="eat-wrongB" class="choices" onclick="eatWrongB()" loop>
+                            <source src="images/eat/eatw2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <video id="eat-correct" class="choices" onclick="eatCorrect()" loop>
+                            <source src="images/eat/eatc.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <button class="pop-up-tertiary" onclick="eatNext()">Lewati pertanyaan ini ></button>
+                    </div>
+
+                    <div id="eat-screen-black" class="screen-black"></div>
+
+                    <div id="eat-progress-cont" class="progress-cont">
+                        <div class="inner-progress-cont">
+                            <progress class="learn-progress" max="100" value="100">Progress</progress>
+                            <div class="progress-dot learn-progress-dot" id="learn-progress-dot"></div>
+                        </div>
+                        <div class="inner-progress-cont">
+                            <progress id="eat-progress" max="100" value="0">Progress</progress>
+                            <div class="progress-dot eat-progress-dot"></div>
+                        </div>
+                        <div class="inner-progress-cont">
+                            <progress class="help-progress" max="100" value="0">Progress</progress>
+                            <div class="progress-dot help-progress-dot"></div>
+                        </div>
+                        <div class="inner-progress-cont">
+                            <progress class="thx-progress" max="100" value="0">Progress</progress>
+                            <div class="progress-dot thx-progress-dot"></div>
+                        </div>
+                        <div class="inner-progress-cont">  
+                            <progress class="urwel-progress" max="100" value="0">Progress</progress>
+                            <div class="progress-dot urwel-progress-dot"></div>
+                        </div>
+                        <div class="inner-progress-cont">
+                            <progress class="outro-progress" max="100" value="0">Progress</progress>
+                        </div>
+                    </div>
+
+                    <button id="eat-play-pause" class="play-pause" onclick="eatPlayPause()"></button>
+
+                    <div class="screen-gradient"></div>
+                    <video id="eat-vid" class="lecture-vid">
+                        <source src="images/eat/eat.mp4" type="video/mp4">
+                        Your browser does not support the video tag. 
+                    </video>
+
+                </div>
+
+<!--------------HELP------HELP------HELP------HELP------HELP------HELP--------------------------->
+                <div id="help" class="lecture-cont">
+                    <!--BACK BUTTON-->
+                    <button class="back-button" id="help-back" onclick="backButton('help-vid', 'help-play-pause', 'help-pop-up-exit', 'help-screen-black')"><img src="images/back.svg"/></button>
+
+
+                    <!--EXIT POP UP-->
+                    <div id="help-pop-up-exit" class="d-flex justify-content-center pop-up-exit">
+                        <img src="images/exit.png"/>
+                        <h1 class="pop-up-h1">
+                            Kamu yakin mau pergi?
+                        </h1>
+                        <p class="pop-up-p">
+                            Kamu belum selesai belajar BISINDO bersamaku. Kalau kamu keluar sekarang, kamu akan harus mengulang pelajaran ini dari awal.
+                        </p>
+                        <button class="pop-up-button primary" onclick="backContinueButton('help-vid', 'help-play-pause', 'help-pop-up-exit', 'help-screen-black')">Lanjut belajar</button>
+                        <a href="index.html" class="pop-up-button secondary">Keluar ke beranda</a>
+                    </div>
+
+                     <!--INFO BUTTON-->
+                     <button class="info-button" id="info-help" onclick="backButton('help-vid', 'help-play-pause', 'help-pop-up-info', 'help-screen-black')"><img src="images/info.svg"/></button>
+
+                     <!--INFO POP UP-->
+                     <div class="pop-up-info" id="help-pop-up-info">
+                         <button class="info-close-button" onclick="backContinueButton('help-vid', 'help-play-pause', 'help-pop-up-info', 'help-screen-black')"><img src="images/close.svg"/></button>
+                         <div class="pop-up-info-cont">
+                             <img src="images/info.png" class="info-img"/>
+                             <h1 class="pop-up-h1">
+                                Hal yang wajib kamu ketahui tentang Bahasa Isyarat di Indonesia!
+                             </h1>
+                             <div class="info-paragraph-left">
+                                 <h2 class="pop-up-h4">
+                                     Bahasa Isyarat di Indonesia
+                                 </h2>
+                                 <p>
+                                     Bahasa isyarat adalah cara komunikasi yang dilakukan dengan gerakan tubuh dan bibir dari pada suara kita. Di Indonesia ada 2 jenis bahasa isyarat, yaitu Sistem Isyarat Bahasa Indonesia (SIBI) dan Bahasa Isyarat Indonesia (BISINDO). Perbedaan paling jelas antar keduanya adalah SIBI memakai satu tangan sedangkan BISINDO memakai dengan dua tangan.  
+                                 </p>
+                             </div>
+                             <div class="info-paragraph-right">
+                                 <h2 class="pop-up-h4">
+                                     Mengenai BISINDO
+                                 </h2>
+                                 <p>
+                                     BISINDO merupakan bahasa isyarat yang biasa digunakan oleh kalangan difabel dan masyarat inklusi dalam berkomunikasi sehari-hari. BISINDO muncul secara alami dari komunitas Teman Tuli, serta lebih praktis dan mudah untuk digunakan sehari-hari.
+                                 </p>
+                             </div>
+                             <div class="info-paragraph-bottom">
+                                 <h2 class="pop-up-h4">
+                                     Manfaat belajar bahasa isyarat
+                                 </h2>
+                                 <div class="first-manfaat-6 manfaat-6">
+                                     <img src="images/info-1.png"/>
+                                     <p>Meningkatkan Kepedulian</p>
+                                 </div>
+ 
+                                 <div class="manfaat-6">
+                                     <img src="images/info-2.png"/>
+                                     <p>Mudah Bersosialisasi</p>
+                                 </div>
+ 
+                                 <div class= "manfaat-6">
+                                     <img src="images/info-3.png"/>
+                                     <p>Mengasah Kemampuan Otak</p>
+                                 </div>
+ 
+                                 <div class= "manfaat-6">
+                                     <img src="images/info-4.png"/>
+                                     <p>Nilai Jual untuk Kerja</p>
+                                 </div>
+ 
+                                 <div class= "manfaat-6">
+                                     <img src="images/info-5.png"/>
+                                     <p>Sumber Mencari Uang</p>
+                                 </div>
+ 
+                                 <div class= "manfaat-6">
+                                     <img src="images/info-6.png"/>
+                                     <p>Menjadi Pekerjaan</p>
+                                 </div>
+
+                                 <ul>
+                                    <li>Meningkatkan Kepedulian</li>
+                                    <li>Mudah Bersosialisasi</li>
+                                    <li>Mengasah Kemampuan Otak</li>
+                                    <li>Nilai Jual untuk Kerja</li>
+                                    <li>Sumber Mencari Uang</li>
+                                    <li>Menjadi Pekerjaan</li>
+                                    
+                                </ul>
+                             </div>
+                         </div>
+                     </div>
+
+                    <!--CONTENT-->
+                    <div id="help-msg-correct" class="msg-correct pop-up-h1">Yay jawabanmu benar!</div>
+                    <div id="help-msg-wrong1" class="msg-wrong pop-up-h1">Oops! Jawabanmu masih salah.
+                        Coba lagi ya!</div>
+                    <div id="help-msg-wrong2" class="msg-wrong pop-up-h1">Oops! Jawabanmu masih salah.
+                        Coba lagi ya!</div>
+
+                    <div id="help-pop-up-question" class="pop-up-questions">
+                        <h1 class="pop-up-h1">
+                            Bagaimana cara bilang “Tolong” dalam bahasa isyarat?
+                        </h1>
+                        <p class="pop-up-p">
+                            Klik jawaban yang benar!
+                        </p>
+                        <video id="help-wrongA" class="choices" onclick="helpWrongA()" loop>
+                            <source src="images/help/helpw1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <video id="help-correct" class="choices" onclick="helpCorrect()" loop>
+                            <source src="images/help/helpc.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <video id="help-wrongB" class="choices" onclick="helpWrongB()" loop>
+                            <source src="images/help/helpw2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <button class="pop-up-tertiary" onclick="helpNext()">Lewati pertanyaan ini ></button>
+                    </div>
+
+                    <div id="help-screen-black" class="screen-black"></div>
+
+                    <div id="help-progress-cont" class="progress-cont">
+                        <div class="inner-progress-cont">
+                            <progress class="learn-progress" max="100" value="100">Progress</progress>
+                            <div class="progress-dot learn-progress-dot" id="eat-learn-progress-dot"></div>
+                        </div>
+                        <div class="inner-progress-cont">
+                            <progress class="eat-progress" max="100" value="100">Progress</progress>
+                        <div class="progress-dot eat-progress-dot" id="eat-progress-dot"></div>
+                        </div>
+                        <div class="inner-progress-cont">
+                            <progress id="help-progress" max="100" value="0">Progress</progress>
+                            <div class="progress-dot help-progress-dot"></div>
+                        </div>
+                        <div class="inner-progress-cont">
+                            <progress class="thx-progress" max="100" value="0">Progress</progress>
+                            <div class="progress-dot thx-progress-dot"></div>
+                        </div>
+                        <div class="inner-progress-cont">  
+                            <progress class="urwel-progress" max="100" value="0">Progress</progress>
+                            <div class="progress-dot urwel-progress-dot"></div>
+                        </div>
+                        <div class="inner-progress-cont">
+                            <progress class="outro-progress" max="100" value="0">Progress</progress>
+                        </div>
+                    </div>
+
+                    <button id="help-play-pause" class="play-pause"  onclick="helpPlayPause()"></button>
+
+                    <div class="screen-gradient"></div>
+                    <video id="help-vid" class="lecture-vid">
+                        <source src="images/help/help.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+
+                </div>
+
+<!------------THANKS------THANKS------THANKS------THANKS------THANKS------THANKS------------------>       
+                <div id="thx" class="lecture-cont">
+                    <!--BACK BUTTON-->
+                    <button class="back-button" id="thx-back" onclick="backButton('thx-vid', 'thx-play-pause', 'thx-pop-up-exit', 'thx-screen-black')"><img src="images/back.svg"/></button>
+
+
+                    <!--EXIT POP UP-->
+                    <div id="thx-pop-up-exit" class="d-flex justify-content-center pop-up-exit">
+                        <img src="images/exit.png"/>
+                        <h1 class="pop-up-h1">
+                            Kamu yakin mau pergi?
+                        </h1>
+                        <p class="pop-up-p">
+                            Kamu belum selesai belajar BISINDO bersamaku. Kalau kamu keluar sekarang, kamu akan harus mengulang pelajaran ini dari awal.
+                        </p>
+                        <button class="pop-up-button primary" onclick="backContinueButton('thx-vid', 'thx-play-pause', 'thx-pop-up-exit', 'thx-screen-black')">Lanjut belajar</button>
+                        <a href="index.html" class="pop-up-button secondary">Keluar ke beranda</a>
+                    </div>
+
+                    <!--INFO BUTTON-->
+                    <button class="info-button" id="info-thx" onclick="backButton('thx-vid', 'thx-play-pause', 'thx-pop-up-info', 'thx-screen-black')"><img src="images/info.svg"/></button>
+
+                    <!--INFO POP UP-->
+                    <div class="pop-up-info" id="thx-pop-up-info">
+                        <button class="info-close-button" onclick="backContinueButton('thx-vid', 'thx-play-pause', 'thx-pop-up-info', 'thx-screen-black')"><img src="images/close.svg"/></button>
+                        <div class="pop-up-info-cont">
+                            <img src="images/info.png" class="info-img"/>
+                            <h1 class="pop-up-h1">
+                                Hal yang wajib kamu ketahui tentang Bahasa Isyarat di Indonesia!
+                            </h1>
+                            <div class="info-paragraph-left">
+                                <h2 class="pop-up-h4">
+                                    Bahasa Isyarat di Indonesia
+                                </h2>
+                                <p>
+                                    Bahasa isyarat adalah cara komunikasi yang dilakukan dengan gerakan tubuh dan bibir dari pada suara kita. Di Indonesia ada 2 jenis bahasa isyarat, yaitu Sistem Isyarat Bahasa Indonesia (SIBI) dan Bahasa Isyarat Indonesia (BISINDO). Perbedaan paling jelas antar keduanya adalah SIBI memakai satu tangan sedangkan BISINDO memakai dengan dua tangan.  
+                                </p>
+                            </div>
+                            <div class="info-paragraph-right">
+                                <h2 class="pop-up-h4">
+                                    Mengenai BISINDO
+                                </h2>
+                                <p>
+                                    BISINDO merupakan bahasa isyarat yang biasa digunakan oleh kalangan difabel dan masyarat inklusi dalam berkomunikasi sehari-hari. BISINDO muncul secara alami dari komunitas Teman Tuli, serta lebih praktis dan mudah untuk digunakan sehari-hari.
+                                </p>
+                            </div>
+                            <div class="info-paragraph-bottom">
+                                <h2 class="pop-up-h4">
+                                    Manfaat belajar bahasa isyarat
+                                </h2>
+                                <div class="first-manfaat-6 manfaat-6">
+                                    <img src="images/info-1.png"/>
+                                    <p>Meningkatkan Kepedulian</p>
+                                </div>
+
+                                <div class="manfaat-6">
+                                    <img src="images/info-2.png"/>
+                                    <p>Mudah Bersosialisasi</p>
+                                </div>
+
+                                <div class= "manfaat-6">
+                                    <img src="images/info-3.png"/>
+                                    <p>Mengasah Kemampuan Otak</p>
+                                </div>
+
+                                <div class= "manfaat-6">
+                                    <img src="images/info-4.png"/>
+                                    <p>Nilai Jual untuk Kerja</p>
+                                </div>
+
+                                <div class= "manfaat-6">
+                                    <img src="images/info-5.png"/>
+                                    <p>Sumber Mencari Uang</p>
+                                </div>
+
+                                <div class= "manfaat-6">
+                                    <img src="images/info-6.png"/>
+                                    <p>Menjadi Pekerjaan</p>
+                                </div>
+
+                                <ul>
+                                    <li>Meningkatkan Kepedulian</li>
+                                    <li>Mudah Bersosialisasi</li>
+                                    <li>Mengasah Kemampuan Otak</li>
+                                    <li>Nilai Jual untuk Kerja</li>
+                                    <li>Sumber Mencari Uang</li>
+                                    <li>Menjadi Pekerjaan</li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!--CONTENT-->
+                    <div id="thx-msg-correct" class="msg-correct pop-up-h1">Yay jawabanmu benar!</div>
+                    <div id="thx-msg-wrong1" class="msg-wrong pop-up-h1">Oops! Jawabanmu masih salah.
+                        Coba lagi ya!</div>
+                    <div id="thx-msg-wrong2" class="msg-wrong pop-up-h1">Oops! Jawabanmu masih salah.
+                        Coba lagi ya!</div>
+
+                    <div id="thx-pop-up-question" class="pop-up-questions">
+                        <h1 class="pop-up-h1">
+                            Bagaimana cara bilang “Terima Kasih” dalam bahasa isyarat?
+                        </h1>
+                        <p class="pop-up-p">
+                            Klik jawaban yang benar!
+                        </p>
+                        <video id="thx-correct" class="choices" onclick="thxCorrect()" loop>
+                            <source src="images/thx/thxc.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <video id="thx-wrongA" class="choices" onclick="thxWrongA()" loop>
+                            <source src="images/thx/thxw1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <video id="thx-wrongB" class="choices" onclick="thxWrongB()" loop>
+                            <source src="images/thx/thxw2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <button class="pop-up-tertiary" onclick="thxNext()">Lewati pertanyaan ini ></button>
+                    </div>
+
+                    <div id="thx-screen-black" class="screen-black"></div>
+
+                    <div id="thx-progress-cont" class="progress-cont">
+                        <div class="inner-progress-cont">
+                            <progress class="learn-progress" max="100" value="100">Progress</progress>
+                            <div class="progress-dot learn-progress-dot" id="help-learn-progress-dot"></div>
+                        </div>
+                        <div class="inner-progress-cont">
+                            <progress class="eat-progress" max="100" value="100">Progress</progress>
+                        <div class="progress-dot eat-progress-dot" id="help-eat-progress-dot"></div>
+                        </div>
+                        <div class="inner-progress-cont">
+                            <progress class="help-progress" max="100" value="100">Progress</progress>
+                            <div class="progress-dot help-progress-dot" id="help-progress-dot"></div>
+                        </div>
+                        <div class="inner-progress-cont">
+                            <progress id="thx-progress" max="100" value="100">Progress</progress>
+                            <div class="progress-dot thx-progress-dot"></div>
+                        </div>
+                        <div class="inner-progress-cont">  
+                            <progress class="urwel-progress" max="100" value="0">Progress</progress>
+                            <div class="progress-dot urwel-progress-dot"></div>
+                        </div>
+                        <div class="inner-progress-cont">
+                            <progress class="outro-progress" max="100" value="0">Progress</progress>
+                        </div>
+                    </div>
+
+                    <button id="thx-play-pause" class="play-pause" onclick="thxPlayPause()"></button>
+
+                    <div class="screen-gradient"></div>
+                    <video id="thx-vid" class="lecture-vid">
+                        <source src="images/thx/thx.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+
+                </div>
+
+<!--------------URWEL------URWEL------URWEL------URWEL------URWEL------URWEL--------------------->        
+                <div id="urwel" class="lecture-cont">
+                    <!--BACK BUTTON-->
+                    <button class="back-button" id="urwel-back" onclick="backButton('urwel-vid', 'urwel-play-pause', 'urwel-pop-up-exit', 'urwel-screen-black')"><img src="images/back.svg"/></button>
+
+
+                    <!--EXIT POP UP-->
+                    <div id="urwel-pop-up-exit" class="d-flex justify-content-center pop-up-exit">
+                        <img src="images/exit.png"/>
+                        <h1 class="pop-up-h1">
+                            Kamu yakin mau pergi?
+                        </h1>
+                        <p class="pop-up-p">
+                            Kamu belum selesai belajar BISINDO bersamaku. Kalau kamu keluar sekarang, kamu akan harus mengulang pelajaran ini dari awal.
+                        </p>
+                        <button class="pop-up-button primary" onclick="backContinueButton('urwel-vid', 'urwel-play-pause', 'urwel-pop-up-exit', 'urwel-screen-black')">Lanjut belajar</button>
+                        <a href="index.html" class="pop-up-button secondary">Keluar ke beranda</a>
+                    </div>
+
+                    <!--INFO BUTTON-->
+                    <button class="info-button" id="info-urwel" onclick="backButton('urwel-vid', 'urwel-play-pause', 'urwel-pop-up-info', 'urwel-screen-black')"><img src="images/info.svg"/></button>
+
+                    <!--INFO POP UP-->
+                    <div class="pop-up-info" id="urwel-pop-up-info">
+                        <button class="info-close-button" onclick="backContinueButton('urwel-vid', 'urwel-play-pause', 'urwel-pop-up-info', 'urwel-screen-black')"><img src="images/close.svg"/></button>
+                        <div class="pop-up-info-cont">
+                            <img src="images/info.png" class="info-img"/>
+                            <h1 class="pop-up-h1">
+                                Hal yang wajib kamu ketahui tentang Bahasa Isyarat di Indonesia!
+                            </h1>
+                            <div class="info-paragraph-left">
+                                <h2 class="pop-up-h4">
+                                    Bahasa Isyarat di Indonesia
+                                </h2>
+                                <p>
+                                    Bahasa isyarat adalah cara komunikasi yang dilakukan dengan gerakan tubuh dan bibir dari pada suara kita. Di Indonesia ada 2 jenis bahasa isyarat, yaitu Sistem Isyarat Bahasa Indonesia (SIBI) dan Bahasa Isyarat Indonesia (BISINDO). Perbedaan paling jelas antar keduanya adalah SIBI memakai satu tangan sedangkan BISINDO memakai dengan dua tangan.  
+                                </p>
+                            </div>
+                            <div class="info-paragraph-right">
+                                <h2 class="pop-up-h4">
+                                    Mengenai BISINDO
+                                </h2>
+                                <p>
+                                    BISINDO merupakan bahasa isyarat yang biasa digunakan oleh kalangan difabel dan masyarat inklusi dalam berkomunikasi sehari-hari. BISINDO muncul secara alami dari komunitas Teman Tuli, serta lebih praktis dan mudah untuk digunakan sehari-hari.
+                                </p>
+                            </div>
+                            <div class="info-paragraph-bottom">
+                                <h2 class="pop-up-h4">
+                                    Manfaat belajar bahasa isyarat
+                                </h2>
+                                <div class="first-manfaat-6 manfaat-6">
+                                    <img src="images/info-1.png"/>
+                                    <p>Meningkatkan Kepedulian</p>
+                                </div>
+
+                                <div class="manfaat-6">
+                                    <img src="images/info-2.png"/>
+                                    <p>Mudah Bersosialisasi</p>
+                                </div>
+
+                                <div class= "manfaat-6">
+                                    <img src="images/info-3.png"/>
+                                    <p>Mengasah Kemampuan Otak</p>
+                                </div>
+
+                                <div class= "manfaat-6">
+                                    <img src="images/info-4.png"/>
+                                    <p>Nilai Jual untuk Kerja</p>
+                                </div>
+
+                                <div class= "manfaat-6">
+                                    <img src="images/info-5.png"/>
+                                    <p>Sumber Mencari Uang</p>
+                                </div>
+
+                                <div class= "manfaat-6">
+                                    <img src="images/info-6.png"/>
+                                    <p>Menjadi Pekerjaan</p>
+                                </div>
+
+                                <ul>
+                                    <li>Meningkatkan Kepedulian</li>
+                                    <li>Mudah Bersosialisasi</li>
+                                    <li>Mengasah Kemampuan Otak</li>
+                                    <li>Nilai Jual untuk Kerja</li>
+                                    <li>Sumber Mencari Uang</li>
+                                    <li>Menjadi Pekerjaan</li>   
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!--CONTENT-->
+                    <div id="urwel-msg-correct" class="msg-correct pop-up-h1">Yay jawabanmu benar!</div>
+                    <div id="urwel-msg-wrong1" class="msg-wrong pop-up-h1">Oops! Jawabanmu masih salah.
+                        Coba lagi ya!</div>
+                    <div id="urwel-msg-wrong2" class="msg-wrong pop-up-h1">Oops! Jawabanmu masih salah.
+                        Coba lagi ya!</div>
+
+                    <div id="urwel-pop-up-question" class="pop-up-questions">
+                        <h1 class="pop-up-h1">
+                            Bagaimana cara bilang “Sama-sama” dalam bahasa isyarat?
+                        </h1>
+                        <p class="pop-up-p">
+                            Klik jawaban yang benar!
+                        </p>
+                        <video id="urwel-wrongA" class="choices" onclick="urwelWrongA()" loop>
+                            <source src="images/urwel/urwelw1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <video id="urwel-correct" class="choices" onclick="urwelCorrect()" loop>
+                            <source src="images/urwel/urwelc.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <video id="urwel-wrongB" class="choices" onclick="urwelWrongB()" loop>
+                            <source src="images/urwel/urwelw2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <button class="pop-up-tertiary" onclick="urwelNext()">Lewati pertanyaan ini ></button>
+                    </div>
+
+                    <div id="urwel-screen-black" class="screen-black"></div>
+
+                    <div id="urwel-progress-cont" class="progress-cont">
+                        <div class="inner-progress-cont">
+                            <progress class="learn-progress" max="100" value="100">Progress</progress>
+                            <div class="progress-dot learn-progress-dot" id="thx-learn-progress-dot"></div>
+                        </div>
+                        <div class="inner-progress-cont">
+                            <progress class="eat-progress" max="100" value="100">Progress</progress>
+                        <div class="progress-dot eat-progress-dot" id="thx-eat-progress-dot"></div>
+                        </div>
+                        <div class="inner-progress-cont">
+                            <progress class="help-progress" max="100" value="100">Progress</progress>
+                            <div class="progress-dot help-progress-dot" id="thx-help-progress-dot"></div>
+                        </div>
+                        <div class="inner-progress-cont">
+                            <progress class="thx-progress" max="100" value="100">Progress</progress>
+                            <div class="progress-dot thx-progress-dot" id="thx-progress-dot"></div>
+                        </div>
+                        <div class="inner-progress-cont">  
+                            <progress id="urwel-progress" max="100" value="0">Progress</progress>
+                            <div class="progress-dot urwel-progress-dot"></div>
+                        </div>
+                        <div class="inner-progress-cont">
+                            <progress class="outro-progress" max="100" value="0">Progress</progress>
+                        </div>
+                    </div>
+
+                    <button id="urwel-play-pause" class="play-pause" onclick="urwelPlayPause()"></button>
+
+                    <div class="screen-gradient"></div>
+                    <video id="urwel-vid" class="lecture-vid">
+                        <source src="images/urwel/urwel.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+
+                </div>
+
+<!--------------CLOSING------CLOSING------CLOSING------CLOSING------CLOSING------CLOSING---------->            
+                <div id="closing" class="lecture-cont">
+                    <!--BACK BUTTON-->
+                    <button class="back-button" id="closing-back" onclick="backButton('closing-vid', 'closing-play-pause', 'closing-pop-up-exit', 'closing-screen-black')"><img src="images/back.svg"/></button>
+
+
+                    <!--EXIT POP UP-->
+                    <div id="closing-pop-up-exit" class="d-flex justify-content-center pop-up-exit">
+                        <img src="images/exit.png"/>
+                        <h1 class="pop-up-h1">
+                            Kamu yakin mau pergi?
+                        </h1>
+                        <p class="pop-up-p">
+                            Kamu belum selesai belajar BISINDO bersamaku. Kalau kamu keluar sekarang, kamu akan harus mengulang pelajaran ini dari awal.
+                        </p>
+                        <button class="pop-up-button primary" onclick="backContinueButton('closing-vid', 'closing-play-pause', 'closing-pop-up-exit', 'closing-screen-black')">Lanjut belajar</button>
+                        <a href="index.html" class="pop-up-button secondary">Keluar ke beranda</a>
+                    </div>
+
+                    <!--INFO BUTTON-->
+                    <button class="info-button" id="info-closing" onclick="backButton('closing-vid', 'closing-play-pause', 'closing-pop-up-info', 'closing-screen-black')"><img src="images/info.svg"/></button>
+
+                    <!--INFO POP UP-->
+                    <div class="pop-up-info" id="closing-pop-up-info">
+                        <button class="info-close-button" onclick="backContinueButton('closing-vid', 'closing-play-pause', 'closing-pop-up-info', 'closing-screen-black')"><img src="images/close.svg"/></button>
+                        <div class="pop-up-info-cont">
+                            <img src="images/info.png" class="info-img"/>
+                            <h1 class="pop-up-h1">
+                                Hal yang wajib kamu ketahui tentang Bahasa Isyarat di Indonesia!
+                            </h1>
+                            <div class="info-paragraph-left">
+                                <h2 class="pop-up-h4">
+                                    Bahasa Isyarat di Indonesia
+                                </h2>
+                                <p>
+                                    Bahasa isyarat adalah cara komunikasi yang dilakukan dengan gerakan tubuh dan bibir dari pada suara kita. Di Indonesia ada 2 jenis bahasa isyarat, yaitu Sistem Isyarat Bahasa Indonesia (SIBI) dan Bahasa Isyarat Indonesia (BISINDO). Perbedaan paling jelas antar keduanya adalah SIBI memakai satu tangan sedangkan BISINDO memakai dengan dua tangan.  
+                                </p>
+                            </div>
+                            <div class="info-paragraph-right">
+                                <h2 class="pop-up-h4">
+                                    Mengenai BISINDO
+                                </h2>
+                                <p>
+                                    BISINDO merupakan bahasa isyarat yang biasa digunakan oleh kalangan difabel dan masyarat inklusi dalam berkomunikasi sehari-hari. BISINDO muncul secara alami dari komunitas Teman Tuli, serta lebih praktis dan mudah untuk digunakan sehari-hari.
+                                </p>
+                            </div>
+                            <div class="info-paragraph-bottom">
+                                <h2 class="pop-up-h4">
+                                    Manfaat belajar bahasa isyarat
+                                </h2>
+                                <div class="first-manfaat-6 manfaat-6">
+                                    <img src="images/info-1.png"/>
+                                    <p>Meningkatkan Kepedulian</p>
+                                </div>
+
+                                <div class="manfaat-6">
+                                    <img src="images/info-2.png"/>
+                                    <p>Mudah Bersosialisasi</p>
+                                </div>
+
+                                <div class= "manfaat-6">
+                                    <img src="images/info-3.png"/>
+                                    <p>Mengasah Kemampuan Otak</p>
+                                </div>
+
+                                <div class= "manfaat-6">
+                                    <img src="images/info-4.png"/>
+                                    <p>Nilai Jual untuk Kerja</p>
+                                </div>
+
+                                <div class= "manfaat-6">
+                                    <img src="images/info-5.png"/>
+                                    <p>Sumber Mencari Uang</p>
+                                </div>
+
+                                <div class= "manfaat-6">
+                                    <img src="images/info-6.png"/>
+                                    <p>Menjadi Pekerjaan</p>
+                                </div>
+
+                                <ul>
+                                    <li>Meningkatkan Kepedulian</li>
+                                    <li>Mudah Bersosialisasi</li>
+                                    <li>Mengasah Kemampuan Otak</li>
+                                    <li>Nilai Jual untuk Kerja</li>
+                                    <li>Sumber Mencari Uang</li>
+                                    <li>Menjadi Pekerjaan</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!--CONTENT-->
+
+                    <div id="closing-screen-black" class="screen-black"></div>
+                    <div id="closing-progress-cont" class="progress-cont">
+                        <div class="inner-progress-cont">
+                            <progress class="learn-progress" max="100" value="100">Progress</progress>
+                            <div class="progress-dot learn-progress-dot" id="urwel-learn-progress-dot"></div>
+                        </div>
+                        <div class="inner-progress-cont">
+                            <progress class="eat-progress" max="100" value="100">Progress</progress>
+                        <div class="progress-dot eat-progress-dot" id="urwel-eat-progress-dot"></div>
+                        </div>
+                        <div class="inner-progress-cont">
+                            <progress class="help-progress" max="100" value="100">Progress</progress>
+                            <div class="progress-dot help-progress-dot" id="urwel-help-progress-dot"></div>
+                        </div>
+                        <div class="inner-progress-cont">
+                            <progress class="thx-progress" max="100" value="100">Progress</progress>
+                            <div class="progress-dot thx-progress-dot" id="urwel-thx-progress-dot"></div>
+                        </div>
+                        <div class="inner-progress-cont">  
+                            <progress class="urwel-progress" max="100" value="100">Progress</progress>
+                            <div class="progress-dot urwel-progress-dot" id="urwel-progress-dot"></div>
+                        </div>
+                        <div class="inner-progress-cont">
+                            <progress id="closing-progress" max="100" value="0">Progress</progress>
+                        </div>
+                    </div>
+
+                    <button id="closing-play-pause" class="play-pause" onclick="closingPlayPause()"></button>
+
+                    <div class="screen-gradient"></div>
+                    <video id="closing-vid" class="lecture-vid">
+                        <source src="images/closing.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+
+                </div>
+            </div>
+
+            <div id="popupportrait"> 
+                <div class="popupportraitcon">
+                    <img src="images/rotate.gif"/>
+                    <h1 class="pop-up-h1">Putar perangkatmu dan refresh halaman ini untuk mengakses Video</h1>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+<script>
+    window.onload = function(){
+        var screen = document.getElementById("xx");
+        var screenwidth = window.getComputedStyle(screen).width;
+        var screenheight = window.getComputedStyle(screen).height;
+        // alert(screenwidth+screenheight);
+
+        if (parseFloat(screenwidth) > parseFloat(screenheight)) {
+            document.getElementById("landscapeonly").style.display="block";
+            document.getElementById("popupportrait").style.display="none";
+            document.getElementById("popupportrait").style.left="-100vw";
+        
+        } else{
+            document.getElementById("landscapeonly").style.display="none";
+            document.getElementById("popupportrait").style.display="block";
+            document.getElementById("popupportrait").style.left="0";
+        }
+    };
+
+    function removePopUp(popupId){
+        document.getElementById(popupId).style.display="none";
+        document.getElementById("screen-black").style.display="none";
+    };
+
+    function mulaiBelajarPlay(){
+        learnVid.play();
+        document.getElementById("demo-play-pause").style.display="none";
+        learnButton.style.backgroundImage="url('images/pause.svg')";
+    };
+</script>
+
+<script src="backbutton.js"></script>
+<script src="learn.js"></script>
+<script src="eat.js"></script>
+<script src="help.js"></script>
+<script src="thx.js"></script>
+<script src="urwel.js"></script>
+<script src="closing.js"></script>

@@ -1,0 +1,1125 @@
+body{
+    background-color: #F9FCFF;
+}
+
+.screen-gradient{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 67.68%);
+    position: fixed;
+    z-index: 11;
+    width: 100vw;
+    height: 40vh;
+    bottom: 0;
+    left: 0;
+}
+
+.screen-black{
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -200;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+#screen-black{
+    z-index: 100;
+}
+
+#landscapeonly{
+    z-index: 1000000000000000000;
+}
+
+.lecture-cont{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+}
+
+#learn{
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+#eat{
+    top: 0;
+    left: -100vw;
+    z-index: -20;
+}
+
+#help{
+    top: 0;
+    left: -100vw;
+    z-index: -40;
+}
+
+#thx{
+    top: 0;
+    left: -100vw;
+    z-index: -60;
+}
+
+#urwel{
+    top: 0;
+    left: -100vw;
+    z-index: -80;
+}
+
+#closing{
+    top: 0;
+    left: -100vw;
+    z-index: -100;
+}
+
+.lecture-vid{
+    width: inherit;
+    height: inherit;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: black;
+}
+
+.progress-cont{
+    position: fixed;
+    z-index: 12;
+    bottom: 80px;
+    left: calc(50vw - 525px);
+    width: 1050px;
+}
+
+.inner-progress-cont, .progress-cont progress{
+    float: left;
+}
+
+.progress-cont progress{
+    height: 30px;
+    width: 175px;
+}
+
+.inner-progress-cont{
+    display: flex;
+}
+
+.inner-progress-cont div{
+    float: right;
+    align-self: center;
+}
+
+.progress-dot{
+    background: #FFFFFF;
+    border: 5px solid #6391F9;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    z-index: 1000001;
+    display: inline-block;
+}
+
+.learn-progress-dot{
+    left: 160px;
+}
+
+.eat-progress-dot{
+    left: 340px;
+}
+
+.help-progress-dot{
+    left: 510px;
+}
+
+.thx-progress-dot{
+    left: 690px;
+}
+
+.urwel-progress-dot{
+    left: 860px;
+}
+
+.play-pause{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    left: 70px;
+    bottom: 70px;
+    z-index: 30;
+}
+
+#learn-screen-black, #eat-screen-black{
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -5;
+    width: 100vw;
+    height: 100vh;
+}
+
+.pop-up-questions{
+    position: fixed;
+    background-color: #FFFFFF;
+    width: 800px;
+    height: 450px;
+    left: calc(50vw - 400px);
+    top: calc(50vh - 225px);
+    border-radius: 25px;
+    z-index: -5;
+    visibility: hidden;
+}
+
+.pop-up-questions .pop-up-h1{
+    margin-top: 50px;
+    width: 70%;
+    margin-left: 15%;
+    text-align: center;
+}
+
+.pop-up-questions .choices{
+    width: 25%;
+    height: 30%;
+    float: left;
+    left: 5%;
+    top: 4%;
+    position: relative;
+    border-radius: 7px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.pop-up-questions .pop-up-p{
+    margin-top: 10px;
+    width: 70%;
+    margin-left: 15%;
+    text-align: center;
+}
+
+.pop-up-questions button{
+    margin-top: 50px;
+    width: 30%;
+    margin-left: 35%;
+    text-align: center;
+}
+
+.msg-correct{
+    background: #25D595;
+    border-radius: 25px;
+    padding: 30px 50px 30px 50px;
+    width: 500px;
+    color: white;
+    text-align: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 29px;
+    line-height: 134.52%;
+    position: fixed;
+    left: calc(50% - 250px);
+    top: calc(50% - 60px);
+    z-index: -200;
+    visibility: hidden;
+}
+
+.msg-wrong{
+    background: #FF4E4E;
+    border-radius: 25px;
+    padding: 30px 50px 30px 50px;
+    width: 600px;
+    color: white;
+    text-align: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 29px;
+    line-height: 134.52%;
+    position: fixed;
+    left: calc(50% - 300px);
+    top: calc(50% - 80px);
+    z-index: -200;
+    visibility: hidden;
+}
+
+#pop-up-1, .pop-up-exit{
+    position: fixed;
+    background-color: #FFFFFF;
+    width: 600px;
+    height: 570px;
+    left: calc(50vw - 300px);
+    top: calc(50vh - 280px);
+    border-radius: 25px;
+    z-index: 10000;
+}
+
+.pop-up-exit{
+    display: none;
+}
+
+#pop-up-1 img, .pop-up-exit img{
+    margin-top: 50px;
+    width: 50%;
+    margin-left: 25%;
+}
+
+#pop-up-1 h1, .pop-up-exit h1{
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 40px;
+}
+
+#pop-up-1 p, .pop-up-exit p{
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
+}
+
+#pop-up-1 button{
+    margin-left: 35%;
+    margin-top: 20px;
+}
+
+.pop-up-exit button, .pop-up-exit a{
+    margin-top: 20px;
+}
+
+.pop-up-exit .secondary{
+    margin-left: 30px;
+}
+
+.pop-up-exit .primary{
+    margin-left: 17%;
+}
+
+.back-button{
+    background: rgba(27, 27, 27, 0.46);
+    border-radius: 23px;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    left: 70px;
+    top: 40px;
+    border: none;
+    cursor: pointer;
+    z-index: 30;  
+}
+
+.back-button:hover{
+    background: rgba(27, 27, 27, 0.6);
+}
+
+.back-button:active{
+    background: rgba(27, 27, 27, 0.8);
+}
+
+.back-button img{
+    color: white;
+    width: 90%;
+    height: 90%;
+}
+
+#popupportrait{
+    position: fixed;
+    z-index: 1000;
+    background: #FFFFFF;
+    height: 100vh;
+    width: 100vw;
+    left: -100vw;
+}
+
+.popupportraitcon{
+    position: absolute;
+    left: 10%;
+    top: calc(50% - 200px);
+    height: 400px;
+    width: 80%;
+}
+
+#popupportrait img{
+    width: 50%;
+    margin-left: 25%;
+    height: auto;
+}
+
+#popupportrait h1{
+    width: 100%;
+    text-align: center;
+}
+
+.info-button{
+    background: #FFFFFF;
+    border-radius: 23px;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    right: 70px;
+    bottom: 70px;
+    border: none;
+    cursor: pointer;
+    z-index: 30;
+}
+
+.info-button:hover{
+    background: #EDF0F8;
+}
+
+.info-button:active{
+    background: #D5DAE0;
+}
+
+.info-button img{
+    color: white;
+    width: 80%;
+    height: 80%;
+}
+
+.pop-up-info{
+    position: fixed;
+    background-color: #FFFFFF;
+    width: 1100px;
+    height: 700px;
+    left: calc(50vw - 550px);
+    top: calc(50vh - 350px);
+    border-radius: 25px;
+    z-index: 10000;
+    display: none;
+}
+
+.pop-up-info-cont{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    width: 1000px;
+    height: 570px;
+    left: 80px;
+    top: 40px;
+}
+
+.info-close-button{
+    position: fixed;
+    background: #FFFFFF;
+    border-radius: 23px;
+    width: 40px;
+    height: 40px;
+    margin-left: 40px;
+    margin-top: 40px;
+    border: none;
+    cursor: pointer;
+    z-index: 30;
+}
+
+.pop-up-info-cont .info-img{
+    width: 40%;
+    margin-left: 33%;
+}
+
+.pop-up-info-cont h1{
+    width: 70%;
+    text-align: center;
+    margin-left: 13%;
+    margin-top: 40px;
+}
+
+ul{
+    display: none;
+}
+
+.info-paragraph-left, .info-paragraph-right{
+    margin-top: 30px;
+    float: left;
+    margin-left: 4%;
+    width: 41%;
+    height: 60%;
+}
+
+.info-paragraph-right{
+    margin-left: 7%;
+}
+
+.info-paragraph-bottom{
+    margin-top: 0px;
+    width: 96%;
+    margin-left: 4%;
+}
+
+.info-paragraph-bottom h2{
+    margin-top: 400px;
+}
+
+.img-manfaat-6{
+    margin-top: 30px;
+}
+
+.manfaat-6{
+    width: 14%;
+    margin-left: 2%;
+    margin-top: 30px;
+    float: left;
+}
+
+.first-manfaat-6{
+    margin-left: 0;
+}
+
+.manfaat-6 p{
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.manfaat-6 img{
+    height: 50%;
+    margin-left: 20%;
+}
+
+#learn-correct{
+    left: 8%;
+}
+
+#learn-wrongA{
+    left: 13%;
+}
+
+#learn-wrongB{
+    left: 18%;
+}
+
+#eat-wrongA{
+    left: 8%;
+}
+
+#eat-wrongB{
+    left: 13%;
+}
+
+#eat-correct{
+    left: 18%;
+}
+
+#help-wrongA{
+    left: 8%;
+}
+
+#help-correct{
+    left: 13%;
+}
+
+#help-wrongB{
+    left: 18%;
+}
+
+#thx-correct{
+    left: 8%;
+}
+
+#thx-wrongA{
+    left: 13%;
+}
+
+#thx-wrongB{
+    left: 18%;
+}
+
+#urwel-wrongA{
+    left: 8%;
+}
+
+#urwel-correct{
+    left: 13%;
+}
+
+#urwel-wrongB{
+    left: 18%;
+}
+
+
+@media screen and (max-width: 1330px){
+    .progress-cont{
+        left: calc(50vw - 465px);
+        width: 930px;
+    }
+    .progress-cont progress{
+        width: 155px;
+    }
+    .learn-progress-dot{
+        left: 140px;
+    }
+    
+    .eat-progress-dot{
+        left: 295px;
+    }
+    
+    .help-progress-dot{
+        left: 450px;
+    }
+    
+    .thx-progress-dot{
+        left: 605px;
+    }
+    
+    .urwel-progress-dot{
+        left: 760px;
+    }
+    .back-button{
+        left: 50px;
+    }
+    .play-pause{
+        left: 50px;
+    }
+    .info-button{
+        right: 50px;
+    }
+}
+
+@media screen and (max-width: 1187px){
+    .progress-cont{
+        left: calc(50vw - 390px);
+        width: 780px;
+    }
+    .progress-cont progress{
+        width: 130px;
+    }
+
+    .learn-progress-dot{
+        left: 115px;
+    }
+    
+    .eat-progress-dot{
+        left: 245px;
+    }
+    
+    .help-progress-dot{
+        left: 375px;
+    }
+    
+    .thx-progress-dot{
+        left: 505px;
+    }
+    
+    .urwel-progress-dot{
+        left: 635px;
+    }
+
+    .pop-up-info{
+        width: 800px;
+        height: 600px;
+        left: calc(50vw - 400px);
+        top: calc(50vh - 300px);
+    }
+    
+    .pop-up-info-cont{
+        width: 700px;
+        height: 500px;
+    }
+    
+    .info-paragraph-bottom{
+        margin-top: 465px;
+    }
+    
+    .info-paragraph-bottom h2{
+        margin-top: 400px;
+    }
+    
+    .img-manfaat-6{
+        margin-top: 30px;
+    }
+    
+    .manfaat-6 p{
+        font-size: 15px;
+    }
+    
+    .manfaat-6 img{
+        width: 70%;
+        margin-left: 15%;
+    }
+}
+
+@media screen and (max-width: 1034px){
+    .progress-cont{
+        left: calc(50vw - 330px);
+        width: 660px;
+    }
+
+    .progress-cont progress{
+        width: 110px;
+    }
+
+    .learn-progress-dot{
+        left: 95px;
+    }
+    
+    .eat-progress-dot{
+        left: 205px;
+    }
+    
+    .help-progress-dot{
+        left: 315px;
+    }
+    
+    .thx-progress-dot{
+        left: 425px;
+    }
+   
+    .urwel-progress-dot{
+        left: 535px;
+    }
+
+    .pop-up-info{
+        width: 800px;
+        height: 544px;
+        left: calc(50vw - 400px);
+        top: calc(50vh - 272px);
+    }
+    
+    .pop-up-info-cont{
+        width: 700px;
+        height: 444px;
+    }
+    
+    .pop-up-info-cont h1{
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .info-paragraph-bottom{
+        margin-top: 500px;
+    }
+
+    .pop-up-questions{
+        width: 650px;
+        height: 420px;
+        left: calc(50vw - 325px);
+        top: calc(50vh - 210px);
+    }
+    
+    .pop-up-questions .pop-up-h1{
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .pop-up-questions button{
+        width: 40%;
+        margin-left: 30%;
+    }
+
+    .choices{
+        height: 10%;
+    }
+
+    #pop-up-1, .pop-up-exit{
+        width: 580px;
+        height: 540px;
+        left: calc(50vw - 290px);
+        top: calc(50vh - 270px);
+    }
+
+    #pop-up-1 p, .pop-up-exit p{
+        text-align: center;
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    #pop-up-1 img, .pop-up-exit img{
+        width: 40%;
+        margin-left: 30%;
+    }
+
+    #pop-up-exit button{
+        margin-left: 20%;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 900px), 
+screen and (max-height: 500px){
+
+    .progress-dot{
+        width: 25px;
+        height: 25px;
+    }
+
+    .learn-progress-dot{
+        left: 80px;
+    }
+    
+    .eat-progress-dot{
+        left: 170px;
+    }
+    
+    .help-progress-dot{
+        left: 260px;
+    }
+    
+    .thx-progress-dot{
+        left: 350px;
+    }
+   
+    .urwel-progress-dot{
+        left: 440px;
+    }
+
+    .pop-up-info{
+        width: 600px;
+        height: 400px;
+        left: calc(50vw - 300px);
+        top: calc(50vh - 200px);
+    }
+
+    .pop-up-info-cont{
+        width: 500px;
+        height: 300px;
+    }
+
+    .info-close-button{
+        width: 30px;
+        height: 30px;
+    }
+    
+    ul{
+        display: block;
+    }
+
+    .pop-up-info-cont{
+        width: 500px;
+        height: 300px;
+    }
+
+    .pop-up-info-cont h1{
+        margin-top: 0;
+    }
+    
+    .pop-up-info-cont .info-img{
+        display: none;
+    }
+    
+    .info-paragraph-bottom{
+        margin-top: 460px;
+    }
+
+    .info-paragraph-bottom ul{
+        margin-left: 3%;
+    }
+
+    .info-paragraph-left, .info-paragraph-right{
+        margin-left: 3%;
+        width: 90%;
+    }
+
+    .info-paragraph-right{
+        margin-top: 40px;
+    }
+
+    .info-paragraph-left{
+        margin-top: 10px;
+    }
+
+    .manfaat-6 {
+        display: none;
+    }
+
+    #pop-up-1,  .pop-up-exit{
+        width: 400px;
+        height: 280px;
+        top: calc(50vh - 140px);
+        left: calc(50vw - 200px);
+    }
+
+    .pop-up-exit{
+        height: 240px;
+        top: calc(50vh - 120px);
+    }
+
+    #pop-up-1 h1, .pop-up-exit h1, .pop-up-questions h1, .pop-up-info h1{
+        font-size: 25px;
+        margin-top: 25px;
+    }
+
+    .pop-up-info h2{
+        font-size: 21px;
+    }
+    
+    .pop-up-info p, .pop-up-info li, #pop-up-1 p, .pop-up-exit p, .pop-up-questions p{
+        font-size: 16px;
+    }
+
+    #pop-up-1 button, .pop-up-exit button, .pop-up-exit .secondary, .pop-up-questions button{
+        font-size: 15px;
+        margin-top: 5px;
+    }
+
+    #pop-up-1 button{
+        margin-left: 33%;
+    }
+
+    .pop-up-exit .secondary, .pop-up-exit .primary{
+        margin-top: 10px;
+    }
+
+    .pop-up-exit .primary{
+        margin-left: 11%;
+    }
+
+    .pop-up-exit .secondary{
+        padding: 5px 10px !important;
+        margin-left: 25px;
+    }
+
+    #pop-up-1 img, .pop-up-exit img{
+        display: none;
+    }
+
+    .info-button{
+        width: 50px;
+        height: 50px;
+        right: 30px;
+        bottom: 40px;
+        border-radius: 20px;
+    }
+
+    .back-button{
+        width: 50px;
+        height: 50px;
+        left: 30px;
+        top: 30px;
+        border-radius: 20px;
+    }
+
+    .play-pause{
+        width: 40px;
+        height: 40px;
+        left: 40px;
+        bottom: 40px;
+    }
+
+    .progress-cont{
+        left: calc(50vw - 210px);
+        width: 420px;
+        bottom: 50px;
+    }
+
+    .progress-cont progress{
+        width: 70px;
+        height: 20px;
+    }
+
+    .progress-dot{
+        border: 4px solid #6391F9;
+        width: 23px;
+        height: 23px;
+    }
+
+    .learn-progress-dot{
+        left: 60px;
+    }
+    
+    .eat-progress-dot{
+        left: 130px;
+    }
+    
+    .help-progress-dot{
+        left: 200px;
+    }
+    
+    .thx-progress-dot{
+        left: 270px;
+    }
+    
+    .urwel-progress-dot{
+        left: 340px;
+    }
+
+    .pop-up-info{
+        width: 650px;
+        height: 350px;
+        left: calc(50vw - 325px);
+        top: calc(50vh - 175px);
+    }
+    
+    .pop-up-info-cont{
+        width: 550px;
+        height: 280px;
+        left: 60px;
+        top: 40px;
+    }
+    
+    .info-close-button{
+        width: 30px;
+        height: 30px;
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+    
+    .pop-up-info-cont .info-img{
+       display: none;
+    }
+    
+    .pop-up-info-cont h1{
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 10px;
+    }
+    
+    .info-paragraph-left{
+        margin-top: 15px;
+    }
+    
+    .info-paragraph-right{
+        margin-left: 3%;
+        margin-top: 30px;
+    }
+    
+    .info-paragraph-bottom{
+        margin-top: 410px;
+    }
+    
+    .img-manfaat-6{
+        margin-top: 30px;
+    }
+    
+    .manfaat-6{
+        width: 14%;
+        margin-left: 2%;
+        margin-top: 30px;
+        float: left;
+    }
+    
+    .first-manfaat-6{
+        margin-left: 0;
+    }
+
+    .pop-up-questions{
+        width: 650px;
+        height: 330px;
+        left: calc(50vw - 325px);
+        top: calc(50vh - 165px);
+    }
+    
+    .pop-up-questions .pop-up-h1{
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 35px;
+    }
+
+    .pop-up-questions button{
+        width: 40%;
+        margin-left: 30%;
+        margin-top: 35px;
+    }
+
+    .choices{
+        height: 8%;
+    }
+
+}
+
+@media screen and (max-width: 700px), 
+screen and (max-height: 300px){
+
+    #pop-up-1, .pop-up-exit {
+        height: 265px;
+        top: calc(50vh - 134px);
+    }
+
+    .pop-up-exit {
+        height: 248px;
+        top: calc(50vh - 124px);
+    }
+
+    .pop-up-questions{
+        width: 500px;
+        height: 250px;
+        left: calc(50vw - 250px);
+        top: calc(50vh - 125px);
+    }
+
+    #pop-up-1 h1, .pop-up-exit h1, .pop-up-questions h1, .pop-up-info h1{
+        font-size: 22px;
+    }
+
+    .pop-up-questions .pop-up-h1{
+        margin-top: 15px;
+    }
+
+    .pop-up-questions .pop-up-p{
+        margin-top: -5px;
+    }
+
+    .pop-up-questions button{
+        margin-top: 20px;
+    }
+
+    .pop-up-info{
+        width: 500px;
+        height: 260px;
+        left: calc(50vw - 250px);
+        top: calc(50vh - 130px);
+    }
+    
+    .pop-up-info-cont{
+        width: 420px;
+        height: 230px;
+        left: 60px;
+        top: 30px;
+    }
+    
+    .pop-up-info-cont .info-img{
+       display: none;
+    }
+    
+    .info-paragraph-right {
+        margin-left: 3%;
+        margin-top: 115px;
+    }
+
+    .info-paragraph-bottom {
+        margin-top: 500px;
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .progress-cont{
+        left: calc(50vw - 150px);
+        width: 300px;
+    }
+
+    .progress-cont progress{
+        width: 50px;
+    }
+
+    .learn-progress-dot{
+        left: 40px;
+    }
+    
+    .eat-progress-dot{
+        left: 90px;
+    }
+    
+    .help-progress-dot{
+        left: 140px;
+    }
+    
+    .thx-progress-dot{
+        left: 190px;
+    }
+   
+    .urwel-progress-dot{
+        left: 240px;
+    }
+
+    .msg-wrong{
+        width: 400px;
+        left: calc(50vw - 200px);
+    }
+
+    .msg-right{
+        width: 400px;
+        left: calc(50vw - 200px);
+    }
+}
