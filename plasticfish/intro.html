@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Plastic Fish</title>
+	<link rel="stylesheet" href="home.css">
+	<link rel="stylesheet" href="intro.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+	<nav>
+		<a class="homebtn" href="index.html"><img src="images/icon/home.png"/></a>
+		<a class="ecoton" href="https://www.change.org/p/kementerianlhk-kemenpu-jokowi-free-brantas-river-from-microplastic-before-it-s-too-late-freebrantasfrommicroplastic-brantasbebasmikroplastik" target="_blank">Sign Ecoton Petition </a>
+
+		<div class="help" onclick="openPop()">
+			<img src="images/icon/icon-03.png" class="helpbutton"/>
+		</div>
+
+	</nav>
+
+	<div class="helppopup animate__fadeInDown" id="helppopup">
+ 		<img src="images/icon/close.png" class="close" onclick="closePop()">
+       	<p>
+       		As the use  of plastic increase, so does the waste. According to the Ministry of Environment and Forestry of The Republic of Indonesia (2021), Indonesia produces 28,5 million tons of trash annually, and 17% of them (4,85 million tons) come from plastics. Parts of these trash can turn into microplastic that polluts the freshwater. Microplastics can come from decays of larger plastic objects or small plastic bits such as from body scrubs and laundry detergent. 
+       		<br><br>
+       		This website intends to spread awareness about microplastic, including its sources, process of being eaten by the fish, and the health effects on human. You can also make an impact on this issue by donating or signing petition of the Ecoton Organization. Ecoton is an Indonesian-based environment organization that focuses on river conservation. 
+       		<br><br>
+       		This website is built as a final project for Raffles Institute of Higher Education Singapore.
+       	</p>
+
+       </div>
+
+       <script type="text/javascript">
+       		function openPop() {
+                document.getElementById("helppopup").style.display = "block";
+            }
+            function closePop() {
+                document.getElementById("helppopup").style.display = "none";
+            }
+       </script>
+
+
+       <p id="introtexts">Microplastics are tiny plastic bits that come from degradation of a bigger plastic objects or small plastics such as body scrubs and laundry detergent.</p>
+
+		<a id="skip" href="exp.html"> Skip Intro </a>
+        <button id="next1" onclick="nextone()" class="arrowcon"> 
+        	<img src="images/icon/right.png" class="arrows"/>
+        </button>
+        <button id="next2" onclick="nexttwo()" class="arrowcon"> 
+        	<img src="images/icon/right.png" class="arrows"/>
+        </button>
+        <button id="prev2" onclick="prevtwo()" class="arrowcon">
+        	<img src="images/icon/left.png" class="arrows"/>
+        </button>
+        <a id="next3" href="exp.html" class="arrowcon">
+        	<img src="images/icon/right.png" class="arrows"/>
+        </a>
+        <button id="prev3" onclick="prevthree()" class="arrowcon">
+        	<img src="images/icon/left.png" class="arrows"/>
+        </button>
+
+        <script>
+            function nextone(){
+                document.getElementById("introtexts").innerHTML = "These plastics are often consumed by aquatic organisms. Studies have proven that commercially consumed fish from Indonesian rivers contain microplastics in their fillet.";
+                document.getElementById("next1").style.display ="none";
+                document.getElementById("next2").style.display ="block";
+                document.getElementById("prev2").style.display ="block";
+            }
+            function nexttwo(){
+                document.getElementById("introtexts").innerHTML = "As microplastics contain dangerous polymers and chemicals, contaminated fish can harm human's health when eaten.";
+                document.getElementById("next1").style.display ="none";
+                document.getElementById("next2").style.display ="none";
+                document.getElementById("prev2").style.display ="none";
+                document.getElementById("prev3").style.display ="block";
+                document.getElementById("next3").style.display ="block";
+                document.getElementById("skip").style.display ="block";
+            }
+            function prevtwo(){
+                document.getElementById("introtexts").innerHTML = "Microplastics are tiny plastic bits that come from degradation of a bigger plastic objects or small plastics such as body scrubs and laundry detergent.";
+                document.getElementById("next1").style.display ="block";
+                document.getElementById("next2").style.display ="none";
+                document.getElementById("prev2").style.display ="none";
+                document.getElementById("next3").style.display ="none";
+                document.getElementById("prev3").style.display ="none";
+            }
+            function nextthree(){
+                document.getElementById("texts").style.display ="none";
+                document.getElementById("popup-intro").style.display ="block";
+            }
+            function prevthree(){
+                document.getElementById("introtexts").innerHTML = "Studies have proven that most fish accross Indonesian rivers contain microplastics";
+                document.getElementById("next1").style.display ="none";
+                document.getElementById("next3").style.display ="none";
+                document.getElementById("prev3").style.display ="none";
+                document.getElementById("next2").style.display ="block";
+                document.getElementById("prev2").style.display ="block";
+                document.getElementById("skip").style.display ="block";
+            }
+        </script>
+
+
+</body>
+</html>

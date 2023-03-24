@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Plastic Fish</title>
+	<link rel="stylesheet" href="home.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+	<nav>
+		<a class="ecoton" href="https://www.change.org/p/kementerianlhk-kemenpu-jokowi-free-brantas-river-from-microplastic-before-it-s-too-late-freebrantasfrommicroplastic-brantasbebasmikroplastik" target="_blank">Sign Ecoton Petition </a>
+
+		<div class="lang">
+			<img src="images/icon/icon-04.png" class="langbutton"/>
+		</div>
+
+		<div class="help" onclick="openPop()">
+			<img src="images/icon/icon-03.png" class="helpbutton"/>
+		</div>
+	</nav>
+
+	<img src="images/lang.png" class="animate__animated animate__bounceInDown animate__tada" id="langpopup">
+	<script type="text/javascript">
+		const hideLang = setTimeout(popupLang, 4000);
+
+		function popupLang() {
+		  document.getElementById("langpopup").style.display = "none";
+		}
+	</script>
+
+	<div class="titlecontainer">
+		<img src="images/title/fulltitle.png" class="title"/>
+		<a id="ititlecon" href="intro.html"><img src="images/title/i.png" class="title" id="ititle"></a>
+	</div>	
+
+	<a class="start" href="intro.html">Start Experience</a>
+
+	<div class="socmed socmedcon">
+        <a href="https://ctt.ac/lEwYZ" target="_blank" class="twtbtn"></a>
+       
+        <input type="text" value="plasticfish.co" id="myInput">
+
+        <div id="cpy" class="cpybtn" onclick="myFunction()">
+        </div>
+
+        <script>
+            function myFunction() {
+            // Get the text field
+            var copyText = document.getElementById("myInput");
+
+            // Select the text field
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); // For mobile devices
+
+            // Copy the text inside the text field
+            navigator.clipboard.writeText(copyText.value);
+            }
+        </script>
+    </div>
+
+        <div class="helppopup" id="helppopup">
+       	<p>
+       		As the use  of plastic increase, so does the waste. According to the Ministry of Environment and Forestry of The Republic of Indonesia (2021), Indonesia produces 28,5 million tons of trash annually, and 17% of them (4,85 million tons) come from plastics. Parts of these trash can turn into microplastic that polluts the freshwater. Microplastics can come from decays of larger plastic objects or small plastic bits such as from body scrubs and laundry detergent. 
+       		<br><br>
+       		This website intends to spread awareness about microplastic, including its sources, process of being eaten by the fish, and the health effects on human. You can also make an impact on this issue by donating or signing petition of the Ecoton Organization. Ecoton is an Indonesian-based environment organization that focuses on river conservation. 
+       		<br><br>
+       		<span id="rafflesmark">This website is built as a final project for <br>
+       			<img src="images/raffles.jpeg"/> </span>
+       	</p>
+
+       </div>
+       <img src="images/icon/close.png" class="close" id="close" onclick="closePop()">
+
+       <script type="text/javascript">
+       		function openPop() {
+                document.getElementById("helppopup").style.display = "block";
+                document.getElementById("close").style.display = "block";
+            }
+            function closePop() {
+                document.getElementById("helppopup").style.display = "none";
+                document.getElementById("close").style.display = "none";
+            }
+       </script>
+</body>
+</html>

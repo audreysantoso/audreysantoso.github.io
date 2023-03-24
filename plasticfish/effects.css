@@ -1,0 +1,2020 @@
+body{
+	background-image: url('images/plates/picnic.png');
+	/*background-size: cover;*/
+    overflow: hidden;
+}
+
+nav{
+    margin-top: 10px;
+}
+
+a{
+	text-decoration: none;
+}
+
+.help{
+	width: 40px;
+	height: 40px;
+	float: right;
+	margin-right: 30px;
+	cursor: pointer;
+}
+
+.helpbutton{
+	width: inherit;
+	height: inherit;
+}
+
+
+.homebtn{
+	width: 40px;
+	height: auto;
+	margin-left: 30px;
+	cursor: pointer;
+    display: inline-block;
+}
+
+.homebtn img{
+	width: inherit;
+	height: inherit;
+}
+
+.homebtn img:hover{
+	opacity: 0.8;
+}
+
+
+.homebtn img:active{
+	opacity: 0.6;
+}
+
+.wdwbtn{
+    width: 50px;
+    height: auto;
+    margin-left: 30px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.wdwbtn img{
+    width: inherit;
+    height: inherit;
+}
+
+.wdwbtn img:hover{
+    opacity: 0.8;
+}
+
+
+.wdwbtn img:active{
+    opacity: 0.6;
+}
+
+.ecoton{
+	color: white;
+	font-size: 12pt;
+	font-weight: 300;
+	font-family: Lexend Deca;
+	margin-left: 30px;
+}
+
+.ecoton:hover{
+	opacity: 0.7;
+}
+
+.ecoton:active{
+	opacity: 1;
+	font-weight: 400;
+}
+
+#plate1{
+	width: 759px;
+    height: 488px;
+    position: fixed;
+    left: 350px;
+    top: 150px;
+    background-image: url('images/plates/plate1.png');
+    background-size: contain;
+}
+
+#coverbg{
+    background-color: black;
+    opacity: 0.5;
+    width: 100vw;
+    height: 100vh;
+    margin-top: -60px;
+    display: block;
+}
+
+p{
+	margin-top: 10px;
+	color: black;
+	font-size: 12pt;
+	font-weight: 300;
+	font-family: 'Raleway';
+	line-height: 18pt;
+	text-align: center;
+}
+
+.intropopup, .helpopup{
+    position: fixed;
+    width: 30%;
+    height: 50%;
+    left: 26%;
+    top: 20%;
+    background-color: white;
+    padding: 3%;
+    border-radius: 30px;
+    display: none;
+    z-index: 10000;
+    overflow-y: scroll;
+}
+
+.helppopup{
+    position: fixed;
+    width: 40%;
+    height: 50%;
+    left: 26%;
+    top: 20%;
+    background-color: white;
+    padding: 4%;
+    border-radius: 30px;
+    display: none;
+    z-index: 1000000000000;
+}
+
+.guidepopup{
+    width: 30%;
+}
+
+#solpopup{
+    height: 70%;
+    top: 10%;
+}
+
+.solution{
+    background: white;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    transform: rotate(-90deg);
+    border-radius: 20px 20px 0px 0px;
+    font-size: 15pt;
+    font-weight: 300;
+    font-family: Lexend Deca;
+    position: fixed;
+    width: 190px;
+    right: -74px;
+    bottom: 142px;
+    cursor: pointer;
+}
+
+.solution:hover{
+    opacity: 0.8;
+}
+
+.solution:active{
+    opacity: 0.6;
+}
+
+#solpopup{
+    display: none;
+}
+
+.helppopup img.close{
+    float: right;
+    margin-right: -27px;
+    margin-top: -30px;
+    width: 28px;
+    cursor: pointer;
+}
+
+p, li, a{
+    margin-top: 10px;
+    color: black;
+    font-size: 12pt;
+    font-weight: 300;
+    font-family: 'Raleway';
+    line-height: 18pt;
+    text-align: center;
+}
+
+.level1{
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 46px;
+    color: #5785f6;
+}
+
+.level2{
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 36px;
+    color: #5785f6;
+}
+
+.helppopup p, li{
+    text-align: left;
+}
+
+#solpopup a{
+    opacity: 0.7;
+}
+
+#solpopup a:hover{
+    opacity: 0.3;
+}
+
+#solpopup a:activer{
+    opacity: 0.5;
+}
+
+li{
+    line-height: 13pt;
+    color: #13448d;
+}
+
+#intropopup{
+	display: block;
+	left: 30%;
+	top: 20%;
+    z-index: 100000000000000000000000000;
+}
+
+#coverbg{
+	background-color: black;
+    display: block;
+	opacity: 0.5;
+	width: 100vw;
+	height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 60px;
+    z-index: 10000000;
+}
+
+.start2{
+	color: white;
+    font-size: 13pt;
+    font-weight: 300;
+    font-family: Lexend Deca;
+    display: block;
+    border: none;
+    padding: 7px;
+    text-align: center;
+    border-radius: 30px;
+    width: 160px;
+    background-color: #13448d;
+   /* margin-top: -238px;*/
+    margin-left: 143px;
+    cursor: pointer;
+}
+
+.start2:hover{
+	background-color: #053670;
+}
+
+.start2:active{
+	background-color: #05294c;
+}
+
+#start2close{
+    margin-top: 64px;
+    display: none;
+}
+
+.demo{
+	width: 100%;
+	height: 63%;
+	margin-left: 0%;
+}
+
+#demo1,#demo2{
+    width: 100%;
+    height: 100%;
+}
+
+#demo2con{
+    display: none;
+}
+#demo2{
+    display: none;
+}
+
+#demo2text{
+    display: none;
+}
+
+.fishfragment{
+	position: fixed;
+    left: 881px;
+    top: 190px;
+    width: 179px;
+}
+
+.fishfoam{
+	position: fixed;
+    left: 791px;
+    top: 225px;
+    top: 209px;
+    width: 175px;
+}
+
+.fishmicrobeads{
+	position: fixed;
+    left: 702px;
+    top: 194px;
+    width: 160px;
+}
+
+.fishfilaments{
+	position: fixed;
+    left: 588px;
+    top: 227px;
+    width: 160px;
+    z-index: 10;
+}
+
+.fishfibre{
+	position: fixed;
+    left: 480px;
+    top: 221px;
+    width: 186px;
+}
+
+.fishfilm{
+	position: fixed;
+    left: 393px;
+    top: 243px;
+    width: 144px;
+}
+
+.fishopt1:hover{
+	cursor: pointer;
+	-webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.2));
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.2));
+}
+
+.fishopt1big{
+	width: 550px;
+    height: 354px;
+    position: fixed;
+    left: 440px;
+    top: 200px;
+    display: none;
+    z-index: 1000000;
+    cursor: pointer;
+}
+
+.platefragment{
+    background-image: url('images/plates/platefragment.png');
+    background-size: contain;
+}
+
+.platefoam{
+    background-image: url('images/plates/platefoam.png');
+    background-size: contain;
+}
+
+.platemicrobeads{
+    background-image: url('images/plates/platemicrobeads.png');
+    background-size: contain;
+}
+
+.platefilaments{
+    background-image: url('images/plates/platefilaments.png');
+    background-size: contain;
+}
+
+.platefibre{
+    background-image: url('images/plates/platefibre.png');
+    background-size: contain;
+}
+
+.platefilm{
+    background-image: url('images/plates/platefilm.png');
+    background-size: contain;
+}
+
+.fishopt1big:hover{
+	cursor: pointer;
+	-webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.2));
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.2));
+}
+
+.eachfragment{
+	position: fixed;
+}
+
+.plates{
+	position: fixed;
+}
+
+.plates:hover{
+	cursor: pointer;
+	-webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.2));
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.2));
+}
+
+#fragmentchems{
+	display: none;
+	cursor: pointer;
+}
+
+#fragmentone{
+	background-image: url(images/plates/pet.png);
+    background-size: cover;
+    width: 220px;
+    height: 170px;
+    left: 1047px;
+    top: 60px;
+}
+
+#fragmenttwo{
+	background-image: url(images/plates/ldpe.png);
+    background-size: cover;
+    width: 225px;
+    height: 163px;
+    left: 579px;
+    top: -33px;
+}
+
+#fragmentthree{
+	background-image: url(images/plates/hdpe.png);
+    background-size: cover;
+    width: 220px;
+    height: 170px;
+    left: 175px;
+    top: 405px;
+}
+
+#fragmentfour{
+	background-image: url(images/plates/pvc.png);
+    background-size: cover;
+    width: 180px;
+    height: 180px;
+    left: 175px;
+    top: 57px;
+}
+
+#fragmentfive{
+	background-image: url(images/plates/pp.png);
+    background-size: cover;
+    width: 180px;
+    height: 180px;
+    left: 1073px;
+    top: 405px;
+}
+
+#fragmentsix{
+	background-image: url(images/plates/polystyreneplate.png);
+    background-size: cover;
+    width: 180px;
+    height: 180px;
+    left: 611px;
+    top: 509px;
+}
+
+#foamchems{
+	display: none;
+	cursor: pointer;
+}
+
+.eachfoam{
+	position: fixed;
+}
+
+#foamone{
+	background-image: url(images/plates/polystyreneplate.png);
+    background-size: cover;
+    width: 180px;
+    height: 180px;
+    left: 179px;
+    top: 238px;
+}
+
+#foamtwo{
+	background-image: url(images/plates/ldpehdpepan.png);
+    background-size: cover;
+    width: 220px;
+    height: 170px;
+    left: 1050px;
+    top: 238px;
+}
+
+#microbeadschems{
+	display: none;
+	cursor: pointer;
+}
+
+.eachmicrobeads{
+	position: fixed;
+}
+
+#microbeadsone{
+	background-image: url(images/plates/nylon.png);
+    background-size: cover;
+    width: 220px;
+    height: 170px;
+    left: 1047px;
+    top: 60px;
+}
+
+#microbeadstwo{
+	background-image: url(images/plates/ldpehdpemirror.png);
+    background-size: cover;
+    width: 225px;
+    height: 163px;
+    left: 579px;
+    top: -33px;
+}
+
+#microbeadsthree{
+	background-image: url(images/plates/pet.png);
+    background-size: cover;
+    width: 220px;
+    height: 170px;
+    left: 175px;
+    top: 405px;
+}
+
+#microbeadsfour{
+	background-image: url(images/plates/phtalate.png);
+    background-size: cover;
+    width: 180px;
+    height: 180px;
+    left: 175px;
+    top: 57px;
+}
+
+#microbeadsfive{
+	background-image: url(images/plates/pp.png);
+    background-size: cover;
+    width: 180px;
+    height: 180px;
+    left: 1073px;
+    top: 405px;
+}
+
+#microbeadssix{
+	background-image: url(images/plates/polystyreneplate.png);
+    background-size: cover;
+    width: 180px;
+    height: 180px;
+    left: 611px;
+    top: 509px;
+}
+
+#filamentschems{
+	display: none;
+	cursor: pointer;
+}
+
+.eachfilaments{
+	position: fixed;
+}
+
+#filamentsone{
+	background-image: url(images/plates/pp.png);
+    background-size: cover;
+    width: 180px;
+    height: 180px;
+    left: 1073px;
+    top: 405px;
+}
+
+#filamentstwo{
+	background-image: url(images/plates/dyes.png);
+    background-size: cover;
+    width: 228px;
+    height: 163px;
+    left: 579px;
+    top: -33px;
+}
+
+#filamentsthree{
+	background-image: url(images/plates/pet.png);
+    background-size: cover;
+    width: 220px;
+    height: 170px;
+    left: 175px;
+    top: 405px;
+}
+
+#fibrechems{
+	display: none;
+	cursor: pointer;
+}
+
+.eachfibre{
+	position: fixed;
+}
+
+#fibreone{
+	background-image: url(images/plates/phtalate.png);
+    background-size: cover;
+    width: 180px;
+    height: 180px;
+    left: 1073px;
+    top: 203px;
+}
+
+#fibretwo{
+	background-image: url(images/plates/dyes.png);
+    background-size: cover;
+    width: 228px;
+    height: 163px;
+    left: 579px;
+    top: -45px;
+}
+
+#fibrethree{
+	background-image: url(images/plates/metals.png);
+    background-size: cover;
+    width: 220px;
+    height: 170px;
+    left: 458px;
+    top: 490px;
+
+}
+
+#fibrefour{
+	background-image: url(images/plates/pfc.png);
+    background-size: cover;
+    width: 180px;
+    height: 180px;
+    left: 175px;
+    top: 203px;
+}
+
+#fibrefive{
+	background-image: url(images/plates/solvents.png);
+    background-size: cover;
+    width: 228px;
+    height: 165px;
+    left: 774px;
+    top: 490px;
+}
+
+#filmchems{
+	display: none;
+	cursor: pointer;
+}
+
+.eachfilm{
+	position: fixed;
+}
+
+#filmone{
+	background-image: url(images/plates/phtalate.png);
+    background-size: cover;
+    width: 180px;
+    height: 180px;
+    left: 1073px;
+    top: 203px;
+}
+
+#filmtwo{
+	background-image: url(images/plates/ldpe.png);
+    background-size: cover;
+    width: 228px;
+    height: 166px;
+    left: 579px;
+    top: -45px;
+}
+
+#filmthree{
+	background-image: url(images/plates/hdpe.png);
+    background-size: cover;
+    width: 220px;
+    height: 170px;
+    left: 590px;
+    top: 515px;
+}
+
+#filmfour{
+	background-image: url(images/plates/pvc.png);
+    background-size: cover;
+    width: 180px;
+    height: 180px;
+    left: 175px;
+    top: 203px;
+}
+
+#fragmentonedum{
+	background-image: url(images/plates/pet.png);
+    background-size: cover;
+    width: 220px;
+    height: 170px;
+    top: 245px;
+	left: 593px;
+}
+
+#fragmentpet{
+	position: fixed;
+	display: none;
+}
+
+.nonplates{
+	position: fixed;
+}
+
+#fragmentpetone{
+	background-image: url(images/plates/pet1/pet1.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 230px;
+    left: 294px;
+}
+
+#fragmentpettwo{
+	background-image: url(images/plates/pet1/pet2.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 230px;
+    left: 909px;
+}
+
+#fragmentpetthree{
+	background-image: url(images/plates/pet1/pet3.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 459px;
+    left: 603px;
+}
+
+#fragmentpetfour{
+	background-image: url(images/plates/pet1/pet4.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 10px;
+    left: 603px;
+}
+
+#fragmentldpe{
+	position: fixed;
+	display: none;
+}
+
+#fragmentldpeone{
+	background-image: url(images/plates/ldpe1/ldpe.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 10px;
+    left: 603px;
+}
+
+#fragmenttwodum{
+	background-image: url(images/plates/ldpe.png);
+    background-size: cover;
+    width: 228px;
+    height: 166px;
+    top: 245px;
+	left: 593px;
+}
+
+#fragmentpvc{
+	position: fixed;
+	display: none;
+}
+
+#fragmentpvcone{
+	background-image: url(images/plates/pvc1/pvc1.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 303px;
+    left: 969px;
+}
+
+#fragmentpvctwo{
+	background-image: url(images/plates/pvc1/pvc2.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 118px;
+    left: 969px;
+}
+
+#fragmentpvcthree{
+	background-image: url(images/plates/pvc1/pvc3.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 470px;
+    left: 740px;
+}
+
+#fragmentpvcfour{
+	background-image: url(images/plates/pvc1/pvc4.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 470px;
+    left: 533px;
+}
+
+#fragmentpvcfive{
+	background-image: url(images/plates/pvc1/pvc5.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 303px;
+    left: 294px;
+}
+
+#fragmentpvcsix{
+	background-image: url(images/plates/pvc1/pvc6.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 118px;
+    left: 290px;
+}
+
+#fragmentpvcseven{
+	background-image: url(images/plates/pvc1/pvc7.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 10px;
+    left: 533px;
+}
+
+#fragmentpvceight{
+	background-image: url(images/plates/pvc1/pvc8.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 10px;
+    left: 740px;
+}
+
+#fragmentthreedum{
+	background-image: url(images/plates/pvc.png);
+    background-size: cover;
+    width: 180px;
+    height: 180px;
+    top: 245px;
+    left: 623px;
+}
+
+#fragmenthdpe{
+	position: fixed;
+	display: none;
+}
+
+#fragmenthdpeone{
+	background-image: url(images/plates/hdpe1/hdpe1.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 125px;
+    left: 927px;
+}
+
+#fragmenthdpetwo{
+	background-image: url(images/plates/hdpe1/hdpe2.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 12px;
+    left: 634px;
+}
+
+#fragmenthdpethree{
+	background-image: url(images/plates/hdpe1/hdpe3.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 346px;
+    left: 934px;
+}
+
+#fragmenthdpefour{
+	background-image: url(images/plates/hdpe1/hdpe4.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 470px;
+    left: 638px;
+}
+
+#fragmenthdpefive{
+	background-image: url(images/plates/hdpe1/hdpe5.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 346px;
+    left: 315px;
+}
+
+#fragmenthdpesix{
+	background-image: url(images/plates/hdpe1/hdpe6.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 125px;
+    left: 315px;
+}
+
+#fragmentfourdum{
+	background-image: url(images/plates/hdpe.png);
+    background-size: cover;
+	width: 228px;
+    height: 176px;
+    top: 245px;
+    left: 623px;
+}
+
+#fragmentsixdum{
+	background-image: url(images/plates/polystyreneplate.png);
+    background-size: cover;
+	width: 200px;
+    height: 200px;
+    top: 245px;
+    left: 605px;
+}
+
+#fragmentpolystyrene{
+	position: fixed;
+	display: none;
+}
+
+#fragmentpolystyreneone{
+	background-image: url(images/plates/polystyrene1/polystyrene1.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 10px;
+    left: 603px;
+}
+
+#fragmentfivedum{
+	background-image: url(images/plates/pp.png);
+    background-size: cover;
+	width: 200px;
+    height: 200px;
+    top: 245px;
+    left: 593px;
+}
+
+#fragmentpp{
+	position: fixed;
+	display: none;
+}
+
+#fragmentppone{
+	background-image: url(images/plates/pp1/pp1.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 10px;
+    left: 590px;
+}
+
+#fragmenthdpeldpe{
+	position: fixed;
+	display: none;
+}
+
+#fragmenthdpeldpeone{
+	background-image: url(images/plates/hdpeldpe1/hdpeldpe1.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 125px;
+    left: 927px;
+}
+
+#fragmenthdpeldpetwo{
+	background-image: url(images/plates/hdpeldpe1/hdpeldpe2.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 12px;
+    left: 634px;
+}
+
+#fragmenthdpeldpethree{
+	background-image: url(images/plates/hdpeldpe1/hdpeldpe3.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 346px;
+    left: 934px;
+}
+
+#fragmenthdpeldpefour{
+	background-image: url(images/plates/hdpeldpe1/hdpeldpe4.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 470px;
+    left: 638px;
+}
+
+#fragmenthdpeldpefive{
+	background-image: url(images/plates/hdpeldpe1/hdpeldpe5.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 346px;
+    left: 298px;
+}
+
+#fragmenthdpeldpesix{
+	background-image: url(images/plates/hdpeldpe1/hdpeldpe6.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 125px;
+    left: 298px;
+}
+
+#foamonedum{
+    background-image: url(images/plates/polystyreneplate.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 245px;
+    left: 605px;
+}
+
+#foampolystyrene{
+    position: fixed;
+    display: none;
+}
+
+#foampolystyreneone{
+    background-image: url(images/plates/polystyrene1/polystyrene1.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 10px;
+    left: 603px;
+}
+
+#foamtwodum{
+    background-image: url(images/plates/ldpehdpepan.png);
+    background-size: cover;
+    width: 228px;
+    height: 176px;
+    top: 245px;
+    left: 605px;
+}
+
+#foamhdpeldpe{
+    position: fixed;
+    display: none;
+}
+
+#foamhdpeldpeone{
+    background-image: url(images/plates/hdpe1/hdpe1.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 10px;
+    left: 603px;
+}
+
+#foamhdpeldpetwo{
+    background-image: url(images/plates/hdpe1/hdpe2.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 114px;
+    left: 879px;
+}
+
+
+#foamhdpeldpethree{
+    background-image: url(images/plates/hdpe1/hdpe3.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 114px;
+    left: 330px;
+}
+
+
+#foamhdpeldpefour{
+    background-image: url(images/plates/hdpe1/hdpe4.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 319px;
+    left: 918px;
+}
+
+
+#foamhdpeldpefive{
+    background-image: url(images/plates/hdpe1/hdpe5.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 319px;
+    left: 314px;
+}
+
+#foamhdpeldpesix{
+    background-image: url(images/plates/hdpe1/hdpe6.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 480px;
+    left: 744px;
+}
+
+#foamhdpeldpeseven{
+    background-image: url(images/plates/ldpe1/ldpe.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 480px;
+    left: 507px;
+}
+
+#microbeadsfivedum{
+    background-image: url(images/plates/pp.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 245px;
+    left: 593px;
+}
+
+#microbeadspp{
+    position: fixed;
+    display: none;
+}
+
+#microbeadsppone{
+    background-image: url(images/plates/pp1/pp1.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 10px;
+    left: 590px;
+}
+
+#microbeadssixdum{
+    background-image: url(images/plates/polystyreneplate.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 245px;
+    left: 605px;
+}
+
+#microbeadspolystyrene{
+    position: fixed;
+    display: none;
+}
+
+#microbeadspolystyreneone{
+    background-image: url(images/plates/polystyrene1/polystyrene1.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 10px;
+    left: 603px;
+}
+
+#microbeadspet{
+    position: fixed;
+    display: none;
+}
+
+#microbeadsthreedum{
+    background-image: url(images/plates/pet.png);
+    background-size: cover;
+    width: 220px;
+    height: 170px;
+    top: 245px;
+    left: 593px;
+}
+
+#microbeadspetone{
+    background-image: url(images/plates/pet1/pet1.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 230px;
+    left: 294px;
+}
+
+#microbeadspettwo{
+    background-image: url(images/plates/pet1/pet2.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 230px;
+    left: 909px;
+}
+
+#microbeadspetthree{
+    background-image: url(images/plates/pet1/pet3.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 459px;
+    left: 603px;
+}
+
+#microbeadspetfour{
+    background-image: url(images/plates/pet1/pet4.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 10px;
+    left: 603px;
+}
+
+#microbeadsphtalate{
+    position: fixed;
+    display: none;
+}
+
+#microbeadsfourdum{
+    background-image: url(images/plates/phtalate.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 245px;
+    left: 593px;
+}
+
+#microbeadsphtalateone{
+    background-image: url(images/plates/phtalate1/phtalate1.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 385px;
+    left: 358px;
+}
+
+#microbeadsphtalatetwo{
+    background-image: url(images/plates/phtalate1/phtalate2.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    left: 881px;
+    top: 385px;
+}
+
+#microbeadsphtalatethree{
+    background-image: url(images/plates/phtalate1/phtalate3.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: -1px;
+    left: 593px;
+}
+
+#microbeadstwodum{
+    background-image: url(images/plates/ldpehdpemirror.png);
+    background-size: cover;
+    width: 243px;;
+    height: 176px;
+    top: 245px;
+    left: 605px;
+}
+
+#microbeadshdpeldpe{
+    position: fixed;
+    display: none;
+}
+
+#microbeadshdpeldpeone{
+    background-image: url(images/plates/hdpe1/hdpe1.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 10px;
+    left: 603px;
+}
+
+#microbeadshdpeldpetwo{
+    background-image: url(images/plates/hdpe1/hdpe2.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 114px;
+    left: 879px;
+}
+
+#microbeadshdpeldpethree{
+    background-image: url(images/plates/hdpe1/hdpe3.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 114px;
+    left: 330px;
+}
+
+#microbeadshdpeldpefour{
+    background-image: url(images/plates/hdpe1/hdpe4.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 319px;
+    left: 918px;
+}
+
+
+#microbeadshdpeldpefive{
+    background-image: url(images/plates/hdpe1/hdpe5.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 319px;
+    left: 314px;
+}
+
+#microbeadshdpeldpesix{
+    background-image: url(images/plates/hdpe1/hdpe6.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 480px;
+    left: 744px;
+}
+
+#microbeadshdpeldpeseven{
+    background-image: url(images/plates/ldpe1/ldpe.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 480px;
+    left: 507px;
+}
+
+.research{
+    margin-top: 20px;
+    color: white;
+    font-size: 14pt;
+    font-weight: 300;
+    font-family: 'Raleway';
+    line-height: 18pt;
+    background-color: #04285b;
+    position: fixed;
+    width: 30%;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    left: 35%;
+    top: 40%;
+    display: none;
+}
+
+#filamentsdyes{
+    position: fixed;
+    display: none;
+}
+
+#filamentstwodum{
+    background-image: url(images/plates/dyes.png);
+    background-size: cover;
+    width: 246px;
+    height: 176px;
+    top: 245px;
+    left: 593px;
+}
+
+#filamentsdyesone{
+    background-image: url(images/plates/dyes1/dyes1.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 385px;
+    left: 358px;
+}
+
+#filamentsdyestwo{
+    background-image: url(images/plates/dyes1/dyes2.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    left: 881px;
+    top: 385px;
+}
+
+#filamentsdyesthree{
+    background-image: url(images/plates/dyes1/dyes3.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: -1px;
+    left: 608px;
+}
+
+#filamentspet{
+    position: fixed;
+    display: none;
+}
+
+#filamentsonedum{
+    background-image: url(images/plates/pet.png);
+    background-size: cover;
+    width: 220px;
+    height: 170px;
+    top: 245px;
+    left: 593px;
+}
+
+#filamentspetone{
+    background-image: url(images/plates/pet1/pet1.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 230px;
+    left: 294px;
+}
+
+#filamentspettwo{
+    background-image: url(images/plates/pet1/pet2.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 230px;
+    left: 909px;
+}
+
+#filamentspetthree{
+    background-image: url(images/plates/pet1/pet3.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 459px;
+    left: 603px;
+}
+
+#filamentspetfour{
+    background-image: url(images/plates/pet1/pet4.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 10px;
+    left: 603px;
+}
+
+#filamentsthreedum{
+    background-image: url(images/plates/pp.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 245px;
+    left: 593px;
+}
+
+#filamentspp{
+    position: fixed;
+    display: none;
+}
+
+#filamentsppone{
+    background-image: url(images/plates/pp1/pp1.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 10px;
+    left: 590px;
+}
+
+#fibredyes{
+    position: fixed;
+    display: none;
+}
+
+#fibretwodum{
+    background-image: url(images/plates/dyes.png);
+    background-size: cover;
+    width: 246px;
+    height: 176px;
+    top: 245px;
+    left: 593px;
+}
+
+#fibredyesone{
+    background-image: url(images/plates/dyes1/dyes1.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 385px;
+    left: 358px;
+}
+
+#fibredyestwo{
+    background-image: url(images/plates/dyes1/dyes2.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    left: 881px;
+    top: 385px;
+}
+
+#fibredyesthree{
+    background-image: url(images/plates/dyes1/dyes3.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: -1px;
+    left: 608px;
+}
+
+#fibreonedum{
+    background-image: url(images/plates/phtalate.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 245px;
+    left: 593px;
+}
+
+#fibrephtalate{
+    position: fixed;
+    display: none;
+}
+
+#fibrephtalateone{
+    background-image: url(images/plates/phtalate1/phtalate1.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 385px;
+    left: 358px;
+}
+
+#fibrephtalatetwo{
+    background-image: url(images/plates/phtalate1/phtalate2.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    left: 881px;
+    top: 385px;
+}
+
+#fibrephtalatethree{
+    background-image: url(images/plates/phtalate1/phtalate3.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: -1px;
+    left: 593px;
+}
+
+#fibreonedum{
+    background-image: url(images/plates/phtalate.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 245px;
+    left: 605px;
+}
+
+#fibresolvent{
+    position: fixed;
+    display: none;
+}
+
+#fibresolventone{
+    background-image: url(images/plates/solvent1/solvent1.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 230px;
+    left: 294px;
+}
+
+#fibresolventtwo{
+    background-image: url(images/plates/solvent1/solvent2.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 230px;
+    left: 909px;
+}
+
+#fibrefivedum{
+    background-image: url(images/plates/solvents.png);
+    background-size: cover;
+     width: 243px;;
+    height: 176px;
+    top: 245px;
+    left: 593px;
+}
+
+#fibrephtalate{
+    position: fixed;
+    display: none;
+}
+
+#fibrephtalateone{
+    background-image: url(images/plates/phtalate1/phtalate1.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 385px;
+    left: 358px;
+}
+
+#fibrephtalatetwo{
+    background-image: url(images/plates/phtalate1/phtalate2.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    left: 881px;
+    top: 385px;
+}
+
+#fibrephtalatethree{
+    background-image: url(images/plates/phtalate1/phtalate3.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: -1px;
+    left: 593px;
+}
+
+#fibrethreedum{
+    background-image: url(images/plates/metals.png);
+    background-size: cover;
+    width: 220px;
+    height: 170px;
+    top: 245px;
+    left: 593px;
+}
+
+#fibremetals{
+    position: fixed;
+    display: none;
+}
+
+#fibremetalsone{
+    background-image: url(images/plates/metals1/metals1.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 385px;
+    left: 358px;
+}
+
+#fibremetalstwo{
+    background-image: url(images/plates/metals1/metals2.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    left: 881px;
+    top: 385px;
+}
+
+#fibremetalsthree{
+    background-image: url(images/plates/metals1/metals3.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: -1px;
+    left: 593px;
+}
+
+#fibrepfc{
+    position: fixed;
+    display: none;
+}
+
+#fibrefourdum{
+    background-image: url(images/plates/pfc.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 245px;
+    left: 593px;
+}
+
+#fibrepfcone{
+    background-image: url(images/plates/pfc1/pfc1.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 230px;
+    left: 294px;
+}
+
+#fibrepfctwo{
+    background-image: url(images/plates/pfc1/pfc2.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 230px;
+    left: 909px;
+}
+
+#fibrepfcthree{
+    background-image: url(images/plates/pfc1/pfc3.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 459px;
+    left: 603px;
+}
+
+#fibrepfcfour{
+    background-image: url(images/plates/pfc1/pfc4.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 10px;
+    left: 603px;
+}
+
+#filmonedum{
+    background-image: url(images/plates/phtalate.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 245px;
+    left: 593px;
+}
+
+#filmphtalate{
+    position: fixed;
+    display: none;
+}
+
+#filmphtalateone{
+    background-image: url(images/plates/phtalate1/phtalate1.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 385px;
+    left: 358px;
+}
+
+#filmphtalatetwo{
+    background-image: url(images/plates/phtalate1/phtalate2.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    left: 881px;
+    top: 385px;
+}
+
+#filmphtalatethree{
+    background-image: url(images/plates/phtalate1/phtalate3.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: -1px;
+    left: 593px;
+}
+
+#filmhdpe{
+    position: fixed;
+    display: none;
+}
+
+#filmhdpeone{
+    background-image: url(images/plates/hdpe1/hdpe1.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 125px;
+    left: 927px;
+}
+
+#filmhdpetwo{
+    background-image: url(images/plates/hdpe1/hdpe2.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 12px;
+    left: 634px;
+}
+
+#filmhdpethree{
+    background-image: url(images/plates/hdpe1/hdpe3.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 346px;
+    left: 934px;
+}
+
+#filmhdpefour{
+    background-image: url(images/plates/hdpe1/hdpe4.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 470px;
+    left: 638px;
+}
+
+#filmhdpefive{
+    background-image: url(images/plates/hdpe1/hdpe5.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 346px;
+    left: 298px;
+}
+
+#filmhdpesix{
+    background-image: url(images/plates/hdpe1/hdpe6.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 125px;
+    left: 298px;
+}
+
+#filmthreedum{
+    background-image: url(images/plates/hdpe.png);
+    background-size: cover;
+    width: 228px;
+    height: 176px;
+    top: 245px;
+    left: 623px;
+}
+
+#filmpvc{
+    position: fixed;
+    display: none;
+}
+
+#filmpvcone{
+    background-image: url(images/plates/pvc1/pvc1.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 303px;
+    left: 969px;
+}
+
+#filmpvctwo{
+    background-image: url(images/plates/pvc1/pvc2.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 118px;
+    left: 969px;
+}
+
+#filmpvcthree{
+    background-image: url(images/plates/pvc1/pvc3.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 470px;
+    left: 740px;
+}
+
+#filmpvcfour{
+    background-image: url(images/plates/pvc1/pvc4.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 470px;
+    left: 533px;
+}
+
+#filmpvcfive{
+    background-image: url(images/plates/pvc1/pvc5.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 303px;
+    left: 294px;
+}
+
+#filmpvcsix{
+    background-image: url(images/plates/pvc1/pvc6.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 118px;
+    left: 290px;
+}
+
+#filmpvcseven{
+    background-image: url(images/plates/pvc1/pvc7.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 10px;
+    left: 533px;
+}
+
+#filmpvceight{
+    background-image: url(images/plates/pvc1/pvc8.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 10px;
+    left: 740px;
+}
+
+#filmfourdum{
+    background-image: url(images/plates/pvc.png);
+    background-size: cover;
+    width: 180px;
+    height: 180px;
+    top: 245px;
+    left: 623px;
+}
+
+#filmldpe{
+    position: fixed;
+    display: none;
+}
+
+#filmldpeone{
+    background-image: url(images/plates/ldpe1/ldpe.png);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    top: 10px;
+    left: 603px;
+}
+
+#filmtwodum{
+    background-image: url(images/plates/ldpe.png);
+    background-size: cover;
+    width: 228px;
+    height: 166px;
+    top: 245px;
+    left: 593px;
+}
+
+.optcont{
+    position: fixed;
+    bottom: 50px;
+}
+
+.tableopt{
+    background-color: white;
+    padding: 12px;
+    padding-left: 17px;
+    padding-right: 17px;
+    border-radius: 24px;
+    font-size: 15px;
+    font-family: 'Lexend Deca';
+    font-weight: 400;
+    border: #13448d solid 3px;
+    color: #13448d;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+/*.tableopt:hover{
+    background-color: #13448d;
+    border: #13448d solid 3px;
+    color: white;
+}
+
+.tableopt:active{
+    background-color: #13448d;
+    border: #13448d solid 3px;
+    color: white;
+}*/
+
+#picnicbtn{
+    background-color: #13448d;
+    border: #13448d solid 3px;
+    color: white;
+}
+
+.soundoptions{
+    background-color: transparent;
+    width: 60px;
+    height: 40px;
+    border: none;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.soundoptionsplay{
+    background-image: url('images/icon/vol.png');
+    background-repeat: no-repeat;
+}
+
+.soundoptionspause{
+    background-image: url('images/icon/mute.png');
+    background-repeat: no-repeat;
+}
+
+#sounddiningplay,#sounddiningpause,#soundregularplay,#soundregularpause,#soundpicnicplay,#soundpicnicpause{
+    display: none;
+}
+#soundpicnicpause{
+    display: inline;
+}
+.audiocon{
+    position: fixed;
+    bottom: 50px;
+    left: 460px;
+}
