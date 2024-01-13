@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Airport Train Schedule - KAI Bandara</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body id="body">
+	<div id="loader">
+		<img src="images/kai.png" id="image-loader"/>
+	</div>
+	<div id="contents" ng-app="myApp">
+			<div class="top">
+          		<h1> Where do you want to go? </h1>
+	    	</div>
+	    	<div class="body">
+    			<button type="button" id="buttonairport" class="square-button one active-square-button-default" onclick="switchairport()">
+		            <div class="icon-square-button active-icon-square-button" id="twdairporticon"></div>
+		            <p class="text-square-button active-text-square-button" id="twdairport">Towards Soekarno-Hatta </p>
+		        </button>
+		        <button type="button" class="square-button two" id="buttonjkt" onclick="switchjkt()">
+		            <div class="icon-square-button" id="twdjkticon"></div>
+		            <p class="text-square-button" id="twdjkt">Towards Jakarta</p>
+		        </button>
+
+
+
+		        <div id="soetabox">
+		        	<div class="map map-soeta">
+		        		 <div class="line"></div>
+		                  <div class="map-line map-line-one">
+		                      <span class="radio-map"></span>
+		                      <p class="map-text">Manggarai</p>
+		                  </div>
+		                  <div class="map-line">
+		                    <span class="radio-map"></span>
+		                    <p class="map-text">BNI <br> City</p>
+		                  </div>
+		                  <div class="map-line">
+		                    <span class="radio-map"></span>
+		                    <p class="map-text">Duri</p>
+		                  </div>
+		                  <div class="map-line">
+		                    <span class="radio-map"></span>
+		                    <p class="map-text">Batu Ceper</p>
+		                  </div>
+		                  <div class="map-line">
+		                    <span class="radio-map"></span>
+		                    <div class="airport-icon"></div>
+		                    <p class="map-text">Airport</p>
+		                  </div>
+		        	</div>
+		        	<div class="from">
+		                <h2> From </h2>
+		                <select name="cars" id="cars1" onchange="switchme('sched1','arrival-table1',this.value); switchmeair();">
+				                <option disabled selected value> -- select an option -- </option>
+				                <option value="amang">Manggarai</option>
+				                <option value="abni">BNI City</option>
+				                <option value="aduri">Duri</option>
+				                <option value="abatu">Batu Ceper</option>
+                		</select>
+	                </div>
+	                <div class="schedule" ng-controller="toairport">
+                  		<h2> Schedule </h2>
+                  
+		                <div class="empty" id="empty-airport">
+		                    <div class="empty-img"></div>
+		                    <div class="empty-text">
+		                    	<h3>No Shcedule Yet</h3>
+		                    	<p class="p-light">Choose where you want to travel from with the dropdown button above. Safe Travel!</p>
+		                    </div>
+		                </div>
+                  		<div class="loop_container" ng-repeat="eachdata in airport">
+                    		<div id="{{eachdata.trigger}}" class="sched1 table" id="depart-table1">
+                            	<div class="top-list" id="depart-table1-top">
+                            		<h3> Departure Time</h3>
+                            		<h4 class="p-light" id="departure-station">{{eachdata.from.replace('-', ' ')}}</h4>
+                            	</div>
+                            	<div class="list" ng-repeat="eachtime in eachdata.depart" id="depart-table1-bottom">
+                            		<p class="item p-thick" id="item-dep">{{ eachtime }}</p>
+                            	</div>
+                   			</div>
+                   		</div>
+                  		<div class="table table-two" ng-controller="toairport" id="arrival-table1">
+                            <div class="top-list">
+                                <h3> Arrival Time</h3>
+                                <h4 class="p-light">Soekarno-Hatta Airport</h4>
+                            </div>
+                            <div class="list" ng-repeat="eachtime in soetaaa">
+                                 <p class="item p-thick" id="item-dep">{{ eachtime }}</p>
+                            </div>
+                   		</div>
+		        	</div>
+	    		</div>
+
+
+
+
+	    		<div id="manggaraibox">
+	    			<div class="map map-manggarai">
+                  		<div class="line"></div>
+              			<div class="map-line map-line-one">
+	                      <span class="radio-map"></span>
+	                      <div class="airport-icon"></div>
+	                      <p class="map-text">Airport</p>
+		                </div>
+		                <div class="map-line">
+		                    <span class="radio-map"></span>
+		                    <p class="map-text">Batu Ceper</p>
+		                </div>
+		                <div class="map-line">
+		                    <span class="radio-map"></span>
+		                    <p class="map-text">Duri</p>
+		                </div>
+		                <div class="map-line">
+		                	<span class="radio-map"></span>
+		                    <p class="map-text">BNI<br> City</p>
+		                </div>
+		                <div class="map-line map-line-last">
+		                    <span class="radio-map"></span>
+		                    <p class="map-text">Manggarai</p>
+		                </div>
+               		</div>
+               		<div class="from">
+		                <h2> From </h2>
+		                <select name="cars" id="cars2" onchange="switchme('sched2','arrival-table2',this.value); switchmejkt();">
+		                	<option disabled selected value> -- select an option -- </option>
+		                	<option value="jairp">Airport</option>
+		                	<option value="jbatu">Batu Ceper</option>
+		                	<option value="jduri">Duri</option>
+		               		<option value="jbni">BNI City</option>
+		                </select>
+		            </div>
+		            <div class="schedule" ng-controller="tojkt">
+                  		<h2> Schedule </h2>
+                  
+		                <div class="empty" id="empty-manggarai">
+		                    <div class="empty-img"></div>
+		                    <div class="empty-text">
+		                    	<h3>No Shcedule Yet</h3>
+		                    	<p class="p-light">Choose where you want to travel from with the dropdown button above. Safe Travel!</p>
+		                    </div>
+		                </div>
+                  		<div class="loop_container" ng-repeat="eachdata in jkt">
+                    		<div id="{{eachdata.trigger}}" class="sched2 table" id="depart-table2">
+                            	<div class="top-list">
+                            		<h3> Departure Time </h3>
+                            		<h4 class="p-light" id="departure-station">{{eachdata.from.replace('-', ' ')}}</h4>
+                            	</div>
+                            	<div class="list" ng-repeat="eachtime in eachdata.depart">
+                            		<p class="item p-thick" id="item-dep">{{ eachtime }}</p>
+                            	</div>
+                   			</div>
+                   		</div>
+                  		<div class="table table-two" ng-controller="tojkt" id="arrival-table2">
+                            <div class="top-list">
+                                <h3> Arrival Time</h3>
+                                <h4 class="p-light">Soekarno-Hatta Airport</h4>
+                            </div>
+                            <div class="list" ng-repeat="eachtime in manggaraiii">
+                                 <p class="item p-thick" id="item-dep">{{ eachtime }}</p>
+                            </div>
+                   		</div>
+                  	</div>
+		        </div>
+		        <script src="schedule.js"></script>
+	    	</div>
+	</div>
+</body>
+</html>
+<script>
+	window.onload = function() {
+	setTimeout(function(){ 
+		document.getElementById('loader').style.display = 'none';
+		document.getElementById('contents').style.display = 'block';
+		document.getElementById('body').style.paddingBottom = '40px';
+		document.getElementById('body').style.overflowY = 'scroll';
+	}, 1000);
+}
+</script>
