@@ -653,7 +653,10 @@ footer div div.socmed a:nth-child(4) img{
 	padding-top: 5px;
 }
 
-
+a.previouslyblue {
+	text-decoration: none;
+   	color: white;
+}
 
 
 
