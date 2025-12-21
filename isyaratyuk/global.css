@@ -24,6 +24,10 @@ body{
     overflow-x: hidden;
 }
 
+.footer-bottom{
+    display: none !important;
+}
+
 /* MAIN TEXT STYLES */
 
 h1{
